@@ -1,0 +1,949 @@
+
+*** Running vivado
+    with args -log design_1_dec_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_dec_0.tcl
+
+
+****** Vivado v2018.3 (64-bit)
+  **** SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+  **** IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source design_1_dec_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/puja/Desktop/working_downlink_chain/BBU/ip_repo_path/K_64_N_512_E_896_ATG'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top design_1_dec_0 -part xczu21dr-ffvd1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu21dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu21dr'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4165 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 1492.852 ; gain = 85.996 ; free physical = 24892 ; free virtual = 32931
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_dec_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_dec_0/synth/design_1_dec_0.sv:57]
+WARNING: [Synth 8-5856] 3D RAM path_metric_pipe_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM mux_path_metrics_e2_w_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM mux_path_metrics_e3_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:51699]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (10#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:51699]
+INFO: [Synth 8-6157] synthesizing module 'RAM64X1S' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:45604]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64X1S' (13#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:45604]
+WARNING: [Synth 8-5858] RAM cw_store_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM cw_results_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM int_cw_store_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM id_fields_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM put_r4_wdata_mod_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM path_wdata_mod_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM xbar_llr_e0_w_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM llr_xbar_e1_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM psum_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM ptr_mem_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM path_wdata_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5856] 3D RAM index_pipe_reg  for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM flags_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM m_axis_put_put_tdata_pipe_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM m_axis_put_ppu_tdata_pipe_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM flags_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM s_axis_din_tuser_array_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM pre_itlv_pipe_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM bp_data_words_pipe_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM op_params_pipe_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dec_0' (77#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_dec_0/synth/design_1_dec_0.sv:57]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[id][3]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[id][2]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[id][1]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[id][0]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][15]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][14]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][13]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][12]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][11]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][10]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][9]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][8]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][7]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][6]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][5]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][4]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][3]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][2]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][1]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][0]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[code][6]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[code][5]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[code][4]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[code][3]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[code][2]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[code][1]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[code][0]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blind_decode]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[early_terminate]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][15]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][14]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][13]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][12]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][11]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][10]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][9]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][8]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][7]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][6]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][5]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][4]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][3]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][2]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][1]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][0]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[user_id][7]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[user_id][6]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[user_id][5]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[user_id][4]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[user_id][3]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[user_id][2]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[user_id][1]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[user_id][0]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][9]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][8]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][7]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][6]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][5]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][4]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][3]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][2]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][1]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][0]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port cntrl_if[ctrl_enable]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port cntrl_if[din_enable]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port cntrl_if[din_words_enable]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port cntrl_if[status_enable]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port cntrl_if[dout_words_enable]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port cntrl_if[dout_enable]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port cntrl_if[din_words]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port cntrl_if[dout_words]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port s_axis_cmd_tdata[p_start]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port s_axis_cmd_tdata[hard]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[n][11]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[n][10]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[n][9]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[n][8]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[n][7]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[n][6]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[n][5]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[n][4]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[n][3]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[n][2]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[n][1]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[n][0]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[code][6]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[code][5]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[code][4]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[code][3]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[code][2]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[code][1]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[code][0]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[user_id][7]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[user_id][6]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[user_id][5]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[user_id][4]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[user_id][3]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[user_id][2]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[user_id][1]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[user_id][0]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:26 ; elapsed = 00:00:36 . Memory (MB): peak = 2126.594 ; gain = 719.738 ; free physical = 21058 ; free virtual = 29095
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 2126.594 ; gain = 719.738 ; free physical = 20204 ; free virtual = 28248
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:41 . Memory (MB): peak = 2126.594 ; gain = 719.738 ; free physical = 20204 ; free virtual = 28248
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xczu21dr-ffvd1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_dec_0/design_1_dec_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_dec_0/design_1_dec_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_dec_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_dec_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3140.930 ; gain = 1.000 ; free physical = 21234 ; free virtual = 29306
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  RAM64X1S => RAM64X1S (RAMS64E): 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 3160.930 ; gain = 0.000 ; free physical = 21194 ; free virtual = 29281
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.86 . Memory (MB): peak = 3160.930 ; gain = 20.000 ; free physical = 21175 ; free virtual = 29262
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:56 ; elapsed = 00:01:14 . Memory (MB): peak = 3160.930 ; gain = 1754.074 ; free physical = 21147 ; free virtual = 29226
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5580] Multithreading enabled for synth_design using a maximum of 4 processes.
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu21dr-ffvd1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:56 ; elapsed = 00:01:14 . Memory (MB): peak = 3160.930 ; gain = 1754.074 ; free physical = 21146 ; free virtual = 29225
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_dec_0_synth_1/dont_touch.xdc, line 9).
+INFO: [Synth 8-5546] ROM "logn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dcrc_cache_filled" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dcrc_cache_filled" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dcrc_cache_filled" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dcrc_cache_filled" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dcrc_cache_filled" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dcrc_cache_filled" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dcrc_cache_filled" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dcrc_cache_filled" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "logn" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dcrc_cache_filled" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dcrc_cache_filled" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dcrc_cache_filled" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dcrc_cache_filled" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dcrc_cache_filled" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dcrc_cache_filled" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dcrc_cache_filled" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "dcrc_cache_filled" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_state_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_pass0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_pass0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_pass0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_pass0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_pass0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_pass0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_pass0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_pass0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_state_in" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_pass0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_pass0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_pass0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_pass0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_pass0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_pass0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_pass0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "crc_pass0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flags" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fn_put_flags[blank_path]_return" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flags" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "null_remove_din_tlast" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'polar_v1_0_2_reg_decode_rd'
+INFO: [Synth 8-5546] ROM "core_code_wr_protect_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axis_width_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axis_enable_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_isr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_imr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_isr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_imr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_version_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "polar_code_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "polar_ba_table_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_code_wr_protect_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axis_width_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axis_enable_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_isr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_imr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_isr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_imr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_version_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "polar_code_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "polar_ba_table_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axi_wr_protect_wdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_code_wr_protect_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axis_width_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axis_enable_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_isr_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ier_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_idr_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_isr_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_ier_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_idr_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "polar_code_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "polar_ba_table_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[15].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[15].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[14].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[14].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[13].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[13].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[12].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[12].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[11].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[11].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[10].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[10].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[9].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[9].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[8].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[8].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[7].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[7].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[6].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[6].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[5].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[5].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[4].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[4].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[3].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[3].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[2].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "(null)[2].signmag_llr" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                 ST_READ |                               01 |                               01
+            ST_READ_RESP |                               10 |                               10
+                 ST_DONE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'polar_v1_0_2_axi_lite_conv_rd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+               ST_DECODE |                               01 |                               01
+             ST_READ_RSP |                               10 |                               10
+                  ST_ACK |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'polar_v1_0_2_reg_decode_rd'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:24 ; elapsed = 00:02:01 . Memory (MB): peak = 3160.930 ; gain = 1754.074 ; free physical = 17898 ; free virtual = 25952
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------------------------+------------+----------+
+|      |RTL Partition                                |Replication |Instances |
++------+---------------------------------------------+------------+----------+
+|1     |fec_5g_common_v1_1_0_sdp_ram__parameterized0 |           1|     23040|
+|2     |polar_v1_0_2_pd_mem_if__GB1                  |           1|     14015|
+|3     |polar_v1_0_2_parallel_pu__GB0                |           1|     39926|
+|4     |polar_v1_0_2_parallel_pu__GB1                |           1|      9824|
+|5     |polar_v1_0_2_parallel_pu__GB2                |           1|     23422|
+|6     |polar_v1_0_2_brute_sort                      |           1|     34187|
+|7     |polar_v1_0_2_decoder__GCB1                   |           1|     30242|
+|8     |polar_v1_0_2_decoder__GCB2                   |           1|     42901|
+|9     |polar_v1_0_2_decoder_ctrl                    |           1|     15807|
+|10    |polar_v1_0_2_output_copy                     |           1|     13702|
+|11    |polar_v1_0_2_op_if                           |           1|     22395|
+|12    |polar_v1_0_2_inner_core__GCB1                |           1|     18855|
+|13    |polar_v1_0_2__GC0                            |           1|      1614|
++------+---------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/PROC_GA[7].TIER_GA[0].ROW_GA[6].out_llr_reg[8]' (FDS) to 'inst/PPU_Ii_3/PROC_GA[7].TIER_GA[1].ROW_GA[0].out_llr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/PROC_GA[7].TIER_GA[0].ROW_GA[6].out_llr_reg[9]' (FDS) to 'inst/PPU_Ii_3/PROC_GA[7].TIER_GA[1].ROW_GA[0].out_llr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/PROC_GA[7].TIER_GA[0].ROW_GA[6].out_llr_reg[10]' (FDR) to 'inst/PPU_Ii_3/PROC_GA[7].TIER_GA[1].ROW_GA[0].out_llr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/PROC_GA[2].TIER_GA[0].ROW_GA[2].out_llr_reg[8]' (FDS) to 'inst/PPU_Ii_3/PROC_GA[7].TIER_GA[1].ROW_GA[0].out_llr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/PROC_GA[2].TIER_GA[0].ROW_GA[2].out_llr_reg[9]' (FDS) to 'inst/PPU_Ii_3/PROC_GA[7].TIER_GA[1].ROW_GA[0].out_llr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/PROC_GA[2].TIER_GA[0].ROW_GA[2].out_llr_reg[10]' (FDR) to 'inst/PPU_Ii_3/PROC_GA[7].TIER_GA[1].ROW_GA[0].out_llr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/PROC_GA[7].TIER_GA[1].ROW_GA[0].out_llr_reg[9]' (FDS) to 'inst/PPU_Ii_3/PROC_GA[1].TIER_GA[1].ROW_GA[1].out_llr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/PROC_GA[7].TIER_GA[1].ROW_GA[0].out_llr_reg[10]' (FDR) to 'inst/PPU_Ii_3/PROC_GA[1].TIER_GA[1].ROW_GA[1].out_llr_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\PROC_GA[7].TIER_GA[1].ROW_GA[2].out_llr_reg[10] )
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/PROC_GA[1].TIER_GA[1].ROW_GA[1].out_llr_reg[9]' (FDS) to 'inst/PPU_Ii_3/PROC_GA[2].TIER_GA[1].ROW_GA[0].out_llr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/PROC_GA[1].TIER_GA[1].ROW_GA[3].out_llr_reg[9]' (FDS) to 'inst/PPU_Ii_3/PROC_GA[2].TIER_GA[1].ROW_GA[0].out_llr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/PROC_GA[1].TIER_GA[1].ROW_GA[1].out_llr_reg[10]' (FDR) to 'inst/PPU_Ii_3/PROC_GA[2].TIER_GA[1].ROW_GA[0].out_llr_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/PROC_GA[1].TIER_GA[1].ROW_GA[3].out_llr_reg[10]' (FDR) to 'inst/PPU_Ii_3/PROC_GA[2].TIER_GA[1].ROW_GA[0].out_llr_reg[10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\PROC_GA[2].TIER_GA[1].ROW_GA[0].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\PROC_GA[2].TIER_GA[1].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\PROC_GA[2].TIER_GA[1].ROW_GA[2].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\PROC_GA[7].TIER_GA[2].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\PROC_GA[1].TIER_GA[2].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\PROC_GA[1].TIER_GA[2].ROW_GA[1].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\PROC_GA[2].TIER_GA[2].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\PROC_GA[2].TIER_GA[2].ROW_GA[1].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\PROC_GA[7].TIER_GA[3].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\PROC_GA[5].TIER_GA[3].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\PROC_GA[1].TIER_GA[3].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\pass_increment_e4_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\PROC_GA[2].TIER_GA[3].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][2][0]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][2][2]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][2][1]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][5][0]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][2][2]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][2][3]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][2][3]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][2][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\m_axis_instruct_srt_tdata_reg[index][2][4] )
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][5][0]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][5][2]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][5][1]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][5][3]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][5][2]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][7][0]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][5][3]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][5][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\m_axis_instruct_srt_tdata_reg[index][5][4] )
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][7][0]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][7][1]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][7][1]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][7][2]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][7][2]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][9][0]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][7][3]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][7][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\m_axis_instruct_srt_tdata_reg[index][7][4] )
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][9][0]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][9][3]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][9][1]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][9][2]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][9][2]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][9][4]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][9][3]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][16][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\m_axis_instruct_srt_tdata_reg[index][9][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\m_axis_instruct_srt_tdata_reg[pass_increment][0] )
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][16][0]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][16][1]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][16][1]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][16][2]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][16][2]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][16][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\m_axis_instruct_srt_tdata_reg[index][16][3] )
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][16][4]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][21][4]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][21][0]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][21][4]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][21][1]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][21][3]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][21][2]' (FDRE) to 'inst/PPU_Ii_3/m_axis_instruct_srt_tdata_reg[index][21][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\m_axis_instruct_srt_tdata_reg[index][21][3] )
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/PROC_GA[7].TIER_GA[1].ROW_GA[2].out_llr_reg[9]' (FDS) to 'inst/PPU_Ii_3/PROC_GA[2].TIER_GA[1].ROW_GA[2].out_llr_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/PPU_Ii_3/PROC_GA[2].TIER_GA[1].ROW_GA[0].out_llr_reg[9]' (FDS) to 'inst/PPU_Ii_3/PROC_GA[2].TIER_GA[1].ROW_GA[2].out_llr_reg[9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/PPU_Ii_3/\PROC_GA[2].TIER_GA[1].ROW_GA[2].out_llr_reg[9] )
+INFO: [Synth 8-5784] Optimized 8 bits of RAM "PD_HI_MID_PATH_I/NO_ECC_G.SDP_RAM_RTL_I/mem_array_reg" due to constant propagation. Old ram width 160 bits, new ram width 152 bits.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[6].TIER_GA[1].ROW_GA[0].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[6].TIER_GA[1].ROW_GA[2].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[6].TIER_GA[1].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[6].TIER_GA[1].ROW_GA[2].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[6].TIER_GA[1].ROW_GA[1].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[6].TIER_GA[1].ROW_GA[3].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[6].TIER_GA[1].ROW_GA[1].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[6].TIER_GA[1].ROW_GA[3].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[4].TIER_GA[1].ROW_GA[0].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[4].TIER_GA[1].ROW_GA[2].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[4].TIER_GA[1].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[4].TIER_GA[1].ROW_GA[2].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[4].TIER_GA[1].ROW_GA[1].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[4].TIER_GA[1].ROW_GA[3].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[4].TIER_GA[1].ROW_GA[1].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[4].TIER_GA[1].ROW_GA[3].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[3].TIER_GA[1].ROW_GA[0].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[3].TIER_GA[1].ROW_GA[2].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[3].TIER_GA[1].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[3].TIER_GA[1].ROW_GA[2].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[3].TIER_GA[1].ROW_GA[1].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[3].TIER_GA[1].ROW_GA[3].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[3].TIER_GA[1].ROW_GA[1].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[3].TIER_GA[1].ROW_GA[3].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[0].TIER_GA[1].ROW_GA[0].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[0].TIER_GA[1].ROW_GA[2].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[0].TIER_GA[1].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[0].TIER_GA[1].ROW_GA[2].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[0].TIER_GA[1].ROW_GA[1].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[0].TIER_GA[1].ROW_GA[3].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[0].TIER_GA[1].ROW_GA[1].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[0].TIER_GA[1].ROW_GA[3].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[6].TIER_GA[2].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[6].TIER_GA[2].ROW_GA[1].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[4].TIER_GA[2].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[4].TIER_GA[2].ROW_GA[1].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[3].TIER_GA[2].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[3].TIER_GA[2].ROW_GA[1].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[0].TIER_GA[2].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[0].TIER_GA[2].ROW_GA[1].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[5].TIER_GA[1].ROW_GA[0].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[5].TIER_GA[1].ROW_GA[2].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[5].TIER_GA[1].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[5].TIER_GA[1].ROW_GA[2].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[5].TIER_GA[1].ROW_GA[1].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[5].TIER_GA[1].ROW_GA[3].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[5].TIER_GA[1].ROW_GA[1].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[5].TIER_GA[1].ROW_GA[3].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[7].TIER_GA[1].ROW_GA[1].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[7].TIER_GA[1].ROW_GA[3].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[7].TIER_GA[1].ROW_GA[1].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[7].TIER_GA[1].ROW_GA[3].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[6].TIER_GA[3].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[4].TIER_GA[3].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[3].TIER_GA[3].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[0].TIER_GA[3].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[1].TIER_GA[1].ROW_GA[0].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[1].TIER_GA[1].ROW_GA[2].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[1].TIER_GA[1].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[1].TIER_GA[1].ROW_GA[2].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[2].TIER_GA[1].ROW_GA[1].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[2].TIER_GA[1].ROW_GA[3].out_llr_reg[9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[2].TIER_GA[1].ROW_GA[1].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[2].TIER_GA[1].ROW_GA[3].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[5].TIER_GA[2].ROW_GA[0].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[5].TIER_GA[2].ROW_GA[1].out_llr_reg[10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\PROC_GA[7].TIER_GA[2].ROW_GA[1].out_llr_reg[10] )
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[31][3]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[28][3]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[31][3]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[31][0]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass4_reg[31][3]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[28][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass2_reg[31][3]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[31][4]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass0_reg[31][3]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[28][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[31][4]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[31][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[31][4]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[28][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass4_reg[31][4]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[28][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass2_reg[31][4]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[31][0]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass0_reg[31][4]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[28][3]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[31][1]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[28][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[31][1]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[28][3]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass4_reg[31][1]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[31][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass2_reg[31][1]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[28][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass0_reg[31][1]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[31][0]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[31][2]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[28][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[31][2]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass0_reg[31][0]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass4_reg[31][2]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[31][0]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass2_reg[31][2]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[28][3]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass0_reg[31][2]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[28][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[27][4]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[27][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[27][4]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[24][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass4_reg[27][4]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[24][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass2_reg[27][4]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[27][0]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass0_reg[27][4]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[24][3]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[31][0]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[28][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass4_reg[31][0]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[28][3]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass2_reg[31][0]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[28][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[27][2]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[24][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[27][2]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass4_reg[27][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass4_reg[27][2]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[27][0]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass2_reg[27][2]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[24][3]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass0_reg[27][2]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[24][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[27][3]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[24][3]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[27][3]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[27][0]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass4_reg[27][3]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[24][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass2_reg[27][3]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass4_reg[27][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass0_reg[27][3]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[24][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[27][0]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass0_reg[27][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[27][0]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[24][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass4_reg[27][0]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[24][3]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass2_reg[27][0]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[24][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass0_reg[27][0]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass4_reg[27][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[27][1]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[24][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[27][1]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[24][3]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass2_reg[27][1]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[24][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[23][3]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[20][3]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[23][3]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[23][0]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass4_reg[23][3]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[20][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass2_reg[23][3]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[23][4]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass0_reg[23][3]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[20][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[23][4]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[23][4]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[20][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass4_reg[23][4]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[20][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass2_reg[23][4]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[23][0]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass0_reg[23][4]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[20][3]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[23][1]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[20][1]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[23][1]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[20][3]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass4_reg[23][1]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[23][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass2_reg[23][1]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[20][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass0_reg[23][1]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[23][0]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[23][2]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass16_reg[20][2]'
+INFO: [Synth 8-3886] merging instance 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass8_reg[23][2]' (FDR) to 'PD_PC_W_I/PD_PC_I/pc_state_tdata_pass0_reg[23][0]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PD_PC_W_I/\PD_PC_I/fz_flag_reg[flag][17] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (PD_PC_W_I/\PD_PC_I/fz_flag_reg[flag][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m_axis_instruct_srt_tdata_reg[index][30][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m_axis_instruct_srt_tdata_reg[index][29][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m_axis_instruct_srt_tdata_reg[index][28][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m_axis_instruct_srt_tdata_reg[index][27][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m_axis_instruct_srt_tdata_reg[index][26][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m_axis_instruct_srt_tdata_reg[index][25][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m_axis_instruct_srt_tdata_reg[index][24][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m_axis_instruct_srt_tdata_reg[index][23][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\m_axis_instruct_srt_tdata_reg[index][22][3] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4471] merging register 'put_r4_waddr_pipe_reg[2][5:0]' into 'put_r7_waddr_pipe_reg[2][5:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7301]
+INFO: [Synth 8-4471] merging register 'put_r4_waddr_pipe_reg[3][5:0]' into 'put_r7_waddr_pipe_reg[3][5:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7301]
+INFO: [Synth 8-4471] merging register 'put_r4_waddr_pipe_reg[4][5:0]' into 'put_r7_waddr_pipe_reg[4][5:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7301]
+INFO: [Synth 8-4471] merging register 'put_r4_waddr_pipe_reg[5][5:0]' into 'put_r7_waddr_pipe_reg[5][5:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7301]
+INFO: [Synth 8-4471] merging register 'put_r4_waddr_pipe_reg[6][5:0]' into 'put_r7_waddr_pipe_reg[6][5:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7301]
+INFO: [Synth 8-4471] merging register 'put_r4_waddr_pipe_reg[7][5:0]' into 'put_r7_waddr_pipe_reg[7][5:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7301]
+INFO: [Synth 8-4471] merging register 'm_axis_put_put_tdata_pipe_reg[0][pass_index][11:0]' into 'pass_index_pipe_reg[0][11:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7292]
+INFO: [Synth 8-4471] merging register 'm_axis_put_put_tdata_pipe_reg[0][cw][2:0]' into 'cw_pipe_reg[0][2:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7292]
+INFO: [Synth 8-4471] merging register 'm_axis_put_put_tdata_pipe_reg[1][pass_index][11:0]' into 'pass_index_pipe_reg[1][11:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7292]
+INFO: [Synth 8-4471] merging register 'm_axis_put_put_tdata_pipe_reg[1][cw][2:0]' into 'cw_pipe_reg[1][2:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7292]
+INFO: [Synth 8-4471] merging register 'm_axis_put_put_tdata_pipe_reg[2][pass_index][11:0]' into 'pass_index_pipe_reg[2][11:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7292]
+INFO: [Synth 8-4471] merging register 'm_axis_put_put_tdata_pipe_reg[2][cw][2:0]' into 'cw_pipe_reg[2][2:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7292]
+INFO: [Synth 8-4471] merging register 'm_axis_put_put_tdata_pipe_reg[3][pass_index][11:0]' into 'pass_index_pipe_reg[3][11:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7292]
+INFO: [Synth 8-4471] merging register 'm_axis_put_put_tdata_pipe_reg[3][cw][2:0]' into 'cw_pipe_reg[3][2:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7292]
+INFO: [Synth 8-4471] merging register 'm_axis_put_put_tdata_pipe_reg[4][pass_index][11:0]' into 'pass_index_pipe_reg[4][11:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7292]
+INFO: [Synth 8-4471] merging register 'm_axis_put_put_tdata_pipe_reg[4][cw][2:0]' into 'cw_pipe_reg[4][2:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7292]
+INFO: [Synth 8-4471] merging register 'm_axis_put_put_tdata_pipe_reg[5][cw][2:0]' into 'cw_pipe_reg[5][2:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7292]
+INFO: [Synth 8-4471] merging register 'm_axis_put_put_tdata_pipe_reg[5][pass_index][11:0]' into 'pass_index_pipe_reg[5][11:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7292]
+INFO: [Synth 8-4471] merging register 'm_axis_put_ppu_tdata_pipe_reg[0][cw][2:0]' into 'cw_pipe_reg[0][2:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7295]
+INFO: [Synth 8-4471] merging register 'm_axis_put_ppu_tdata_pipe_reg[1][cw][2:0]' into 'cw_pipe_reg[1][2:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7295]
+INFO: [Synth 8-4471] merging register 'm_axis_put_ppu_tdata_pipe_reg[2][pass_index][11:0]' into 'pass_index_pipe_reg[2][11:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7295]
+INFO: [Synth 8-4471] merging register 'm_axis_put_ppu_tdata_pipe_reg[2][cw][2:0]' into 'cw_pipe_reg[2][2:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7295]
+INFO: [Synth 8-4471] merging register 'm_axis_put_ppu_tdata_pipe_reg[3][pass_index][11:0]' into 'pass_index_pipe_reg[3][11:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7295]
+INFO: [Synth 8-4471] merging register 'm_axis_put_ppu_tdata_pipe_reg[3][cw][2:0]' into 'cw_pipe_reg[3][2:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7295]
+INFO: [Synth 8-4471] merging register 'm_axis_put_ppu_tdata_pipe_reg[4][pass_index][11:0]' into 'pass_index_pipe_reg[4][11:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7295]
+INFO: [Synth 8-4471] merging register 'm_axis_put_ppu_tdata_pipe_reg[4][cw][2:0]' into 'cw_pipe_reg[4][2:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7295]
+INFO: [Synth 8-4471] merging register 'm_axis_put_ppu_tdata_pipe_reg[5][cw][2:0]' into 'cw_pipe_reg[5][2:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7295]
+INFO: [Synth 8-4471] merging register 'm_axis_put_ppu_tdata_pipe_reg[5][pass_index][11:0]' into 'pass_index_pipe_reg[5][11:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:7295]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4471] merging register 'FIFO_M1_I/REG_G.FIFO_CTRL_I/out_of_reset_reg' into 'FIFO_M0_I/REG_G.FIFO_CTRL_I/out_of_reset_reg' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/a023/hdl/fec_5g_common_v1_1_rfs.sv:2393]
+WARNING: [Synth 8-3917] design polar_v1_0_2_decoder_ctrl has port m_axis_op_avail_tdata[user_id][7] driven by constant 0
+WARNING: [Synth 8-3917] design polar_v1_0_2_decoder_ctrl has port m_axis_op_avail_tdata[user_id][6] driven by constant 0
+WARNING: [Synth 8-3917] design polar_v1_0_2_decoder_ctrl has port m_axis_op_avail_tdata[user_id][5] driven by constant 0
+WARNING: [Synth 8-3917] design polar_v1_0_2_decoder_ctrl has port m_axis_op_avail_tdata[user_id][4] driven by constant 0
+WARNING: [Synth 8-3917] design polar_v1_0_2_decoder_ctrl has port m_axis_op_avail_tdata[user_id][3] driven by constant 0
+WARNING: [Synth 8-3917] design polar_v1_0_2_decoder_ctrl has port m_axis_op_avail_tdata[user_id][2] driven by constant 0
+WARNING: [Synth 8-3917] design polar_v1_0_2_decoder_ctrl has port m_axis_op_avail_tdata[user_id][1] driven by constant 0
+WARNING: [Synth 8-3917] design polar_v1_0_2_decoder_ctrl has port m_axis_op_avail_tdata[user_id][0] driven by constant 0
+INFO: [Synth 8-4471] merging register 'INSTR_FORK_I/FIFO_M1_I/REG_G.FIFO_CTRL_I/out_of_reset_reg' into 'INSTR_FORK_I/FIFO_M0_I/REG_G.FIFO_CTRL_I/out_of_reset_reg' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/a023/hdl/fec_5g_common_v1_1_rfs.sv:2393]
+INFO: [Synth 8-4471] merging register 'INSTR_FORK_I/FIFO_M2_I/REG_G.FIFO_CTRL_I/out_of_reset_reg' into 'INSTR_FORK_I/FIFO_M0_I/REG_G.FIFO_CTRL_I/out_of_reset_reg' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/a023/hdl/fec_5g_common_v1_1_rfs.sv:2393]
+INFO: [Synth 8-4471] merging register 'rnti_cw_reg[2:0]' into 'op_params_pipe_reg[0][cw][2:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:21250]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4471] merging register 'AXIS_FORK3_I/FIFO_M1_I/REG_G.FIFO_CTRL_I/out_of_reset_reg' into 'AXIS_FORK3_I/FIFO_M0_I/REG_G.FIFO_CTRL_I/out_of_reset_reg' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/a023/hdl/fec_5g_common_v1_1_rfs.sv:2393]
+INFO: [Synth 8-4471] merging register 'FIFO_DATA_I/LUTRAM_G.FIFO_CTRL_I/out_of_reset_reg' into 'AXIS_FORK3_I/FIFO_M0_I/REG_G.FIFO_CTRL_I/out_of_reset_reg' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/a023/hdl/fec_5g_common_v1_1_rfs.sv:2393]
+INFO: [Synth 8-4471] merging register 'DOUT_WORDS_I/FIFO_TIMING_OPT_I/REG_G.FIFO_CTRL_I/out_of_reset_reg' into 'AXIS_FORK3_I/FIFO_M0_I/REG_G.FIFO_CTRL_I/out_of_reset_reg' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/a023/hdl/fec_5g_common_v1_1_rfs.sv:2393]
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4471] merging register 'AXIS_FORK2_I/FIFO_M1_I/REG_G.FIFO_CTRL_I/out_of_reset_reg' into 'AXIS_FORK2_I/FIFO_M0_I/REG_G.FIFO_CTRL_I/out_of_reset_reg' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/a023/hdl/fec_5g_common_v1_1_rfs.sv:2393]
+INFO: [Synth 8-4471] merging register 'DIN_IF_I/FIFO_TIMING_OPT_I/REG_G.FIFO_CTRL_I/out_of_reset_reg' into 'AXIS_FORK2_I/FIFO_M0_I/REG_G.FIFO_CTRL_I/out_of_reset_reg' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/a023/hdl/fec_5g_common_v1_1_rfs.sv:2393]
+INFO: [Synth 8-4471] merging register 'xym_core_raddr_reg[3][6:0]' into 'xym_core_raddr_reg[2][6:0]' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/2b35/hdl/polar_v1_0_vl_rfs.sv:27713]
+WARNING: [Synth 8-3917] design polar_v1_0_2_inner_core__GCB1 has port m_axis_status_tdata[23] driven by constant 0
+WARNING: [Synth 8-3917] design polar_v1_0_2_inner_core__GCB1 has port m_axis_status_tdata[22] driven by constant 0
+WARNING: [Synth 8-3917] design polar_v1_0_2_inner_core__GCB1 has port m_axis_status_tdata[21] driven by constant 0
+WARNING: [Synth 8-3917] design polar_v1_0_2_inner_core__GCB1 has port m_axis_status_tdata[20] driven by constant 0
+WARNING: [Synth 8-3917] design polar_v1_0_2_inner_core__GCB1 has port m_axis_status_tdata[19] driven by constant 0
+WARNING: [Synth 8-3917] design polar_v1_0_2_inner_core__GCB1 has port m_axis_status_tdata[18] driven by constant 0
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:12 ; elapsed = 00:03:27 . Memory (MB): peak = 3160.930 ; gain = 1754.074 ; free physical = 15691 ; free virtual = 23857
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/CTL_I/SC_I/i_16/dcrc_index_e0_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/CTL_I/SC_I/i_16/dcrc_index_e0_reg_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/i_13/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/i_14/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/i_15/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/i_16/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/i_17/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/i_18/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/i_19/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/i_20/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/i_21/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/i_22/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/i_23/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/i_24/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/i_25/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/i_26/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/i_27/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/i_28/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_7/AXI_LITE_IF_I/OPC_BAM_DEC.BAM_OPC_I/i_0/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_7/AXI_LITE_IF_I/OPC_BAM_DEC.BAM_OPC_I/i_0/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_7/AXI_LITE_IF_I/BAM_PU_I/i_0/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_7/AXI_LITE_IF_I/BAM_PU_I/i_0/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_7/AXI_LITE_IF_I/XYM_G[0].XYM_MEM_G.MEM_XYM_I/i_0/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_7/AXI_LITE_IF_I/XYM_G[2].XYM_MEM_G.MEM_XYM_I/i_0/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_7/AXI_LITE_IF_I/XYM_G[3].XYM_MEM_G.MEM_XYM_I/i_0/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++------+---------------------------------------------+------------+----------+
+|      |RTL Partition                                |Replication |Instances |
++------+---------------------------------------------+------------+----------+
+|1     |fec_5g_common_v1_1_0_sdp_ram__parameterized0 |           1|      2048|
+|2     |polar_v1_0_2_pd_mem_if__GB1                  |           1|      8235|
+|3     |polar_v1_0_2_parallel_pu__GB0                |           1|     36457|
+|4     |polar_v1_0_2_parallel_pu__GB1                |           1|      8516|
+|5     |polar_v1_0_2_parallel_pu__GB2                |           1|     17494|
+|6     |polar_v1_0_2_brute_sort                      |           1|     30711|
+|7     |polar_v1_0_2_decoder__GCB1                   |           1|     25696|
+|8     |polar_v1_0_2_decoder__GCB2                   |           1|     39136|
+|9     |polar_v1_0_2_decoder_ctrl                    |           1|     12921|
+|10    |polar_v1_0_2_output_copy                     |           1|      8206|
+|11    |polar_v1_0_2_op_if                           |           1|      7905|
+|12    |polar_v1_0_2_inner_core__GCB1                |           1|      9858|
+|13    |polar_v1_0_2__GC0                            |           1|      2067|
++------+---------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:30 ; elapsed = 00:04:00 . Memory (MB): peak = 3160.930 ; gain = 1754.074 ; free physical = 18327 ; free virtual = 26578
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5556] The block RAM ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-5556] The block RAM ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg may be mapped as a cascade chain, because it is not timing critical.
+INFO: [Synth 8-5556] The block RAM PD_HI_MID_PATH_I/NO_ECC_G.SDP_RAM_RTL_I/mem_array_reg may be mapped as a cascade chain, because it is not timing critical.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:51 ; elapsed = 00:04:21 . Memory (MB): peak = 3169.422 ; gain = 1762.566 ; free physical = 19589 ; free virtual = 27846
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------------------------+------------+----------+
+|      |RTL Partition                                |Replication |Instances |
++------+---------------------------------------------+------------+----------+
+|1     |fec_5g_common_v1_1_0_sdp_ram__parameterized0 |           1|      2048|
+|2     |polar_v1_0_2_pd_mem_if__GB1                  |           1|      8187|
+|3     |polar_v1_0_2_parallel_pu__GB0                |           1|     36457|
+|4     |polar_v1_0_2_parallel_pu__GB1                |           1|      8516|
+|5     |polar_v1_0_2_parallel_pu__GB2                |           1|     17494|
+|6     |polar_v1_0_2_brute_sort                      |           1|     30711|
+|7     |polar_v1_0_2_decoder__GCB1                   |           1|     23987|
+|8     |polar_v1_0_2_decoder__GCB2                   |           1|     39136|
+|9     |polar_v1_0_2_decoder_ctrl                    |           1|     11133|
+|10    |polar_v1_0_2_output_copy                     |           1|      8182|
+|11    |polar_v1_0_2_op_if                           |           1|      7825|
+|12    |polar_v1_0_2_inner_core__GCB1                |           1|      9771|
+|13    |polar_v1_0_2__GC0                            |           1|      1960|
++------+---------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_7/AXI_LITE_IF_I/OPC_BAM_DEC.BAM_OPC_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_7/AXI_LITE_IF_I/OPC_BAM_DEC.BAM_OPC_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_7/AXI_LITE_IF_I/BAM_PU_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_7/AXI_LITE_IF_I/BAM_PU_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_7/AXI_LITE_IF_I/XYM_G[0].XYM_MEM_G.MEM_XYM_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_7/AXI_LITE_IF_I/XYM_G[2].XYM_MEM_G.MEM_XYM_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_7/AXI_LITE_IF_I/XYM_G[3].XYM_MEM_G.MEM_XYM_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:06 ; elapsed = 00:05:04 . Memory (MB): peak = 3204.473 ; gain = 1797.617 ; free physical = 19322 ; free virtual = 27584
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+---------------------------------------------+------------+----------+
+|      |RTL Partition                                |Replication |Instances |
++------+---------------------------------------------+------------+----------+
+|1     |fec_5g_common_v1_1_0_sdp_ram__parameterized0 |           1|      2048|
+|2     |polar_v1_0_2_pd_mem_if__GB1                  |           1|      6853|
+|3     |polar_v1_0_2_parallel_pu__GB0                |           1|     12463|
+|4     |polar_v1_0_2_parallel_pu__GB1                |           1|      2894|
+|5     |polar_v1_0_2_parallel_pu__GB2                |           1|      9032|
+|6     |polar_v1_0_2_brute_sort                      |           1|      9936|
+|7     |polar_v1_0_2_decoder__GCB1                   |           1|     13210|
+|8     |polar_v1_0_2_decoder__GCB2                   |           1|     13222|
+|9     |polar_v1_0_2_decoder_ctrl                    |           1|      6414|
+|10    |polar_v1_0_2_output_copy                     |           1|      4147|
+|11    |polar_v1_0_2_op_if                           |           1|      4497|
+|12    |polar_v1_0_2_inner_core__GCB1                |           1|      3849|
+|13    |polar_v1_0_2__GC0                            |           1|      1194|
++------+---------------------------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel_rep__13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/PD_G.PD_TOP_I/OPC_I/ITLV_I/sel (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/AXI_LITE_IF_I/OPC_BAM_DEC.BAM_OPC_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/AXI_LITE_IF_I/OPC_BAM_DEC.BAM_OPC_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/AXI_LITE_IF_I/BAM_PU_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/AXI_LITE_IF_I/BAM_PU_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/AXI_LITE_IF_I/XYM_G[0].XYM_MEM_G.MEM_XYM_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/AXI_LITE_IF_I/XYM_G[2].XYM_MEM_G.MEM_XYM_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/AXI_LITE_IF_I/XYM_G[3].XYM_MEM_G.MEM_XYM_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:16 ; elapsed = 00:05:14 . Memory (MB): peak = 3262.207 ; gain = 1855.352 ; free physical = 19283 ; free virtual = 27594
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:16 ; elapsed = 00:05:15 . Memory (MB): peak = 3262.207 ; gain = 1855.352 ; free physical = 19283 ; free virtual = 27594
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:27 ; elapsed = 00:05:26 . Memory (MB): peak = 3262.207 ; gain = 1855.352 ; free physical = 19264 ; free virtual = 27575
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:28 ; elapsed = 00:05:26 . Memory (MB): peak = 3262.207 ; gain = 1855.352 ; free physical = 19264 ; free virtual = 27575
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:30 ; elapsed = 00:05:29 . Memory (MB): peak = 3262.207 ; gain = 1855.352 ; free physical = 19259 ; free virtual = 27570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:30 ; elapsed = 00:05:29 . Memory (MB): peak = 3262.207 ; gain = 1855.352 ; free physical = 19259 ; free virtual = 27570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |CARRY8      |   603|
+|2     |LUT1        |   329|
+|3     |LUT2        |  2244|
+|4     |LUT3        |  6908|
+|5     |LUT4        |  4394|
+|6     |LUT5        |  6578|
+|7     |LUT6        | 26388|
+|8     |MUXF7       |  3912|
+|9     |MUXF8       |   347|
+|10    |RAM16X1D    |  1024|
+|11    |RAM32M16    |   115|
+|12    |RAM64M8     |   640|
+|13    |RAM64X1D    |  1208|
+|14    |RAM64X1S    |     1|
+|15    |RAMB18E2_1  |     2|
+|16    |RAMB18E2_10 |     1|
+|17    |RAMB18E2_11 |     1|
+|18    |RAMB18E2_12 |     1|
+|19    |RAMB18E2_13 |     1|
+|20    |RAMB18E2_14 |     1|
+|21    |RAMB18E2_15 |     1|
+|22    |RAMB18E2_16 |     1|
+|23    |RAMB18E2_17 |     1|
+|24    |RAMB18E2_18 |     1|
+|25    |RAMB18E2_19 |     2|
+|26    |RAMB18E2_2  |     1|
+|27    |RAMB18E2_20 |     1|
+|28    |RAMB18E2_21 |     1|
+|29    |RAMB18E2_3  |     1|
+|30    |RAMB18E2_4  |     1|
+|31    |RAMB18E2_5  |     1|
+|32    |RAMB18E2_6  |     1|
+|33    |RAMB18E2_7  |     1|
+|34    |RAMB18E2_8  |     1|
+|35    |RAMB18E2_9  |     1|
+|36    |RAMB36E2_1  |     2|
+|37    |RAMB36E2_2  |     4|
+|38    |SRL16E      |  1698|
+|39    |SRLC32E     |    46|
+|40    |FDRE        | 31208|
+|41    |FDSE        |  2179|
++------+------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:30 ; elapsed = 00:05:29 . Memory (MB): peak = 3262.207 ; gain = 1855.352 ; free physical = 19259 ; free virtual = 27570
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 414 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:10 ; elapsed = 00:05:06 . Memory (MB): peak = 3266.117 ; gain = 824.926 ; free physical = 25906 ; free virtual = 34217
+Synthesis Optimization Complete : Time (s): cpu = 00:03:31 ; elapsed = 00:05:33 . Memory (MB): peak = 3266.117 ; gain = 1859.262 ; free physical = 25919 ; free virtual = 34217
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 7850 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/INNER_CORE_I/PD_G.PD_TOP_I/CTL_I/SC_I/dcrc_index_e0_reg_rep has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3304.223 ; gain = 0.000 ; free physical = 25760 ; free virtual = 34058
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2988 instances were transformed.
+  RAM16X1D => RAM32X1D (RAMD32, RAMD32): 1024 instances
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 115 instances
+  RAM64M8 => RAM64M8 (RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E, RAMD64E): 640 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 1208 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+557 Infos, 137 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:45 ; elapsed = 00:05:47 . Memory (MB): peak = 3304.223 ; gain = 1897.367 ; free physical = 25892 ; free virtual = 34190
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3304.223 ; gain = 0.000 ; free physical = 25892 ; free virtual = 34190
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_dec_0_synth_1/design_1_dec_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 3328.234 ; gain = 24.012 ; free physical = 25886 ; free virtual = 34198
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_dec_0, cache-ID = b8f10963f5e0715c
+INFO: [Coretcl 2-1174] Renamed 632 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 3440.258 ; gain = 0.000 ; free physical = 25776 ; free virtual = 34201
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_dec_0_synth_1/design_1_dec_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:17 ; elapsed = 00:00:14 . Memory (MB): peak = 3440.258 ; gain = 0.000 ; free physical = 25777 ; free virtual = 34202
+INFO: [runtcl-4] Executing : report_utilization -file design_1_dec_0_utilization_synth.rpt -pb design_1_dec_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 10 12:07:55 2020...

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="subblockint" xd:componentRef="subblockint" xd:initiationInterval="4" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="ITLVdataIn.data" xd:originalName="ITLVdataIn" xd:direction="in" xd:interfaceRef="ITLVdataIn" xd:busTypeRef="axis" xd:dataWidth="128"/>
+  <xd:arg xd:name="ITLVdataIn.last" xd:originalName="ITLVdataIn" xd:direction="in" xd:interfaceRef="ITLVdataIn" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="ITLVdataOut.data" xd:originalName="ITLVdataOut" xd:direction="out" xd:interfaceRef="ITLVdataOut" xd:busTypeRef="axis" xd:dataWidth="128"/>
+  <xd:arg xd:name="ITLVdataOut.last" xd:originalName="ITLVdataOut" xd:direction="out" xd:interfaceRef="ITLVdataOut" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="5" xd:worst-case="5" xd:average-case="5"/>
+  <xd:resourceEstimates xd:LUT="246" xd:FF="870" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

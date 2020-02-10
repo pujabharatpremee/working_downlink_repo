@@ -1,0 +1,675 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 10 09:58:32 2020
+# Process ID: 17479
+# Current directory: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_modulation_0_0_synth_1
+# Command line: vivado -log design_1_modulation_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_modulation_0_0.tcl
+# Log file: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_modulation_0_0_synth_1/design_1_modulation_0_0.vds
+# Journal file: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_modulation_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_modulation_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/puja/Desktop/working_downlink_chain/BBU/ip_repo_path/K_64_N_512_E_896_ATG'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1365.164 ; gain = 0.000 ; free physical = 23379 ; free virtual = 28926
+Command: synth_design -top design_1_modulation_0_0 -part xczu21dr-ffvd1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu21dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu21dr'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 17508 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:03 . Memory (MB): peak = 1475.840 ; gain = 77.000 ; free physical = 23126 ; free virtual = 28660
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_modulation_0_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_modulation_0_0/synth/design_1_modulation_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'modulation' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:12]
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_pp0_stage1 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_pp0_stage2 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_pp0_stage3 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp0_stage4 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_pp0_stage5 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_pp0_stage6 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_pp0_stage7 bound to: 8'b10000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:66]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:1971]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:1973]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:1975]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:1977]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:1979]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:1981]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:1983]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:1985]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:1987]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:1989]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:1991]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:1993]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:1995]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:1997]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:1999]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2001]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2003]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2005]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2007]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2009]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2011]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2013]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2015]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2017]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2019]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2021]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2023]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2025]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2027]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2029]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2031]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2033]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2035]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2037]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2039]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2041]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2043]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2045]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2047]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2049]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2051]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2053]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2055]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2057]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2059]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2061]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2063]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2065]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2067]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2069]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2071]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2073]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2075]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2077]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2079]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2081]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2083]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2085]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2087]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2089]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2091]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2093]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2095]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2097]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2099]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2101]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2103]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2105]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2107]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2109]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2111]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2113]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2115]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2117]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2119]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2121]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2123]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2125]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2127]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2129]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2131]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2133]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2135]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2137]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2139]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2141]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2143]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2145]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2147]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2149]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2151]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2153]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2155]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2157]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2159]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2161]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2163]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2165]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2167]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:2169]
+INFO: [Common 17-14] Message 'Synth 8-589' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-6155] done synthesizing module 'modulation' (1#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/bce0/hdl/verilog/modulation.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_modulation_0_0' (2#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_modulation_0_0/synth/design_1_modulation_0_0.v:58]
+WARNING: [Synth 8-3331] design modulation has unconnected port bit_in_TLAST[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1532.590 ; gain = 133.750 ; free physical = 23049 ; free virtual = 28584
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1532.590 ; gain = 133.750 ; free physical = 23071 ; free virtual = 28606
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:03 ; elapsed = 00:00:05 . Memory (MB): peak = 1532.590 ; gain = 133.750 ; free physical = 23071 ; free virtual = 28606
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu21dr-ffvd1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_modulation_0_0/constraints/modulation_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_modulation_0_0/constraints/modulation_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_modulation_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_modulation_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2457.770 ; gain = 0.000 ; free physical = 21602 ; free virtual = 27131
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2458.770 ; gain = 0.000 ; free physical = 21601 ; free virtual = 27131
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.04 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2458.770 ; gain = 1.000 ; free physical = 21601 ; free virtual = 27130
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 2458.770 ; gain = 1059.930 ; free physical = 21662 ; free virtual = 27190
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu21dr-ffvd1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 2458.770 ; gain = 1059.930 ; free physical = 21664 ; free virtual = 27193
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_modulation_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:14 ; elapsed = 00:00:29 . Memory (MB): peak = 2458.770 ; gain = 1059.930 ; free physical = 21657 ; free virtual = 27186
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5545] ROM "tmp_last_V_6_fu_2316_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_5_fu_2296_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_4_fu_2276_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_3_fu_2256_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_7_fu_2336_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_1_fu_1620_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_fu_1604_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_2_fu_1640_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5544] ROM "tmp_21_62_fu_5845_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_61_fu_5776_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_60_fu_5707_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_59_fu_5638_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_58_fu_5569_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_57_fu_5500_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_56_fu_5431_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_55_fu_5362_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_54_fu_5247_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_53_fu_5178_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_52_fu_5109_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_51_fu_5040_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_50_fu_4971_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_49_fu_4902_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_48_fu_4833_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_62_fu_5835_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_62_fu_5840_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_61_fu_5766_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_61_fu_5771_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_60_fu_5697_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_60_fu_5702_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_59_fu_5628_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_59_fu_5633_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_58_fu_5559_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_58_fu_5564_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_57_fu_5490_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_57_fu_5495_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_56_fu_5421_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_56_fu_5426_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_55_fu_5352_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_55_fu_5357_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_54_fu_5237_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_54_fu_5242_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_53_fu_5168_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_53_fu_5173_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_52_fu_5099_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_52_fu_5104_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_51_fu_5030_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_51_fu_5035_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_50_fu_4961_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_50_fu_4966_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_49_fu_4892_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_49_fu_4897_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_48_fu_4823_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_48_fu_4828_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_47_fu_4764_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_47_fu_4754_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_47_fu_4759_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_46_fu_4649_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_45_fu_4580_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_44_fu_4511_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_43_fu_4442_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_42_fu_4373_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_41_fu_4304_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_40_fu_4235_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_39_fu_4166_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_38_fu_4051_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_37_fu_3982_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_36_fu_3913_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_35_fu_3844_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_34_fu_3775_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_33_fu_3706_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_32_fu_3637_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_46_fu_4639_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_46_fu_4644_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_45_fu_4570_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_45_fu_4575_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_44_fu_4501_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_44_fu_4506_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_43_fu_4432_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_43_fu_4437_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_42_fu_4363_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_42_fu_4368_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_41_fu_4294_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_41_fu_4299_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_40_fu_4225_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_40_fu_4230_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_39_fu_4156_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_39_fu_4161_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_38_fu_4041_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_38_fu_4046_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_37_fu_3972_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_37_fu_3977_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_36_fu_3903_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_36_fu_3908_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_35_fu_3834_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_35_fu_3839_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_34_fu_3765_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_34_fu_3770_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_33_fu_3696_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_33_fu_3701_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_32_fu_3627_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_32_fu_3632_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_31_fu_3568_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_2_31_fu_3558_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_5_31_fu_3563_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_30_fu_3453_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_29_fu_3384_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_28_fu_3315_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "tmp_21_27_fu_3246_p2" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Common 17-14] Message 'Synth 8-5544' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5545] ROM "tmp_last_V_6_fu_2316_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_5_fu_2296_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_4_fu_2276_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_3_fu_2256_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_7_fu_2336_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_1_fu_1620_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_fu_1604_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_2_fu_1640_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:31 . Memory (MB): peak = 2458.770 ; gain = 1059.930 ; free physical = 21636 ; free virtual = 27163
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
++---XORs : 
+	   2 Input      1 Bit         XORs := 64    
++---Registers : 
+	              128 Bit    Registers := 6     
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 62    
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 56    
+	   2 Input     15 Bit        Muxes := 200   
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 211   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module modulation 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 7     
++---XORs : 
+	   2 Input      1 Bit         XORs := 64    
++---Registers : 
+	              128 Bit    Registers := 6     
+	               32 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                2 Bit    Registers := 62    
+	                1 Bit    Registers := 23    
++---Muxes : 
+	   2 Input    128 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 6     
+	   2 Input     16 Bit        Muxes := 56    
+	   2 Input     15 Bit        Muxes := 200   
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      7 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 7     
+	   4 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 211   
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "tmp_last_V_fu_1604_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_1_fu_1620_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_2_fu_1640_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_3_fu_2256_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_4_fu_2276_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_5_fu_2296_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_6_fu_2316_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "tmp_last_V_7_fu_2336_p2" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design modulation has unconnected port bit_in_TLAST[0]
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[0]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[0]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[1]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[1]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[2]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[2]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[3]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[3]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[4]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[4]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[5]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[5]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[6]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[6]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[7]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[7]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[8]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[8]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[9]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[9]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[10]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[10]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[11]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[11]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[12]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[12]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[14]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[14]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[16]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[32]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[16]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[32]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[17]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[17]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[18]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[18]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[19]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[19]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[20]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[20]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[21]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[21]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[22]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[22]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[23]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[23]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[24]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[24]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[25]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[25]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[26]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[26]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[27]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[27]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[28]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[28]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[30]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[30]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[32]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[48]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[32]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[48]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[33]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[34]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[33]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[34]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[34]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[35]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[34]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[35]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[35]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[36]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[35]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[36]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[36]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[37]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[36]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[37]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[37]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[37]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[39]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[38]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[40]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[38]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[40]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[39]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[41]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[39]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[41]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[40]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[42]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[40]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[42]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[41]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[44]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[41]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[44]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[42]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[43]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[42]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[43]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[43]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[45]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[43]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[45]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[44]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[46]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[44]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[46]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[46]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[47]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[46]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[47]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[48]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[64]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[48]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[64]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[49]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[50]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[49]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[50]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[50]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[51]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[50]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[51]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[51]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[52]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[51]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[52]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[52]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[53]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[52]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[53]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[53]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[55]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[53]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[55]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[54]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[56]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[54]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[56]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_B_reg[55]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_B_reg[57]'
+INFO: [Synth 8-3886] merging instance 'inst/sym_imag_V_data_V_1_payload_A_reg[55]' (FDE) to 'inst/sym_imag_V_data_V_1_payload_A_reg[57]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:34 . Memory (MB): peak = 2458.770 ; gain = 1059.930 ; free physical = 21493 ; free virtual = 27091
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:01:06 . Memory (MB): peak = 2748.074 ; gain = 1349.234 ; free physical = 22971 ; free virtual = 28639
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:01:08 . Memory (MB): peak = 2793.105 ; gain = 1394.266 ; free physical = 22392 ; free virtual = 28094
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\sym_imag_V_data_V_1_payload_A_reg[112] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\sym_imag_V_data_V_1_payload_B_reg[112] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\sym_real_V_data_V_1_payload_A_reg[112] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\sym_real_V_data_V_1_payload_B_reg[112] )
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:01:08 . Memory (MB): peak = 2801.113 ; gain = 1402.273 ; free physical = 22421 ; free virtual = 28121
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:01:09 . Memory (MB): peak = 2801.113 ; gain = 1402.273 ; free physical = 22367 ; free virtual = 28064
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:01:09 . Memory (MB): peak = 2801.113 ; gain = 1402.273 ; free physical = 22361 ; free virtual = 28058
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:01:09 . Memory (MB): peak = 2801.113 ; gain = 1402.273 ; free physical = 22349 ; free virtual = 28046
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:01:09 . Memory (MB): peak = 2801.113 ; gain = 1402.273 ; free physical = 22351 ; free virtual = 28048
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:01:09 . Memory (MB): peak = 2801.113 ; gain = 1402.273 ; free physical = 22362 ; free virtual = 28059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:01:09 . Memory (MB): peak = 2801.113 ; gain = 1402.273 ; free physical = 22360 ; free virtual = 28059
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |    28|
+|2     |LUT1   |     1|
+|3     |LUT2   |   226|
+|4     |LUT3   |   168|
+|5     |LUT4   |    82|
+|6     |LUT5   |    62|
+|7     |LUT6   |    96|
+|8     |FDRE   |   537|
+|9     |FDSE   |     2|
++------+-------+------+
+
+Report Instance Areas: 
++------+---------+-----------+------+
+|      |Instance |Module     |Cells |
++------+---------+-----------+------+
+|1     |top      |           |  1202|
+|2     |  inst   |modulation |  1202|
++------+---------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:01:09 . Memory (MB): peak = 2801.113 ; gain = 1402.273 ; free physical = 22360 ; free virtual = 28059
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 1 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:00:47 . Memory (MB): peak = 2801.113 ; gain = 476.094 ; free physical = 22395 ; free virtual = 28089
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:01:09 . Memory (MB): peak = 2801.121 ; gain = 1402.273 ; free physical = 22395 ; free virtual = 28088
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 28 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+WARNING: [Netlist 29-101] Netlist 'design_1_modulation_0_0' is not ideal for floorplanning, since the cellview 'modulation' contains a large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2831.754 ; gain = 0.000 ; free physical = 22227 ; free virtual = 27924
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+252 Infos, 103 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:01:11 . Memory (MB): peak = 2831.754 ; gain = 1460.590 ; free physical = 22300 ; free virtual = 27997
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2831.754 ; gain = 0.000 ; free physical = 22300 ; free virtual = 27997
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_modulation_0_0_synth_1/design_1_modulation_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_modulation_0_0, cache-ID = fa951a80cee76821
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2855.766 ; gain = 0.000 ; free physical = 22299 ; free virtual = 27989
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_modulation_0_0_synth_1/design_1_modulation_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_modulation_0_0_utilization_synth.rpt -pb design_1_modulation_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 10 10:00:03 2020...

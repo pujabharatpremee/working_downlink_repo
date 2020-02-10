@@ -1,0 +1,734 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 10 12:01:10 2020
+# Process ID: 4043
+# Current directory: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_enc_0_synth_1
+# Command line: vivado -log design_1_enc_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_enc_0.tcl
+# Log file: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_enc_0_synth_1/design_1_enc_0.vds
+# Journal file: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_enc_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_enc_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/puja/Desktop/working_downlink_chain/BBU/ip_repo_path/K_64_N_512_E_896_ATG'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:03 ; elapsed = 00:00:06 . Memory (MB): peak = 1365.582 ; gain = 0.000 ; free physical = 25623 ; free virtual = 33652
+Command: synth_design -top design_1_enc_0 -part xczu21dr-ffvd1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu21dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu21dr'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 4340 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:06 . Memory (MB): peak = 1492.262 ; gain = 84.996 ; free physical = 24779 ; free virtual = 32786
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_enc_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_enc_0/synth/design_1_enc_0.sv:57]
+INFO: [Synth 8-6157] synthesizing module 'RAM64X1S' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:45604]
+INFO: [Synth 8-6155] done synthesizing module 'RAM64X1S' (9#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:45604]
+INFO: [Synth 8-6157] synthesizing module 'SRL16E' [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:51699]
+INFO: [Synth 8-6155] done synthesizing module 'SRL16E' (10#1) [/opt/Xilinx/Vivado/2018.3/scripts/rt/data/unisim_comp.v:51699]
+WARNING: [Synth 8-5858] RAM flags_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM s_axis_din_tuser_array_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM pre_itlv_pipe_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM bp_data_words_pipe_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM op_params_pipe_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+WARNING: [Synth 8-5858] RAM s_axis_cmd_tdata_r_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-6155] done synthesizing module 'design_1_enc_0' (61#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_enc_0/synth/design_1_enc_0.sv:57]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[id][3]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[id][2]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[id][1]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[id][0]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][15]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][14]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][13]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][12]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][11]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][10]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][9]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][8]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][7]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][6]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][5]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][4]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][3]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][2]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][1]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[ipm_base][0]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[code][6]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[code][5]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[code][4]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[code][3]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[code][2]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[code][1]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[code][0]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blind_decode]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[early_terminate]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][15]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][14]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][13]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][12]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][11]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][10]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][9]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][8]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][7]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][6]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][5]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][4]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][3]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][2]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][1]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[rnti][0]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[hard_op]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[user_id][7]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[user_id][6]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[user_id][5]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[user_id][4]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[user_id][3]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[user_id][2]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[user_id][1]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[user_id][0]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][9]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][8]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][7]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][6]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][5]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][4]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][3]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][2]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][1]
+WARNING: [Synth 8-3331] design fec_5g_common_v1_1_0_words_if__parameterized0 has unconnected port s_axis_size_tdata[blk_iom][0]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port cntrl_if[ctrl_enable]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port cntrl_if[din_enable]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port cntrl_if[din_words_enable]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port cntrl_if[status_enable]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port cntrl_if[dout_words_enable]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port cntrl_if[dout_enable]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port cntrl_if[din_words]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port cntrl_if[dout_words]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port s_axis_cmd_tdata[p_start]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_data_mem_if has unconnected port s_axis_cmd_tdata[hard]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[k][11]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[k][10]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[k][9]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[k][8]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[k][7]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[k][6]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[k][5]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[k][4]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[k][3]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[k][2]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[k][1]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[k][0]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[code][6]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[code][5]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[code][4]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[code][3]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[code][2]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[code][1]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[code][0]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[user_id][7]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[user_id][6]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[user_id][5]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[user_id][4]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[user_id][3]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[user_id][2]
+WARNING: [Synth 8-3331] design polar_v1_0_2_op_addr_gen has unconnected port s_axis_produce_tdata[user_id][1]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:15 . Memory (MB): peak = 1644.012 ; gain = 236.746 ; free physical = 24262 ; free virtual = 32282
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1644.012 ; gain = 236.746 ; free physical = 24112 ; free virtual = 32132
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:16 . Memory (MB): peak = 1644.012 ; gain = 236.746 ; free physical = 24112 ; free virtual = 32132
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xczu21dr-ffvd1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_enc_0/design_1_enc_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_enc_0/design_1_enc_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_enc_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_enc_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2582.777 ; gain = 0.000 ; free physical = 20959 ; free virtual = 29104
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  RAM64X1S => RAM64X1S (RAMS64E): 1 instances
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2590.777 ; gain = 0.000 ; free physical = 20948 ; free virtual = 29095
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.24 ; elapsed = 00:00:00.21 . Memory (MB): peak = 2590.777 ; gain = 8.000 ; free physical = 21064 ; free virtual = 29101
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 2590.777 ; gain = 1183.512 ; free physical = 20693 ; free virtual = 28843
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu21dr-ffvd1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 2590.777 ; gain = 1183.512 ; free physical = 20692 ; free virtual = 28842
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_enc_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:36 . Memory (MB): peak = 2590.777 ; gain = 1183.512 ; free physical = 20691 ; free virtual = 28842
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5544] ROM "almost_full" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "almost_empty" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "almost_full" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'polar_v1_0_2_axi_lite_conv_rd'
+INFO: [Synth 8-5546] ROM "m_axis_cmd_tdata[addr]0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flags" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "almost_full" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "almost_empty" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "equal" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "data_mask" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "nibble_count_w_e0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nibble_count_w_e0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nibble_count_w_e0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "nibble_count_w_e0" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "null_remove_din_tlast" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "ncode8" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ncode9" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "ncode10" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "stagescnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "pec_xoa_tdata_mod[ipm_base]" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "n" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'polar_v1_0_2_reg_decode_rd'
+INFO: [Synth 8-5546] ROM "core_code_wr_protect_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axis_width_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axis_enable_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_isr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_imr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_isr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_imr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_version_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "polar_code_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "polar_ba_table_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "reg_ack" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "core_code_wr_protect_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axis_width_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axis_enable_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_isr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_imr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_isr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_imr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_version_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "polar_code_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "polar_ba_table_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "reg_ack" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "core_axi_wr_protect_wdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_code_wr_protect_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axis_width_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axis_enable_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_isr_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ier_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_idr_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_isr_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_ier_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_idr_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "polar_code_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "polar_ba_table_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "xym_axi_wren" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "io_flags_polar_encode[n_first]_return" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ret_val" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ret_val" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "almost_full" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "almost_empty" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "equal" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+                 ST_READ |                               01 |                               01
+            ST_READ_RESP |                               10 |                               10
+                 ST_DONE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'polar_v1_0_2_axi_lite_conv_rd'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+               ST_DECODE |                               01 |                               01
+             ST_READ_RSP |                               10 |                               10
+                  ST_ACK |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'sequential' in module 'polar_v1_0_2_reg_decode_rd'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:42 . Memory (MB): peak = 2590.777 ; gain = 1183.512 ; free physical = 19936 ; free virtual = 27979
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------------+------------+----------+
+|      |RTL Partition                |Replication |Instances |
++------+-----------------------------+------------+----------+
+|1     |polar_v1_0_2_inner_core__GB0 |           1|     29905|
+|2     |polar_v1_0_2_inner_core__GB1 |           1|     28641|
+|3     |polar_v1_0_2_inner_core__GB2 |           1|     23943|
+|4     |polar_v1_0_2__GC0            |           1|      1614|
++------+-----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5546] ROM "flags" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "m_axis_cmd_tdata[addr]0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "null_remove_din_tlast" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "XOA_CALC_I/stagescnt" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "n" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_code_wr_protect_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axis_width_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axis_enable_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_isr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_imr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_isr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_imr_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_version_rd_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "polar_code_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axi_wr_protect_wdata" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_code_wr_protect_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axis_width_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_axis_enable_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_isr_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ier_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_idr_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_isr_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_ier_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "core_ecc_idr_wr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "polar_code_addr" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "io_flags_polar_encode[n_first]_return" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/NULL_INSERT_I/info_sum4_reg[2][3]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/NULL_INSERT_I/info_sum4_reg[0][3]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_itlv_reg_reg[164]' (FDRE) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_null_mask_reg[174]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_itlv_reg_reg[165]' (FDRE) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_null_mask_reg[174]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_itlv_reg_reg[166]' (FDRE) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_null_mask_reg[174]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_itlv_reg_reg[167]' (FDRE) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_null_mask_reg[174]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_itlv_reg_reg[168]' (FDRE) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_null_mask_reg[174]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_itlv_reg_reg[169]' (FDRE) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_null_mask_reg[174]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_itlv_reg_reg[170]' (FDRE) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_null_mask_reg[174]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_itlv_reg_reg[171]' (FDRE) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_null_mask_reg[174]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_itlv_reg_reg[172]' (FDRE) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_null_mask_reg[174]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_itlv_reg_reg[173]' (FDRE) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_null_mask_reg[174]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_itlv_reg_reg[174]' (FDRE) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_null_mask_reg[174]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/NULL_INSERT_I/info_sum4_reg[0][3]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/NULL_INSERT_I/info_sum4_reg[1][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /ITLV_I/\NULL_INSERT_I/info_sum4_reg[1][3] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_itlv_reg_reg[175]' (FDRE) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/ITLV_I/post_null_mask_reg[174]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][23]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][21]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][22][22] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][21]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][19]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][22][20] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][19]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][18]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][18]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][17]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][17]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][22][16] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][15]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][14]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][14]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][13]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][13]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][12]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][12]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][9]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][22][11] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][22][10] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][9]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][22][6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][22][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][22][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][22][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][22][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][22][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][22][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][22][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][22][0] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][14]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][22][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][22][12] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][11]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][10]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][10]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][9]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][9]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][8]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][8]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][6]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][22][7] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][6]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][5]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][5]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][4]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][4]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][22][3] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][2]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][22][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][22][1] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][22]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][20]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][21][21] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][20]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][18]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][21][19] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][18]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][17]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][17]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][16]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][16]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][14]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][21][15] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][14]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][13]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][13]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][12]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][12]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][11]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][11]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][8]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][21][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][21][9] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][8]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][21][5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][21][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][21][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][21][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][21][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][21][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][21][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][21][0] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][15]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][21][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][21][13] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][12]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][11]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][11]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][10]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][10]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][9]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][9]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][21][8] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][7]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][6]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][6]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][5]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][5]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][21][4] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][3]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][21][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][21][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][21][0] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][23]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][20]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][20][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][20][21] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][20]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][19]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][19]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][18]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][18]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][17]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][17]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][16]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][16]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][20][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][20][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][20][13] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][12]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][11]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][11]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][10]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][10]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][9]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][9]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][8]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][8]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][20][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][20][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][20][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][20][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][20][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][20][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][20][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][20][0] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][15]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][14]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][14]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][13]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][13]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][12]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][12]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][11]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][11]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][20][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][20][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][20][8] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][7]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][6]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][6]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][5]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][5]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][4]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][4]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][3]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][3]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][20][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][20][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][20][1] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][22]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][21]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][21]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][20]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][20]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][19]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][19]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][17]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][19][18] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][17]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][16]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][16]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][19][15] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][19][14] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][13]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][11]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][19][12] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][11]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][10]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][10]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][19][3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][19][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][19][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][19][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][19][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][19][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][19][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][19][2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][19][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][19][0] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][19][13]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][19][12]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][19][12]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][19][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][19][11] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][19][10]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][19][7]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][19][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][19][8] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][19][7]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][19][6]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][19][6]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][19][4]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][19][5] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][19][4]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][19][3]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][19][3]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][19][2]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][19][2]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][19][1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][19][0] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][21]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][20]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][20]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][19]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][19]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][18]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][18]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][16]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][18][17] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][16]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][15]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][15]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][12]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][18][14] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][18][13] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][12]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][10]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][18][11] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][10]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][9]'
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][9]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[fb_eqns][18][2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][18][8] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][18][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][18][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][18][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][18][4] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][18][3] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][18][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][18][0] )
+INFO: [Synth 8-3886] merging instance 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][18][14]' (FDR) to 'inst/INNER_CORE_Ii_1/PE_G.PE_TOP_I/CRC_I/rom_out_e0_reg[data_eqns][18][13]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][18][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][18][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][18][9] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][18][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][18][1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[data_eqns][18][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][17][22] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][17][21] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][17][16] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][17][13] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][17][12] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][17][10] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][17][7] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][17][6] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][17][5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/INNER_CORE_Ii_1/\PE_G.PE_TOP_I /CRC_I/\rom_out_e0_reg[fb_eqns][17][4] )
+INFO: [Common 17-14] Message 'Synth 8-3333' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:01:21 ; elapsed = 00:02:00 . Memory (MB): peak = 2590.777 ; gain = 1183.512 ; free physical = 17976 ; free virtual = 26035
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_2/BAM_PU_Ii_36/AXI_LITE_IF_I/BAM_PU_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_2/BAM_PU_Ii_36/AXI_LITE_IF_I/BAM_PU_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_2/XYM_G[0].XYM_MEM_G.MEM_XYM_Ii_43/AXI_LITE_IF_I/XYM_G[0].XYM_MEM_G.MEM_XYM_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_2/XYM_G[2].XYM_MEM_G.MEM_XYM_Ii_50/AXI_LITE_IF_I/XYM_G[2].XYM_MEM_G.MEM_XYM_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_Ii_2/XYM_G[3].XYM_MEM_G.MEM_XYM_Ii_57/AXI_LITE_IF_I/XYM_G[3].XYM_MEM_G.MEM_XYM_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++------+-----------------------------+------------+----------+
+|      |RTL Partition                |Replication |Instances |
++------+-----------------------------+------------+----------+
+|1     |polar_v1_0_2_inner_core__GB0 |           1|     16964|
+|2     |polar_v1_0_2_inner_core__GB1 |           1|     10250|
+|3     |polar_v1_0_2_inner_core__GB2 |           1|      9472|
+|4     |polar_v1_0_2__GC0            |           1|      1975|
++------+-----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:39 ; elapsed = 00:02:44 . Memory (MB): peak = 2824.113 ; gain = 1416.848 ; free physical = 17317 ; free virtual = 25483
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5556] The block RAM AXI_LITE_IF_I/BAM_PU_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg may be mapped as a cascade chain, because it is not timing critical.
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:43 ; elapsed = 00:02:51 . Memory (MB): peak = 2894.426 ; gain = 1487.160 ; free physical = 16762 ; free virtual = 24922
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+-----------------------------+------------+----------+
+|      |RTL Partition                |Replication |Instances |
++------+-----------------------------+------------+----------+
+|1     |polar_v1_0_2_inner_core__GB0 |           1|     16989|
+|2     |polar_v1_0_2_inner_core__GB1 |           1|     10250|
+|3     |polar_v1_0_2_inner_core__GB2 |           1|      9472|
+|4     |polar_v1_0_2__GC0            |           1|      1975|
++------+-----------------------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/AXI_LITE_IF_I/BAM_PU_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/AXI_LITE_IF_I/BAM_PU_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/AXI_LITE_IF_I/XYM_G[0].XYM_MEM_G.MEM_XYM_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/AXI_LITE_IF_I/XYM_G[2].XYM_MEM_G.MEM_XYM_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-6837] The timing for the instance inst/INNER_CORE_I/AXI_LITE_IF_I/XYM_G[3].XYM_MEM_G.MEM_XYM_I/ECC_G.SDP_RAM_RTL_I/SINGLE_G.SDP_RAM_RTL_I/mem_array_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:51 ; elapsed = 00:03:04 . Memory (MB): peak = 2961.355 ; gain = 1554.090 ; free physical = 16526 ; free virtual = 24675
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:52 ; elapsed = 00:03:06 . Memory (MB): peak = 2961.355 ; gain = 1554.090 ; free physical = 16398 ; free virtual = 24547
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:52 ; elapsed = 00:03:07 . Memory (MB): peak = 2961.355 ; gain = 1554.090 ; free physical = 16370 ; free virtual = 24519
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:54 ; elapsed = 00:03:11 . Memory (MB): peak = 2961.355 ; gain = 1554.090 ; free physical = 15875 ; free virtual = 24024
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:54 ; elapsed = 00:03:11 . Memory (MB): peak = 2961.355 ; gain = 1554.090 ; free physical = 15871 ; free virtual = 24020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:55 ; elapsed = 00:03:13 . Memory (MB): peak = 2961.355 ; gain = 1554.090 ; free physical = 15838 ; free virtual = 23992
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:55 ; elapsed = 00:03:13 . Memory (MB): peak = 2961.355 ; gain = 1554.090 ; free physical = 15833 ; free virtual = 23987
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----------+------+
+|      |Cell       |Count |
++------+-----------+------+
+|1     |CARRY8     |    81|
+|2     |LUT1       |    75|
+|3     |LUT2       |   594|
+|4     |LUT3       |  2425|
+|5     |LUT4       |  1273|
+|6     |LUT5       |  1261|
+|7     |LUT6       |  6300|
+|8     |MUXF7      |    46|
+|9     |RAM32M16   |    40|
+|10    |RAM32X1D   |   128|
+|11    |RAM64X1D   |    64|
+|12    |RAM64X1S   |     1|
+|13    |RAMB18E2   |     2|
+|14    |RAMB18E2_1 |     1|
+|15    |RAMB18E2_2 |     1|
+|16    |RAMB36E2_1 |     1|
+|17    |SRL16E     |   414|
+|18    |SRLC32E    |    67|
+|19    |FDRE       |  8139|
+|20    |FDSE       |   230|
++------+-----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:55 ; elapsed = 00:03:13 . Memory (MB): peak = 2961.355 ; gain = 1554.090 ; free physical = 15833 ; free virtual = 23987
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:43 ; elapsed = 00:02:55 . Memory (MB): peak = 2961.355 ; gain = 607.324 ; free physical = 15881 ; free virtual = 24030
+Synthesis Optimization Complete : Time (s): cpu = 00:01:55 ; elapsed = 00:03:13 . Memory (MB): peak = 2961.363 ; gain = 1554.090 ; free physical = 15881 ; free virtual = 24030
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 360 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2977.363 ; gain = 0.000 ; free physical = 15734 ; free virtual = 23883
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 233 instances were transformed.
+  RAM32M16 => RAM32M16 (RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMD32, RAMS32, RAMS32): 40 instances
+  RAM32X1D => RAM32X1D (RAMD32, RAMD32): 128 instances
+  RAM64X1D => RAM64X1D (RAMD64E, RAMD64E): 64 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+328 Infos, 106 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:02:00 ; elapsed = 00:03:18 . Memory (MB): peak = 2977.363 ; gain = 1570.098 ; free physical = 15786 ; free virtual = 23935
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2977.363 ; gain = 0.000 ; free physical = 15783 ; free virtual = 23932
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_enc_0_synth_1/design_1_enc_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 3001.375 ; gain = 24.012 ; free physical = 15721 ; free virtual = 23878
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_enc_0, cache-ID = 2a50b7954d9b05bd
+INFO: [Coretcl 2-1174] Renamed 199 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 3032.906 ; gain = 0.000 ; free physical = 15624 ; free virtual = 23810
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_enc_0_synth_1/design_1_enc_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_enc_0_utilization_synth.rpt -pb design_1_enc_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 10 12:04:59 2020...

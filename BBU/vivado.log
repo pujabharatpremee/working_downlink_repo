@@ -1,0 +1,1399 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 10 09:46:06 2020
+# Process ID: 14161
+# Current directory: /home/puja/Desktop/working_downlink_chain/BBU
+# Command line: vivado
+# Log file: /home/puja/Desktop/working_downlink_chain/BBU/vivado.log
+# Journal file: /home/puja/Desktop/working_downlink_chain/BBU/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project K_64_N_512_E_896 /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896 -part xczu21dr-ffvd1156-2-e
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
+create_project: Time (s): cpu = 00:00:09 ; elapsed = 00:00:06 . Memory (MB): peak = 6425.781 ; gain = 56.836 ; free physical = 34963 ; free virtual = 39962
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+set_property  ip_repo_paths  /home/puja/Desktop/working_downlink_chain/BBU/ip_repo_path/K_64_N_512_E_896_ATG [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/puja/Desktop/working_downlink_chain/BBU/ip_repo_path/K_64_N_512_E_896_ATG'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+source /home/puja/Desktop/working_downlink_chain/encoder_int_rm_mod_demod_rr_deint_decoder/K_64_N_512_E_896WithATG/design_1.tcl
+# namespace eval _tcl {
+# proc get_script_folder {} {
+#    set script_path [file normalize [info script]]
+#    set script_folder [file dirname $script_path]
+#    return $script_folder
+# }
+# }
+# variable script_folder
+# set script_folder [_tcl::get_script_folder]
+# set scripts_vivado_version 2018.3
+# set current_vivado_version [version -short]
+# if { [string first $scripts_vivado_version $current_vivado_version] == -1 } {
+#    puts ""
+#    catch {common::send_msg_id "BD_TCL-109" "ERROR" "This script was generated using Vivado <$scripts_vivado_version> and is being run in <$current_vivado_version> of Vivado. Please run the script in Vivado <$scripts_vivado_version> then open the design in Vivado <$current_vivado_version>. Upgrade the design by running \"Tools => Report => Report IP Status...\", then run write_bd_tcl to create an updated script."}
+# 
+#    return 1
+# }
+# set list_projs [get_projects -quiet]
+# if { $list_projs eq "" } {
+#    create_project project_1 myproj -part xczu28dr-ffvg1517-2-e
+#    set_property BOARD_PART xilinx.com:zcu111:part0:1.1 [current_project]
+# }
+# variable design_name
+# set design_name design_1
+# set errMsg ""
+# set nRet 0
+# set cur_design [current_bd_design -quiet]
+# set list_cells [get_bd_cells -quiet]
+# if { ${design_name} eq "" } {
+#    # USE CASES:
+#    #    1) Design_name not set
+# 
+#    set errMsg "Please set the variable <design_name> to a non-empty value."
+#    set nRet 1
+# 
+# } elseif { ${cur_design} ne "" && ${list_cells} eq "" } {
+#    # USE CASES:
+#    #    2): Current design opened AND is empty AND names same.
+#    #    3): Current design opened AND is empty AND names diff; design_name NOT in project.
+#    #    4): Current design opened AND is empty AND names diff; design_name exists in project.
+# 
+#    if { $cur_design ne $design_name } {
+#       common::send_msg_id "BD_TCL-001" "INFO" "Changing value of <design_name> from <$design_name> to <$cur_design> since current design is empty."
+#       set design_name [get_property NAME $cur_design]
+#    }
+#    common::send_msg_id "BD_TCL-002" "INFO" "Constructing design in IPI design <$cur_design>..."
+# 
+# } elseif { ${cur_design} ne "" && $list_cells ne "" && $cur_design eq $design_name } {
+#    # USE CASES:
+#    #    5) Current design opened AND has components AND same names.
+# 
+#    set errMsg "Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
+#    set nRet 1
+# } elseif { [get_files -quiet ${design_name}.bd] ne "" } {
+#    # USE CASES: 
+#    #    6) Current opened design, has components, but diff names, design_name exists in project.
+#    #    7) No opened design, design_name exists in project.
+# 
+#    set errMsg "Design <$design_name> already exists in your project, please set the variable <design_name> to another value."
+#    set nRet 2
+# 
+# } else {
+#    # USE CASES:
+#    #    8) No opened design, design_name not in project.
+#    #    9) Current opened design, has components, but diff names, design_name not in project.
+# 
+#    common::send_msg_id "BD_TCL-003" "INFO" "Currently there is no design <$design_name> in project, so creating one..."
+# 
+#    create_bd_design $design_name
+# 
+#    common::send_msg_id "BD_TCL-004" "INFO" "Making design <$design_name> as current_bd_design."
+#    current_bd_design $design_name
+# 
+# }
+INFO: [BD_TCL-3] Currently there is no design <design_1> in project, so creating one...
+Wrote  : </home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/design_1.bd> 
+INFO: [BD_TCL-4] Making design <design_1> as current_bd_design.
+# common::send_msg_id "BD_TCL-005" "INFO" "Currently the variable <design_name> is equal to \"$design_name\"."
+INFO: [BD_TCL-5] Currently the variable <design_name> is equal to "design_1".
+# if { $nRet != 0 } {
+#    catch {common::send_msg_id "BD_TCL-114" "ERROR" $errMsg}
+#    return $nRet
+# }
+# set bCheckIPsPassed 1
+# set bCheckIPs 1
+# if { $bCheckIPs == 1 } {
+#    set list_check_ips "\ 
+# xilinx.com:ip:axi_traffic_gen:3.0\
+# xilinx.com:hls:config_decoder:1.0\
+# xilinx.com:hls:config_encoder:1.0\
+# xilinx.com:ip:polar:1.0\
+# xilinx.com:hls:demodulation:1.0\
+# xilinx.com:hls:modulation:1.0\
+# xilinx.com:hls:rate_match:1.0\
+# xilinx.com:hls:rate_recovery:1.0\
+# xilinx.com:ip:proc_sys_reset:5.0\
+# xilinx.com:hls:subblockdeint:1.0\
+# xilinx.com:hls:subblockint:1.0\
+# xilinx.com:ip:system_ila:1.1\
+# xilinx.com:ip:vio:3.0\
+# xilinx.com:ip:xlconstant:1.1\
+# xilinx.com:ip:zynq_ultra_ps_e:3.2\
+# "
+# 
+#    set list_ips_missing ""
+#    common::send_msg_id "BD_TCL-006" "INFO" "Checking if the following IPs exist in the project's IP catalog: $list_check_ips ."
+# 
+#    foreach ip_vlnv $list_check_ips {
+#       set ip_obj [get_ipdefs -all $ip_vlnv]
+#       if { $ip_obj eq "" } {
+#          lappend list_ips_missing $ip_vlnv
+#       }
+#    }
+# 
+#    if { $list_ips_missing ne "" } {
+#       catch {common::send_msg_id "BD_TCL-115" "ERROR" "The following IPs are not found in the IP Catalog:\n  $list_ips_missing\n\nResolution: Please add the repository containing the IP(s) to the project." }
+#       set bCheckIPsPassed 0
+#    }
+# 
+# }
+INFO: [BD_TCL-6] Checking if the following IPs exist in the project's IP catalog:  
+xilinx.com:ip:axi_traffic_gen:3.0 xilinx.com:hls:config_decoder:1.0 xilinx.com:hls:config_encoder:1.0 xilinx.com:ip:polar:1.0 xilinx.com:hls:demodulation:1.0 xilinx.com:hls:modulation:1.0 xilinx.com:hls:rate_match:1.0 xilinx.com:hls:rate_recovery:1.0 xilinx.com:ip:proc_sys_reset:5.0 xilinx.com:hls:subblockdeint:1.0 xilinx.com:hls:subblockint:1.0 xilinx.com:ip:system_ila:1.1 xilinx.com:ip:vio:3.0 xilinx.com:ip:xlconstant:1.1 xilinx.com:ip:zynq_ultra_ps_e:3.2  .
+# if { $bCheckIPsPassed != 1 } {
+#   common::send_msg_id "BD_TCL-1003" "WARNING" "Will not continue with creation of design due to the error(s) above."
+#   return 3
+# }
+# proc create_root_design { parentCell } {
+# 
+#   variable script_folder
+#   variable design_name
+# 
+#   if { $parentCell eq "" } {
+#      set parentCell [get_bd_cells /]
+#   }
+# 
+#   # Get object for parentCell
+#   set parentObj [get_bd_cells $parentCell]
+#   if { $parentObj == "" } {
+#      catch {common::send_msg_id "BD_TCL-100" "ERROR" "Unable to find parent cell <$parentCell>!"}
+#      return
+#   }
+# 
+#   # Make sure parentObj is hier blk
+#   set parentType [get_property TYPE $parentObj]
+#   if { $parentType ne "hier" } {
+#      catch {common::send_msg_id "BD_TCL-101" "ERROR" "Parent <$parentObj> has TYPE = <$parentType>. Expected to be <hier>."}
+#      return
+#   }
+# 
+#   # Save current instance; Restore later
+#   set oldCurInst [current_bd_instance .]
+# 
+#   # Set parent object as current
+#   current_bd_instance $parentObj
+# 
+# 
+#   # Create interface ports
+# 
+#   # Create ports
+# 
+#   # Create instance: axi_traffic_gen_0, and set properties
+#   set axi_traffic_gen_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_traffic_gen:3.0 axi_traffic_gen_0 ]
+#   set_property -dict [ list \
+#    CONFIG.C_ATG_MODE {AXI4-Stream} \
+#    CONFIG.C_ATG_STREAMING_MAX_LEN_BITS {1} \
+#  ] $axi_traffic_gen_0
+# 
+#   # Create instance: config_decoder_0, and set properties
+#   set config_decoder_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:config_decoder:1.0 config_decoder_0 ]
+# 
+#   # Create instance: config_encoder_0, and set properties
+#   set config_encoder_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:config_encoder:1.0 config_encoder_0 ]
+# 
+#   # Create instance: dec, and set properties
+#   set dec [ create_bd_cell -type ip -vlnv xilinx.com:ip:polar:1.0 dec ]
+# 
+#   # Create instance: demodulation_0, and set properties
+#   set demodulation_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:demodulation:1.0 demodulation_0 ]
+# 
+#   # Create instance: enc, and set properties
+#   set enc [ create_bd_cell -type ip -vlnv xilinx.com:ip:polar:1.0 enc ]
+#   set_property -dict [ list \
+#    CONFIG.Operation {Encode} \
+#  ] $enc
+# 
+#   # Create instance: modulation_0, and set properties
+#   set modulation_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:modulation:1.0 modulation_0 ]
+# 
+#   # Create instance: ps8_0_axi_periph, and set properties
+#   set ps8_0_axi_periph [ create_bd_cell -type ip -vlnv xilinx.com:ip:axi_interconnect:2.1 ps8_0_axi_periph ]
+#   set_property -dict [ list \
+#    CONFIG.NUM_MI {3} \
+#  ] $ps8_0_axi_periph
+# 
+#   # Create instance: rate_match_0, and set properties
+#   set rate_match_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:rate_match:1.0 rate_match_0 ]
+# 
+#   # Create instance: rate_recovery_0, and set properties
+#   set rate_recovery_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:rate_recovery:1.0 rate_recovery_0 ]
+# 
+#   # Create instance: rst_ps8_0_99M, and set properties
+#   set rst_ps8_0_99M [ create_bd_cell -type ip -vlnv xilinx.com:ip:proc_sys_reset:5.0 rst_ps8_0_99M ]
+# 
+#   # Create instance: subblockdeint_0, and set properties
+#   set subblockdeint_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:subblockdeint:1.0 subblockdeint_0 ]
+# 
+#   # Create instance: subblockint_0, and set properties
+#   set subblockint_0 [ create_bd_cell -type ip -vlnv xilinx.com:hls:subblockint:1.0 subblockint_0 ]
+# 
+#   # Create instance: system_ila_0, and set properties
+#   set system_ila_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:system_ila:1.1 system_ila_0 ]
+#   set_property -dict [ list \
+#    CONFIG.C_BRAM_CNT {94.5} \
+#    CONFIG.C_DATA_DEPTH {16384} \
+#    CONFIG.C_MON_TYPE {MIX} \
+#    CONFIG.C_NUM_MONITOR_SLOTS {16} \
+#    CONFIG.C_NUM_OF_PROBES {2} \
+#    CONFIG.C_SLOT {15} \
+#    CONFIG.C_SLOT_0_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+#    CONFIG.C_SLOT_10_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+#    CONFIG.C_SLOT_11_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+#    CONFIG.C_SLOT_12_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+#    CONFIG.C_SLOT_13_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+#    CONFIG.C_SLOT_14_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+#    CONFIG.C_SLOT_15_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+#    CONFIG.C_SLOT_1_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+#    CONFIG.C_SLOT_2_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+#    CONFIG.C_SLOT_3_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+#    CONFIG.C_SLOT_4_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+#    CONFIG.C_SLOT_5_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+#    CONFIG.C_SLOT_6_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+#    CONFIG.C_SLOT_7_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+#    CONFIG.C_SLOT_8_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+#    CONFIG.C_SLOT_9_INTF_TYPE {xilinx.com:interface:axis_rtl:1.0} \
+#  ] $system_ila_0
+# 
+#   # Create instance: vio_0, and set properties
+#   set vio_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:vio:3.0 vio_0 ]
+#   set_property -dict [ list \
+#    CONFIG.C_EN_PROBE_IN_ACTIVITY {0} \
+#    CONFIG.C_NUM_PROBE_IN {0} \
+#  ] $vio_0
+# 
+#   # Create instance: xlconstant_0, and set properties
+#   set xlconstant_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_0 ]
+# 
+#   # Create instance: xlconstant_1, and set properties
+#   set xlconstant_1 [ create_bd_cell -type ip -vlnv xilinx.com:ip:xlconstant:1.1 xlconstant_1 ]
+#   set_property -dict [ list \
+#    CONFIG.CONST_VAL {0} \
+#  ] $xlconstant_1
+# 
+#   # Create instance: zynq_ultra_ps_e_0, and set properties
+#   set zynq_ultra_ps_e_0 [ create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.2 zynq_ultra_ps_e_0 ]
+#   set_property -dict [ list \
+#    CONFIG.PSU_BANK_0_IO_STANDARD {LVCMOS18} \
+#    CONFIG.PSU_BANK_1_IO_STANDARD {LVCMOS18} \
+#    CONFIG.PSU_BANK_2_IO_STANDARD {LVCMOS18} \
+#    CONFIG.PSU_DDR_RAM_HIGHADDR {0xFFFFFFFF} \
+#    CONFIG.PSU_DDR_RAM_HIGHADDR_OFFSET {0x800000000} \
+#    CONFIG.PSU_DDR_RAM_LOWADDR_OFFSET {0x80000000} \
+#    CONFIG.PSU_MIO_0_DIRECTION {out} \
+#    CONFIG.PSU_MIO_0_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_10_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_11_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_12_DIRECTION {out} \
+#    CONFIG.PSU_MIO_12_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_13_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_14_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_15_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_16_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_17_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_18_DIRECTION {in} \
+#    CONFIG.PSU_MIO_18_DRIVE_STRENGTH {12} \
+#    CONFIG.PSU_MIO_18_SLEW {slow} \
+#    CONFIG.PSU_MIO_19_DIRECTION {out} \
+#    CONFIG.PSU_MIO_19_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_1_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_20_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_21_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_22_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_23_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_24_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_25_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_26_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_27_DIRECTION {out} \
+#    CONFIG.PSU_MIO_27_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_28_DIRECTION {in} \
+#    CONFIG.PSU_MIO_28_DRIVE_STRENGTH {12} \
+#    CONFIG.PSU_MIO_28_SLEW {slow} \
+#    CONFIG.PSU_MIO_29_DIRECTION {out} \
+#    CONFIG.PSU_MIO_29_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_2_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_30_DIRECTION {in} \
+#    CONFIG.PSU_MIO_30_DRIVE_STRENGTH {12} \
+#    CONFIG.PSU_MIO_30_SLEW {slow} \
+#    CONFIG.PSU_MIO_31_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_32_DIRECTION {out} \
+#    CONFIG.PSU_MIO_32_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_33_DIRECTION {out} \
+#    CONFIG.PSU_MIO_33_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_34_DIRECTION {out} \
+#    CONFIG.PSU_MIO_34_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_35_DIRECTION {out} \
+#    CONFIG.PSU_MIO_35_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_36_DIRECTION {out} \
+#    CONFIG.PSU_MIO_36_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_37_DIRECTION {out} \
+#    CONFIG.PSU_MIO_37_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_38_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_39_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_3_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_40_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_41_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_42_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_43_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_44_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_45_DIRECTION {in} \
+#    CONFIG.PSU_MIO_45_DRIVE_STRENGTH {12} \
+#    CONFIG.PSU_MIO_45_SLEW {slow} \
+#    CONFIG.PSU_MIO_46_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_47_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_48_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_49_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_4_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_50_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_51_DIRECTION {out} \
+#    CONFIG.PSU_MIO_51_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_52_DIRECTION {in} \
+#    CONFIG.PSU_MIO_52_DRIVE_STRENGTH {12} \
+#    CONFIG.PSU_MIO_52_SLEW {slow} \
+#    CONFIG.PSU_MIO_53_DIRECTION {in} \
+#    CONFIG.PSU_MIO_53_DRIVE_STRENGTH {12} \
+#    CONFIG.PSU_MIO_53_SLEW {slow} \
+#    CONFIG.PSU_MIO_54_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_55_DIRECTION {in} \
+#    CONFIG.PSU_MIO_55_DRIVE_STRENGTH {12} \
+#    CONFIG.PSU_MIO_55_SLEW {slow} \
+#    CONFIG.PSU_MIO_56_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_57_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_58_DIRECTION {out} \
+#    CONFIG.PSU_MIO_58_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_59_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_5_DIRECTION {out} \
+#    CONFIG.PSU_MIO_5_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_60_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_61_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_62_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_63_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_64_DIRECTION {out} \
+#    CONFIG.PSU_MIO_64_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_65_DIRECTION {out} \
+#    CONFIG.PSU_MIO_65_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_66_DIRECTION {out} \
+#    CONFIG.PSU_MIO_66_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_67_DIRECTION {out} \
+#    CONFIG.PSU_MIO_67_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_68_DIRECTION {out} \
+#    CONFIG.PSU_MIO_68_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_69_DIRECTION {out} \
+#    CONFIG.PSU_MIO_69_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_6_DIRECTION {out} \
+#    CONFIG.PSU_MIO_6_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_70_DIRECTION {in} \
+#    CONFIG.PSU_MIO_70_DRIVE_STRENGTH {12} \
+#    CONFIG.PSU_MIO_70_SLEW {slow} \
+#    CONFIG.PSU_MIO_71_DIRECTION {in} \
+#    CONFIG.PSU_MIO_71_DRIVE_STRENGTH {12} \
+#    CONFIG.PSU_MIO_71_SLEW {slow} \
+#    CONFIG.PSU_MIO_72_DIRECTION {in} \
+#    CONFIG.PSU_MIO_72_DRIVE_STRENGTH {12} \
+#    CONFIG.PSU_MIO_72_SLEW {slow} \
+#    CONFIG.PSU_MIO_73_DIRECTION {in} \
+#    CONFIG.PSU_MIO_73_DRIVE_STRENGTH {12} \
+#    CONFIG.PSU_MIO_73_SLEW {slow} \
+#    CONFIG.PSU_MIO_74_DIRECTION {in} \
+#    CONFIG.PSU_MIO_74_DRIVE_STRENGTH {12} \
+#    CONFIG.PSU_MIO_74_SLEW {slow} \
+#    CONFIG.PSU_MIO_75_DIRECTION {in} \
+#    CONFIG.PSU_MIO_75_DRIVE_STRENGTH {12} \
+#    CONFIG.PSU_MIO_75_SLEW {slow} \
+#    CONFIG.PSU_MIO_76_DIRECTION {out} \
+#    CONFIG.PSU_MIO_76_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_77_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_7_DIRECTION {out} \
+#    CONFIG.PSU_MIO_7_INPUT_TYPE {schmitt} \
+#    CONFIG.PSU_MIO_8_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_9_DIRECTION {inout} \
+#    CONFIG.PSU_MIO_TREE_PERIPHERALS {Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Feedback Clk#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#Quad SPI Flash#GPIO0 MIO#I2C 0#I2C 0#I2C 1#I2C 1#UART 0#UART 0#GPIO0 MIO#GPIO0 MIO#GPIO0 MIO#GPIO0 MIO#GPIO0 MIO#GPIO0 MIO#GPIO1 MIO#DPAUX#DPAUX#DPAUX#DPAUX#GPIO1 MIO#PMU GPO 0#PMU GPO 1#PMU GPO 2#PMU GPO 3#PMU GPO 4#PMU GPO 5#GPIO1 MIO#SD 1#SD 1#SD 1#SD 1#GPIO1 MIO#GPIO1 MIO#SD 1#SD 1#SD 1#SD 1#SD 1#SD 1#SD 1#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#USB 0#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#Gem 3#MDIO 3#MDIO 3} \
+#    CONFIG.PSU_MIO_TREE_SIGNALS {sclk_out#miso_mo1#mo2#mo3#mosi_mi0#n_ss_out#clk_for_lpbk#n_ss_out_upper#mo_upper[0]#mo_upper[1]#mo_upper[2]#mo_upper[3]#sclk_out_upper#gpio0[13]#scl_out#sda_out#scl_out#sda_out#rxd#txd#gpio0[20]#gpio0[21]#gpio0[22]#gpio0[23]#gpio0[24]#gpio0[25]#gpio1[26]#dp_aux_data_out#dp_hot_plug_detect#dp_aux_data_oe#dp_aux_data_in#gpio1[31]#gpo[0]#gpo[1]#gpo[2]#gpo[3]#gpo[4]#gpo[5]#gpio1[38]#sdio1_data_out[4]#sdio1_data_out[5]#sdio1_data_out[6]#sdio1_data_out[7]#gpio1[43]#gpio1[44]#sdio1_cd_n#sdio1_data_out[0]#sdio1_data_out[1]#sdio1_data_out[2]#sdio1_data_out[3]#sdio1_cmd_out#sdio1_clk_out#ulpi_clk_in#ulpi_dir#ulpi_tx_data[2]#ulpi_nxt#ulpi_tx_data[0]#ulpi_tx_data[1]#ulpi_stp#ulpi_tx_data[3]#ulpi_tx_data[4]#ulpi_tx_data[5]#ulpi_tx_data[6]#ulpi_tx_data[7]#rgmii_tx_clk#rgmii_txd[0]#rgmii_txd[1]#rgmii_txd[2]#rgmii_txd[3]#rgmii_tx_ctl#rgmii_rx_clk#rgmii_rxd[0]#rgmii_rxd[1]#rgmii_rxd[2]#rgmii_rxd[3]#rgmii_rx_ctl#gem3_mdc#gem3_mdio_out} \
+#    CONFIG.PSU_SD1_INTERNAL_BUS_WIDTH {8} \
+#    CONFIG.PSU__ACT_DDR_FREQ_MHZ {1066.656006} \
+#    CONFIG.PSU__CAN1__GRP_CLK__ENABLE {0} \
+#    CONFIG.PSU__CAN1__PERIPHERAL__ENABLE {0} \
+#    CONFIG.PSU__CRF_APB__ACPU_CTRL__ACT_FREQMHZ {1199.988037} \
+#    CONFIG.PSU__CRF_APB__ACPU_CTRL__DIVISOR0 {1} \
+#    CONFIG.PSU__CRF_APB__ACPU_CTRL__FREQMHZ {1200} \
+#    CONFIG.PSU__CRF_APB__ACPU_CTRL__SRCSEL {APLL} \
+#    CONFIG.PSU__CRF_APB__APLL_CTRL__DIV2 {1} \
+#    CONFIG.PSU__CRF_APB__APLL_CTRL__FBDIV {72} \
+#    CONFIG.PSU__CRF_APB__APLL_CTRL__FRACDATA {0.000000} \
+#    CONFIG.PSU__CRF_APB__APLL_CTRL__SRCSEL {PSS_REF_CLK} \
+#    CONFIG.PSU__CRF_APB__APLL_FRAC_CFG__ENABLED {0} \
+#    CONFIG.PSU__CRF_APB__APLL_TO_LPD_CTRL__DIVISOR0 {3} \
+#    CONFIG.PSU__CRF_APB__DBG_FPD_CTRL__ACT_FREQMHZ {249.997498} \
+#    CONFIG.PSU__CRF_APB__DBG_FPD_CTRL__DIVISOR0 {2} \
+#    CONFIG.PSU__CRF_APB__DBG_FPD_CTRL__FREQMHZ {250} \
+#    CONFIG.PSU__CRF_APB__DBG_FPD_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRF_APB__DBG_TRACE_CTRL__DIVISOR0 {5} \
+#    CONFIG.PSU__CRF_APB__DBG_TRACE_CTRL__FREQMHZ {250} \
+#    CONFIG.PSU__CRF_APB__DBG_TRACE_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRF_APB__DBG_TSTMP_CTRL__ACT_FREQMHZ {249.997498} \
+#    CONFIG.PSU__CRF_APB__DBG_TSTMP_CTRL__DIVISOR0 {2} \
+#    CONFIG.PSU__CRF_APB__DBG_TSTMP_CTRL__FREQMHZ {250} \
+#    CONFIG.PSU__CRF_APB__DBG_TSTMP_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRF_APB__DDR_CTRL__ACT_FREQMHZ {533.328003} \
+#    CONFIG.PSU__CRF_APB__DDR_CTRL__DIVISOR0 {2} \
+#    CONFIG.PSU__CRF_APB__DDR_CTRL__FREQMHZ {1067} \
+#    CONFIG.PSU__CRF_APB__DDR_CTRL__SRCSEL {DPLL} \
+#    CONFIG.PSU__CRF_APB__DPDMA_REF_CTRL__ACT_FREQMHZ {599.994019} \
+#    CONFIG.PSU__CRF_APB__DPDMA_REF_CTRL__DIVISOR0 {2} \
+#    CONFIG.PSU__CRF_APB__DPDMA_REF_CTRL__FREQMHZ {600} \
+#    CONFIG.PSU__CRF_APB__DPDMA_REF_CTRL__SRCSEL {APLL} \
+#    CONFIG.PSU__CRF_APB__DPLL_CTRL__DIV2 {1} \
+#    CONFIG.PSU__CRF_APB__DPLL_CTRL__FBDIV {64} \
+#    CONFIG.PSU__CRF_APB__DPLL_CTRL__FRACDATA {0.000000} \
+#    CONFIG.PSU__CRF_APB__DPLL_CTRL__SRCSEL {PSS_REF_CLK} \
+#    CONFIG.PSU__CRF_APB__DPLL_FRAC_CFG__ENABLED {0} \
+#    CONFIG.PSU__CRF_APB__DPLL_TO_LPD_CTRL__DIVISOR0 {2} \
+#    CONFIG.PSU__CRF_APB__DP_AUDIO_REF_CTRL__ACT_FREQMHZ {24.999750} \
+#    CONFIG.PSU__CRF_APB__DP_AUDIO_REF_CTRL__DIVISOR0 {15} \
+#    CONFIG.PSU__CRF_APB__DP_AUDIO_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRF_APB__DP_AUDIO_REF_CTRL__SRCSEL {RPLL} \
+#    CONFIG.PSU__CRF_APB__DP_AUDIO__FRAC_ENABLED {0} \
+#    CONFIG.PSU__CRF_APB__DP_STC_REF_CTRL__ACT_FREQMHZ {26.785446} \
+#    CONFIG.PSU__CRF_APB__DP_STC_REF_CTRL__DIVISOR0 {14} \
+#    CONFIG.PSU__CRF_APB__DP_STC_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRF_APB__DP_STC_REF_CTRL__SRCSEL {RPLL} \
+#    CONFIG.PSU__CRF_APB__DP_VIDEO_REF_CTRL__ACT_FREQMHZ {299.997009} \
+#    CONFIG.PSU__CRF_APB__DP_VIDEO_REF_CTRL__DIVISOR0 {5} \
+#    CONFIG.PSU__CRF_APB__DP_VIDEO_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRF_APB__DP_VIDEO_REF_CTRL__SRCSEL {VPLL} \
+#    CONFIG.PSU__CRF_APB__DP_VIDEO__FRAC_ENABLED {0} \
+#    CONFIG.PSU__CRF_APB__GDMA_REF_CTRL__ACT_FREQMHZ {599.994019} \
+#    CONFIG.PSU__CRF_APB__GDMA_REF_CTRL__DIVISOR0 {2} \
+#    CONFIG.PSU__CRF_APB__GDMA_REF_CTRL__FREQMHZ {600} \
+#    CONFIG.PSU__CRF_APB__GDMA_REF_CTRL__SRCSEL {APLL} \
+#    CONFIG.PSU__CRF_APB__GPU_REF_CTRL__ACT_FREQMHZ {499.994995} \
+#    CONFIG.PSU__CRF_APB__GPU_REF_CTRL__DIVISOR0 {1} \
+#    CONFIG.PSU__CRF_APB__GPU_REF_CTRL__FREQMHZ {500} \
+#    CONFIG.PSU__CRF_APB__GPU_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRF_APB__PCIE_REF_CTRL__DIVISOR0 {6} \
+#    CONFIG.PSU__CRF_APB__PCIE_REF_CTRL__FREQMHZ {250} \
+#    CONFIG.PSU__CRF_APB__PCIE_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRF_APB__SATA_REF_CTRL__ACT_FREQMHZ {249.997498} \
+#    CONFIG.PSU__CRF_APB__SATA_REF_CTRL__DIVISOR0 {2} \
+#    CONFIG.PSU__CRF_APB__SATA_REF_CTRL__FREQMHZ {250} \
+#    CONFIG.PSU__CRF_APB__SATA_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRF_APB__TOPSW_LSBUS_CTRL__ACT_FREQMHZ {99.999001} \
+#    CONFIG.PSU__CRF_APB__TOPSW_LSBUS_CTRL__DIVISOR0 {5} \
+#    CONFIG.PSU__CRF_APB__TOPSW_LSBUS_CTRL__FREQMHZ {100} \
+#    CONFIG.PSU__CRF_APB__TOPSW_LSBUS_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRF_APB__TOPSW_MAIN_CTRL__ACT_FREQMHZ {533.328003} \
+#    CONFIG.PSU__CRF_APB__TOPSW_MAIN_CTRL__DIVISOR0 {2} \
+#    CONFIG.PSU__CRF_APB__TOPSW_MAIN_CTRL__FREQMHZ {533.33} \
+#    CONFIG.PSU__CRF_APB__TOPSW_MAIN_CTRL__SRCSEL {DPLL} \
+#    CONFIG.PSU__CRF_APB__VPLL_CTRL__DIV2 {1} \
+#    CONFIG.PSU__CRF_APB__VPLL_CTRL__FBDIV {90} \
+#    CONFIG.PSU__CRF_APB__VPLL_CTRL__FRACDATA {0.000000} \
+#    CONFIG.PSU__CRF_APB__VPLL_CTRL__SRCSEL {PSS_REF_CLK} \
+#    CONFIG.PSU__CRF_APB__VPLL_FRAC_CFG__ENABLED {0} \
+#    CONFIG.PSU__CRF_APB__VPLL_TO_LPD_CTRL__DIVISOR0 {3} \
+#    CONFIG.PSU__CRL_APB__ADMA_REF_CTRL__ACT_FREQMHZ {499.994995} \
+#    CONFIG.PSU__CRL_APB__ADMA_REF_CTRL__DIVISOR0 {3} \
+#    CONFIG.PSU__CRL_APB__ADMA_REF_CTRL__FREQMHZ {500} \
+#    CONFIG.PSU__CRL_APB__ADMA_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__AFI6_REF_CTRL__DIVISOR0 {3} \
+#    CONFIG.PSU__CRL_APB__AMS_REF_CTRL__ACT_FREQMHZ {49.999500} \
+#    CONFIG.PSU__CRL_APB__AMS_REF_CTRL__DIVISOR0 {30} \
+#    CONFIG.PSU__CRL_APB__AMS_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__CAN0_REF_CTRL__DIVISOR0 {15} \
+#    CONFIG.PSU__CRL_APB__CAN0_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__CAN1_REF_CTRL__DIVISOR0 {15} \
+#    CONFIG.PSU__CRL_APB__CAN1_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__CAN1_REF_CTRL__FREQMHZ {100} \
+#    CONFIG.PSU__CRL_APB__CAN1_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__CPU_R5_CTRL__ACT_FREQMHZ {499.994995} \
+#    CONFIG.PSU__CRL_APB__CPU_R5_CTRL__DIVISOR0 {3} \
+#    CONFIG.PSU__CRL_APB__CPU_R5_CTRL__FREQMHZ {500} \
+#    CONFIG.PSU__CRL_APB__CPU_R5_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__DBG_LPD_CTRL__ACT_FREQMHZ {249.997498} \
+#    CONFIG.PSU__CRL_APB__DBG_LPD_CTRL__DIVISOR0 {6} \
+#    CONFIG.PSU__CRL_APB__DBG_LPD_CTRL__FREQMHZ {250} \
+#    CONFIG.PSU__CRL_APB__DBG_LPD_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__DLL_REF_CTRL__ACT_FREQMHZ {1499.984985} \
+#    CONFIG.PSU__CRL_APB__GEM0_REF_CTRL__DIVISOR0 {12} \
+#    CONFIG.PSU__CRL_APB__GEM0_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__GEM1_REF_CTRL__DIVISOR0 {12} \
+#    CONFIG.PSU__CRL_APB__GEM1_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__GEM2_REF_CTRL__DIVISOR0 {12} \
+#    CONFIG.PSU__CRL_APB__GEM2_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__GEM3_REF_CTRL__ACT_FREQMHZ {124.998749} \
+#    CONFIG.PSU__CRL_APB__GEM3_REF_CTRL__DIVISOR0 {12} \
+#    CONFIG.PSU__CRL_APB__GEM3_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__GEM3_REF_CTRL__FREQMHZ {125} \
+#    CONFIG.PSU__CRL_APB__GEM3_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__GEM_TSU_REF_CTRL__ACT_FREQMHZ {249.997498} \
+#    CONFIG.PSU__CRL_APB__GEM_TSU_REF_CTRL__DIVISOR0 {6} \
+#    CONFIG.PSU__CRL_APB__GEM_TSU_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__GEM_TSU_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__I2C0_REF_CTRL__ACT_FREQMHZ {99.999001} \
+#    CONFIG.PSU__CRL_APB__I2C0_REF_CTRL__DIVISOR0 {15} \
+#    CONFIG.PSU__CRL_APB__I2C0_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__I2C0_REF_CTRL__FREQMHZ {100} \
+#    CONFIG.PSU__CRL_APB__I2C0_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__I2C1_REF_CTRL__ACT_FREQMHZ {99.999001} \
+#    CONFIG.PSU__CRL_APB__I2C1_REF_CTRL__DIVISOR0 {15} \
+#    CONFIG.PSU__CRL_APB__I2C1_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__I2C1_REF_CTRL__FREQMHZ {100} \
+#    CONFIG.PSU__CRL_APB__I2C1_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__IOPLL_CTRL__DIV2 {1} \
+#    CONFIG.PSU__CRL_APB__IOPLL_CTRL__FBDIV {90} \
+#    CONFIG.PSU__CRL_APB__IOPLL_CTRL__FRACDATA {0.000000} \
+#    CONFIG.PSU__CRL_APB__IOPLL_CTRL__SRCSEL {PSS_REF_CLK} \
+#    CONFIG.PSU__CRL_APB__IOPLL_FRAC_CFG__ENABLED {0} \
+#    CONFIG.PSU__CRL_APB__IOPLL_TO_FPD_CTRL__DIVISOR0 {3} \
+#    CONFIG.PSU__CRL_APB__IOU_SWITCH_CTRL__ACT_FREQMHZ {249.997498} \
+#    CONFIG.PSU__CRL_APB__IOU_SWITCH_CTRL__DIVISOR0 {6} \
+#    CONFIG.PSU__CRL_APB__IOU_SWITCH_CTRL__FREQMHZ {250} \
+#    CONFIG.PSU__CRL_APB__IOU_SWITCH_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__LPD_LSBUS_CTRL__ACT_FREQMHZ {99.999001} \
+#    CONFIG.PSU__CRL_APB__LPD_LSBUS_CTRL__DIVISOR0 {15} \
+#    CONFIG.PSU__CRL_APB__LPD_LSBUS_CTRL__FREQMHZ {100} \
+#    CONFIG.PSU__CRL_APB__LPD_LSBUS_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__LPD_SWITCH_CTRL__ACT_FREQMHZ {499.994995} \
+#    CONFIG.PSU__CRL_APB__LPD_SWITCH_CTRL__DIVISOR0 {3} \
+#    CONFIG.PSU__CRL_APB__LPD_SWITCH_CTRL__FREQMHZ {500} \
+#    CONFIG.PSU__CRL_APB__LPD_SWITCH_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__NAND_REF_CTRL__DIVISOR0 {15} \
+#    CONFIG.PSU__CRL_APB__NAND_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__PCAP_CTRL__ACT_FREQMHZ {187.498123} \
+#    CONFIG.PSU__CRL_APB__PCAP_CTRL__DIVISOR0 {8} \
+#    CONFIG.PSU__CRL_APB__PCAP_CTRL__FREQMHZ {200} \
+#    CONFIG.PSU__CRL_APB__PCAP_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__PL0_REF_CTRL__ACT_FREQMHZ {99.999001} \
+#    CONFIG.PSU__CRL_APB__PL0_REF_CTRL__DIVISOR0 {15} \
+#    CONFIG.PSU__CRL_APB__PL0_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__PL0_REF_CTRL__FREQMHZ {100} \
+#    CONFIG.PSU__CRL_APB__PL0_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__PL1_REF_CTRL__DIVISOR0 {4} \
+#    CONFIG.PSU__CRL_APB__PL1_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__PL2_REF_CTRL__DIVISOR0 {4} \
+#    CONFIG.PSU__CRL_APB__PL2_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__PL3_REF_CTRL__DIVISOR0 {4} \
+#    CONFIG.PSU__CRL_APB__PL3_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__QSPI_REF_CTRL__ACT_FREQMHZ {124.998749} \
+#    CONFIG.PSU__CRL_APB__QSPI_REF_CTRL__DIVISOR0 {12} \
+#    CONFIG.PSU__CRL_APB__QSPI_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__QSPI_REF_CTRL__FREQMHZ {125} \
+#    CONFIG.PSU__CRL_APB__QSPI_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__RPLL_CTRL__DIV2 {1} \
+#    CONFIG.PSU__CRL_APB__RPLL_CTRL__FBDIV {45} \
+#    CONFIG.PSU__CRL_APB__RPLL_CTRL__FRACDATA {0.000000} \
+#    CONFIG.PSU__CRL_APB__RPLL_CTRL__SRCSEL {PSS_REF_CLK} \
+#    CONFIG.PSU__CRL_APB__RPLL_FRAC_CFG__ENABLED {0} \
+#    CONFIG.PSU__CRL_APB__RPLL_TO_FPD_CTRL__DIVISOR0 {2} \
+#    CONFIG.PSU__CRL_APB__SDIO0_REF_CTRL__DIVISOR0 {7} \
+#    CONFIG.PSU__CRL_APB__SDIO0_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__SDIO1_REF_CTRL__ACT_FREQMHZ {187.498123} \
+#    CONFIG.PSU__CRL_APB__SDIO1_REF_CTRL__DIVISOR0 {8} \
+#    CONFIG.PSU__CRL_APB__SDIO1_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__SDIO1_REF_CTRL__FREQMHZ {200} \
+#    CONFIG.PSU__CRL_APB__SDIO1_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__SPI0_REF_CTRL__DIVISOR0 {7} \
+#    CONFIG.PSU__CRL_APB__SPI0_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__SPI1_REF_CTRL__DIVISOR0 {7} \
+#    CONFIG.PSU__CRL_APB__SPI1_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__TIMESTAMP_REF_CTRL__ACT_FREQMHZ {99.999001} \
+#    CONFIG.PSU__CRL_APB__TIMESTAMP_REF_CTRL__DIVISOR0 {15} \
+#    CONFIG.PSU__CRL_APB__TIMESTAMP_REF_CTRL__FREQMHZ {100} \
+#    CONFIG.PSU__CRL_APB__TIMESTAMP_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__UART0_REF_CTRL__ACT_FREQMHZ {99.999001} \
+#    CONFIG.PSU__CRL_APB__UART0_REF_CTRL__DIVISOR0 {15} \
+#    CONFIG.PSU__CRL_APB__UART0_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__UART0_REF_CTRL__FREQMHZ {100} \
+#    CONFIG.PSU__CRL_APB__UART0_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__UART1_REF_CTRL__ACT_FREQMHZ {99.999001} \
+#    CONFIG.PSU__CRL_APB__UART1_REF_CTRL__DIVISOR0 {15} \
+#    CONFIG.PSU__CRL_APB__UART1_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__UART1_REF_CTRL__FREQMHZ {100} \
+#    CONFIG.PSU__CRL_APB__UART1_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__USB0_BUS_REF_CTRL__ACT_FREQMHZ {249.997498} \
+#    CONFIG.PSU__CRL_APB__USB0_BUS_REF_CTRL__DIVISOR0 {6} \
+#    CONFIG.PSU__CRL_APB__USB0_BUS_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__USB0_BUS_REF_CTRL__FREQMHZ {250} \
+#    CONFIG.PSU__CRL_APB__USB0_BUS_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__USB1_BUS_REF_CTRL__DIVISOR0 {6} \
+#    CONFIG.PSU__CRL_APB__USB1_BUS_REF_CTRL__DIVISOR1 {1} \
+#    CONFIG.PSU__CRL_APB__USB3_DUAL_REF_CTRL__ACT_FREQMHZ {19.999800} \
+#    CONFIG.PSU__CRL_APB__USB3_DUAL_REF_CTRL__DIVISOR0 {25} \
+#    CONFIG.PSU__CRL_APB__USB3_DUAL_REF_CTRL__DIVISOR1 {3} \
+#    CONFIG.PSU__CRL_APB__USB3_DUAL_REF_CTRL__FREQMHZ {20} \
+#    CONFIG.PSU__CRL_APB__USB3_DUAL_REF_CTRL__SRCSEL {IOPLL} \
+#    CONFIG.PSU__CRL_APB__USB3__ENABLE {1} \
+#    CONFIG.PSU__CSUPMU__PERIPHERAL__VALID {1} \
+#    CONFIG.PSU__DDRC__ADDR_MIRROR {0} \
+#    CONFIG.PSU__DDRC__BANK_ADDR_COUNT {2} \
+#    CONFIG.PSU__DDRC__BG_ADDR_COUNT {1} \
+#    CONFIG.PSU__DDRC__BRC_MAPPING {ROW_BANK_COL} \
+#    CONFIG.PSU__DDRC__BUS_WIDTH {64 Bit} \
+#    CONFIG.PSU__DDRC__CL {15} \
+#    CONFIG.PSU__DDRC__CLOCK_STOP_EN {0} \
+#    CONFIG.PSU__DDRC__COL_ADDR_COUNT {10} \
+#    CONFIG.PSU__DDRC__COMPONENTS {UDIMM} \
+#    CONFIG.PSU__DDRC__CWL {14} \
+#    CONFIG.PSU__DDRC__DDR3L_T_REF_RANGE {NA} \
+#    CONFIG.PSU__DDRC__DDR3_T_REF_RANGE {NA} \
+#    CONFIG.PSU__DDRC__DDR4_ADDR_MAPPING {0} \
+#    CONFIG.PSU__DDRC__DDR4_CAL_MODE_ENABLE {0} \
+#    CONFIG.PSU__DDRC__DDR4_CRC_CONTROL {0} \
+#    CONFIG.PSU__DDRC__DDR4_T_REF_MODE {0} \
+#    CONFIG.PSU__DDRC__DDR4_T_REF_RANGE {Normal (0-85)} \
+#    CONFIG.PSU__DDRC__DEEP_PWR_DOWN_EN {0} \
+#    CONFIG.PSU__DDRC__DEVICE_CAPACITY {8192 MBits} \
+#    CONFIG.PSU__DDRC__DIMM_ADDR_MIRROR {0} \
+#    CONFIG.PSU__DDRC__DM_DBI {DM_NO_DBI} \
+#    CONFIG.PSU__DDRC__DQMAP_0_3 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_12_15 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_16_19 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_20_23 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_24_27 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_28_31 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_32_35 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_36_39 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_40_43 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_44_47 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_48_51 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_4_7 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_52_55 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_56_59 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_60_63 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_64_67 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_68_71 {0} \
+#    CONFIG.PSU__DDRC__DQMAP_8_11 {0} \
+#    CONFIG.PSU__DDRC__DRAM_WIDTH {16 Bits} \
+#    CONFIG.PSU__DDRC__ECC {Disabled} \
+#    CONFIG.PSU__DDRC__ENABLE_LP4_HAS_ECC_COMP {0} \
+#    CONFIG.PSU__DDRC__ENABLE_LP4_SLOWBOOT {0} \
+#    CONFIG.PSU__DDRC__FGRM {1X} \
+#    CONFIG.PSU__DDRC__LPDDR3_T_REF_RANGE {NA} \
+#    CONFIG.PSU__DDRC__LPDDR4_T_REF_RANGE {NA} \
+#    CONFIG.PSU__DDRC__LP_ASR {manual normal} \
+#    CONFIG.PSU__DDRC__MEMORY_TYPE {DDR 4} \
+#    CONFIG.PSU__DDRC__PARITY_ENABLE {0} \
+#    CONFIG.PSU__DDRC__PER_BANK_REFRESH {0} \
+#    CONFIG.PSU__DDRC__PHY_DBI_MODE {0} \
+#    CONFIG.PSU__DDRC__RANK_ADDR_COUNT {0} \
+#    CONFIG.PSU__DDRC__ROW_ADDR_COUNT {16} \
+#    CONFIG.PSU__DDRC__SB_TARGET {15-15-15} \
+#    CONFIG.PSU__DDRC__SELF_REF_ABORT {0} \
+#    CONFIG.PSU__DDRC__SPEED_BIN {DDR4_2133P} \
+#    CONFIG.PSU__DDRC__STATIC_RD_MODE {0} \
+#    CONFIG.PSU__DDRC__TRAIN_DATA_EYE {1} \
+#    CONFIG.PSU__DDRC__TRAIN_READ_GATE {1} \
+#    CONFIG.PSU__DDRC__TRAIN_WRITE_LEVEL {1} \
+#    CONFIG.PSU__DDRC__T_FAW {30.0} \
+#    CONFIG.PSU__DDRC__T_RAS_MIN {33} \
+#    CONFIG.PSU__DDRC__T_RC {47.06} \
+#    CONFIG.PSU__DDRC__T_RCD {15} \
+#    CONFIG.PSU__DDRC__T_RP {15} \
+#    CONFIG.PSU__DDRC__VENDOR_PART {OTHERS} \
+#    CONFIG.PSU__DDRC__VREF {1} \
+#    CONFIG.PSU__DDR_HIGH_ADDRESS_GUI_ENABLE {1} \
+#    CONFIG.PSU__DDR__INTERFACE__FREQMHZ {533.500} \
+#    CONFIG.PSU__DISPLAYPORT__LANE0__ENABLE {1} \
+#    CONFIG.PSU__DISPLAYPORT__LANE0__IO {GT Lane1} \
+#    CONFIG.PSU__DISPLAYPORT__LANE1__ENABLE {1} \
+#    CONFIG.PSU__DISPLAYPORT__LANE1__IO {GT Lane0} \
+#    CONFIG.PSU__DISPLAYPORT__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__DLL__ISUSED {1} \
+#    CONFIG.PSU__DPAUX__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__DPAUX__PERIPHERAL__IO {MIO 27 .. 30} \
+#    CONFIG.PSU__DP__LANE_SEL {Dual Lower} \
+#    CONFIG.PSU__DP__REF_CLK_FREQ {27} \
+#    CONFIG.PSU__DP__REF_CLK_SEL {Ref Clk1} \
+#    CONFIG.PSU__ENET3__FIFO__ENABLE {0} \
+#    CONFIG.PSU__ENET3__GRP_MDIO__ENABLE {1} \
+#    CONFIG.PSU__ENET3__GRP_MDIO__IO {MIO 76 .. 77} \
+#    CONFIG.PSU__ENET3__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__ENET3__PERIPHERAL__IO {MIO 64 .. 75} \
+#    CONFIG.PSU__ENET3__PTP__ENABLE {0} \
+#    CONFIG.PSU__ENET3__TSU__ENABLE {0} \
+#    CONFIG.PSU__FPDMASTERS_COHERENCY {0} \
+#    CONFIG.PSU__FPD_SLCR__WDT1__ACT_FREQMHZ {99.999001} \
+#    CONFIG.PSU__FPD_SLCR__WDT1__FREQMHZ {99.999001} \
+#    CONFIG.PSU__FPD_SLCR__WDT_CLK_SEL__SELECT {APB} \
+#    CONFIG.PSU__FPGA_PL0_ENABLE {1} \
+#    CONFIG.PSU__GEM3_COHERENCY {0} \
+#    CONFIG.PSU__GEM__TSU__ENABLE {0} \
+#    CONFIG.PSU__GPIO0_MIO__IO {MIO 0 .. 25} \
+#    CONFIG.PSU__GPIO0_MIO__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__GPIO1_MIO__IO {MIO 26 .. 51} \
+#    CONFIG.PSU__GPIO1_MIO__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__GT__LINK_SPEED {HBR} \
+#    CONFIG.PSU__GT__PRE_EMPH_LVL_4 {0} \
+#    CONFIG.PSU__GT__VLT_SWNG_LVL_4 {0} \
+#    CONFIG.PSU__HIGH_ADDRESS__ENABLE {1} \
+#    CONFIG.PSU__I2C0__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__I2C0__PERIPHERAL__IO {MIO 14 .. 15} \
+#    CONFIG.PSU__I2C1__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__I2C1__PERIPHERAL__IO {MIO 16 .. 17} \
+#    CONFIG.PSU__IOU_SLCR__IOU_TTC_APB_CLK__TTC0_SEL {APB} \
+#    CONFIG.PSU__IOU_SLCR__IOU_TTC_APB_CLK__TTC1_SEL {APB} \
+#    CONFIG.PSU__IOU_SLCR__IOU_TTC_APB_CLK__TTC2_SEL {APB} \
+#    CONFIG.PSU__IOU_SLCR__IOU_TTC_APB_CLK__TTC3_SEL {APB} \
+#    CONFIG.PSU__IOU_SLCR__TTC0__ACT_FREQMHZ {100.000000} \
+#    CONFIG.PSU__IOU_SLCR__TTC0__FREQMHZ {100.000000} \
+#    CONFIG.PSU__IOU_SLCR__TTC1__ACT_FREQMHZ {100.000000} \
+#    CONFIG.PSU__IOU_SLCR__TTC1__FREQMHZ {100.000000} \
+#    CONFIG.PSU__IOU_SLCR__TTC2__ACT_FREQMHZ {100.000000} \
+#    CONFIG.PSU__IOU_SLCR__TTC2__FREQMHZ {100.000000} \
+#    CONFIG.PSU__IOU_SLCR__TTC3__ACT_FREQMHZ {100.000000} \
+#    CONFIG.PSU__IOU_SLCR__TTC3__FREQMHZ {100.000000} \
+#    CONFIG.PSU__IOU_SLCR__WDT0__ACT_FREQMHZ {99.999001} \
+#    CONFIG.PSU__IOU_SLCR__WDT0__FREQMHZ {99.999001} \
+#    CONFIG.PSU__IOU_SLCR__WDT_CLK_SEL__SELECT {APB} \
+#    CONFIG.PSU__LPD_SLCR__CSUPMU__ACT_FREQMHZ {100.000000} \
+#    CONFIG.PSU__LPD_SLCR__CSUPMU__FREQMHZ {100.000000} \
+#    CONFIG.PSU__MAXIGP0__DATA_WIDTH {128} \
+#    CONFIG.PSU__MAXIGP1__DATA_WIDTH {128} \
+#    CONFIG.PSU__MAXIGP2__DATA_WIDTH {32} \
+#    CONFIG.PSU__OVERRIDE__BASIC_CLOCK {0} \
+#    CONFIG.PSU__PL_CLK0_BUF {TRUE} \
+#    CONFIG.PSU__PMU_COHERENCY {0} \
+#    CONFIG.PSU__PMU__AIBACK__ENABLE {0} \
+#    CONFIG.PSU__PMU__EMIO_GPI__ENABLE {0} \
+#    CONFIG.PSU__PMU__EMIO_GPO__ENABLE {0} \
+#    CONFIG.PSU__PMU__GPI0__ENABLE {0} \
+#    CONFIG.PSU__PMU__GPI1__ENABLE {0} \
+#    CONFIG.PSU__PMU__GPI2__ENABLE {0} \
+#    CONFIG.PSU__PMU__GPI3__ENABLE {0} \
+#    CONFIG.PSU__PMU__GPI4__ENABLE {0} \
+#    CONFIG.PSU__PMU__GPI5__ENABLE {0} \
+#    CONFIG.PSU__PMU__GPO0__ENABLE {1} \
+#    CONFIG.PSU__PMU__GPO0__IO {MIO 32} \
+#    CONFIG.PSU__PMU__GPO1__ENABLE {1} \
+#    CONFIG.PSU__PMU__GPO1__IO {MIO 33} \
+#    CONFIG.PSU__PMU__GPO2__ENABLE {1} \
+#    CONFIG.PSU__PMU__GPO2__IO {MIO 34} \
+#    CONFIG.PSU__PMU__GPO2__POLARITY {low} \
+#    CONFIG.PSU__PMU__GPO3__ENABLE {1} \
+#    CONFIG.PSU__PMU__GPO3__IO {MIO 35} \
+#    CONFIG.PSU__PMU__GPO3__POLARITY {low} \
+#    CONFIG.PSU__PMU__GPO4__ENABLE {1} \
+#    CONFIG.PSU__PMU__GPO4__IO {MIO 36} \
+#    CONFIG.PSU__PMU__GPO4__POLARITY {low} \
+#    CONFIG.PSU__PMU__GPO5__ENABLE {1} \
+#    CONFIG.PSU__PMU__GPO5__IO {MIO 37} \
+#    CONFIG.PSU__PMU__GPO5__POLARITY {low} \
+#    CONFIG.PSU__PMU__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__PMU__PLERROR__ENABLE {0} \
+#    CONFIG.PSU__PRESET_APPLIED {1} \
+#    CONFIG.PSU__PROTECTION__MASTERS {USB1:NonSecure;0|USB0:NonSecure;1|S_AXI_LPD:NA;0|S_AXI_HPC1_FPD:NA;0|S_AXI_HPC0_FPD:NA;0|S_AXI_HP3_FPD:NA;0|S_AXI_HP2_FPD:NA;0|S_AXI_HP1_FPD:NA;0|S_AXI_HP0_FPD:NA;0|S_AXI_ACP:NA;0|S_AXI_ACE:NA;0|SD1:NonSecure;1|SD0:NonSecure;0|SATA1:NonSecure;1|SATA0:NonSecure;1|RPU1:Secure;1|RPU0:Secure;1|QSPI:NonSecure;1|PMU:NA;1|PCIe:NonSecure;0|NAND:NonSecure;0|LDMA:NonSecure;1|GPU:NonSecure;1|GEM3:NonSecure;1|GEM2:NonSecure;0|GEM1:NonSecure;0|GEM0:NonSecure;0|FDMA:NonSecure;1|DP:NonSecure;1|DAP:NA;1|Coresight:NA;1|CSU:NA;1|APU:NA;1} \
+#    CONFIG.PSU__PROTECTION__SLAVES {LPD;USB3_1_XHCI;FE300000;FE3FFFFF;0|LPD;USB3_1;FF9E0000;FF9EFFFF;0|LPD;USB3_0_XHCI;FE200000;FE2FFFFF;1|LPD;USB3_0;FF9D0000;FF9DFFFF;1|LPD;UART1;FF010000;FF01FFFF;1|LPD;UART0;FF000000;FF00FFFF;1|LPD;TTC3;FF140000;FF14FFFF;1|LPD;TTC2;FF130000;FF13FFFF;1|LPD;TTC1;FF120000;FF12FFFF;1|LPD;TTC0;FF110000;FF11FFFF;1|FPD;SWDT1;FD4D0000;FD4DFFFF;1|LPD;SWDT0;FF150000;FF15FFFF;1|LPD;SPI1;FF050000;FF05FFFF;0|LPD;SPI0;FF040000;FF04FFFF;0|FPD;SMMU_REG;FD5F0000;FD5FFFFF;1|FPD;SMMU;FD800000;FDFFFFFF;1|FPD;SIOU;FD3D0000;FD3DFFFF;1|FPD;SERDES;FD400000;FD47FFFF;1|LPD;SD1;FF170000;FF17FFFF;1|LPD;SD0;FF160000;FF16FFFF;0|FPD;SATA;FD0C0000;FD0CFFFF;1|LPD;RTC;FFA60000;FFA6FFFF;1|LPD;RSA_CORE;FFCE0000;FFCEFFFF;1|LPD;RPU;FF9A0000;FF9AFFFF;1|FPD;RCPU_GIC;F9000000;F900FFFF;1|LPD;R5_TCM_RAM_GLOBAL;FFE00000;FFE3FFFF;1|LPD;R5_1_Instruction_Cache;FFEC0000;FFECFFFF;1|LPD;R5_1_Data_Cache;FFED0000;FFEDFFFF;1|LPD;R5_1_BTCM_GLOBAL;FFEB0000;FFEBFFFF;1|LPD;R5_1_ATCM_GLOBAL;FFE90000;FFE9FFFF;1|LPD;R5_0_Instruction_Cache;FFE40000;FFE4FFFF;1|LPD;R5_0_Data_Cache;FFE50000;FFE5FFFF;1|LPD;R5_0_BTCM_GLOBAL;FFE20000;FFE2FFFF;1|LPD;R5_0_ATCM_GLOBAL;FFE00000;FFE0FFFF;1|LPD;QSPI_Linear_Address;C0000000;DFFFFFFF;1|LPD;QSPI;FF0F0000;FF0FFFFF;1|LPD;PMU_RAM;FFDC0000;FFDDFFFF;1|LPD;PMU_GLOBAL;FFD80000;FFDBFFFF;1|FPD;PCIE_MAIN;FD0E0000;FD0EFFFF;0|FPD;PCIE_LOW;E0000000;EFFFFFFF;0|FPD;PCIE_HIGH2;8000000000;BFFFFFFFFF;0|FPD;PCIE_HIGH1;600000000;7FFFFFFFF;0|FPD;PCIE_DMA;FD0F0000;FD0FFFFF;0|FPD;PCIE_ATTRIB;FD480000;FD48FFFF;0|LPD;OCM_XMPU_CFG;FFA70000;FFA7FFFF;1|LPD;OCM_SLCR;FF960000;FF96FFFF;1|OCM;OCM;FFFC0000;FFFFFFFF;1|LPD;NAND;FF100000;FF10FFFF;0|LPD;MBISTJTAG;FFCF0000;FFCFFFFF;1|LPD;LPD_XPPU_SINK;FF9C0000;FF9CFFFF;1|LPD;LPD_XPPU;FF980000;FF98FFFF;1|LPD;LPD_SLCR_SECURE;FF4B0000;FF4DFFFF;1|LPD;LPD_SLCR;FF410000;FF4AFFFF;1|LPD;LPD_GPV;FE100000;FE1FFFFF;1|LPD;LPD_DMA_7;FFAF0000;FFAFFFFF;1|LPD;LPD_DMA_6;FFAE0000;FFAEFFFF;1|LPD;LPD_DMA_5;FFAD0000;FFADFFFF;1|LPD;LPD_DMA_4;FFAC0000;FFACFFFF;1|LPD;LPD_DMA_3;FFAB0000;FFABFFFF;1|LPD;LPD_DMA_2;FFAA0000;FFAAFFFF;1|LPD;LPD_DMA_1;FFA90000;FFA9FFFF;1|LPD;LPD_DMA_0;FFA80000;FFA8FFFF;1|LPD;IPI_CTRL;FF380000;FF3FFFFF;1|LPD;IOU_SLCR;FF180000;FF23FFFF;1|LPD;IOU_SECURE_SLCR;FF240000;FF24FFFF;1|LPD;IOU_SCNTRS;FF260000;FF26FFFF;1|LPD;IOU_SCNTR;FF250000;FF25FFFF;1|LPD;IOU_GPV;FE000000;FE0FFFFF;1|LPD;I2C1;FF030000;FF03FFFF;1|LPD;I2C0;FF020000;FF02FFFF;1|FPD;GPU;FD4B0000;FD4BFFFF;1|LPD;GPIO;FF0A0000;FF0AFFFF;1|LPD;GEM3;FF0E0000;FF0EFFFF;1|LPD;GEM2;FF0D0000;FF0DFFFF;0|LPD;GEM1;FF0C0000;FF0CFFFF;0|LPD;GEM0;FF0B0000;FF0BFFFF;0|FPD;FPD_XMPU_SINK;FD4F0000;FD4FFFFF;1|FPD;FPD_XMPU_CFG;FD5D0000;FD5DFFFF;1|FPD;FPD_SLCR_SECURE;FD690000;FD6CFFFF;1|FPD;FPD_SLCR;FD610000;FD68FFFF;1|FPD;FPD_GPV;FD700000;FD7FFFFF;1|FPD;FPD_DMA_CH7;FD570000;FD57FFFF;1|FPD;FPD_DMA_CH6;FD560000;FD56FFFF;1|FPD;FPD_DMA_CH5;FD550000;FD55FFFF;1|FPD;FPD_DMA_CH4;FD540000;FD54FFFF;1|FPD;FPD_DMA_CH3;FD530000;FD53FFFF;1|FPD;FPD_DMA_CH2;FD520000;FD52FFFF;1|FPD;FPD_DMA_CH1;FD510000;FD51FFFF;1|FPD;FPD_DMA_CH0;FD500000;FD50FFFF;1|LPD;EFUSE;FFCC0000;FFCCFFFF;1|FPD;Display Port;FD4A0000;FD4AFFFF;1|FPD;DPDMA;FD4C0000;FD4CFFFF;1|FPD;DDR_XMPU5_CFG;FD050000;FD05FFFF;1|FPD;DDR_XMPU4_CFG;FD040000;FD04FFFF;1|FPD;DDR_XMPU3_CFG;FD030000;FD03FFFF;1|FPD;DDR_XMPU2_CFG;FD020000;FD02FFFF;1|FPD;DDR_XMPU1_CFG;FD010000;FD01FFFF;1|FPD;DDR_XMPU0_CFG;FD000000;FD00FFFF;1|FPD;DDR_QOS_CTRL;FD090000;FD09FFFF;1|FPD;DDR_PHY;FD080000;FD08FFFF;1|DDR;DDR_LOW;0;7FFFFFFF;1|DDR;DDR_HIGH;800000000;87FFFFFFF;1|FPD;DDDR_CTRL;FD070000;FD070FFF;1|LPD;Coresight;FE800000;FEFFFFFF;1|LPD;CSU_DMA;FFC80000;FFC9FFFF;1|LPD;CSU;FFCA0000;FFCAFFFF;0|LPD;CRL_APB;FF5E0000;FF85FFFF;1|FPD;CRF_APB;FD1A0000;FD2DFFFF;1|FPD;CCI_REG;FD5E0000;FD5EFFFF;1|FPD;CCI_GPV;FD6E0000;FD6EFFFF;1|LPD;CAN1;FF070000;FF07FFFF;0|LPD;CAN0;FF060000;FF06FFFF;0|FPD;APU;FD5C0000;FD5CFFFF;1|LPD;APM_INTC_IOU;FFA20000;FFA2FFFF;1|LPD;APM_FPD_LPD;FFA30000;FFA3FFFF;1|FPD;APM_5;FD490000;FD49FFFF;1|FPD;APM_0;FD0B0000;FD0BFFFF;1|LPD;APM2;FFA10000;FFA1FFFF;1|LPD;APM1;FFA00000;FFA0FFFF;1|LPD;AMS;FFA50000;FFA5FFFF;1|FPD;AFI_5;FD3B0000;FD3BFFFF;1|FPD;AFI_4;FD3A0000;FD3AFFFF;1|FPD;AFI_3;FD390000;FD39FFFF;1|FPD;AFI_2;FD380000;FD38FFFF;1|FPD;AFI_1;FD370000;FD37FFFF;1|FPD;AFI_0;FD360000;FD36FFFF;1|LPD;AFIFM6;FF9B0000;FF9BFFFF;1|FPD;ACPU_GIC;F9010000;F907FFFF;1} \
+#    CONFIG.PSU__PSS_REF_CLK__FREQMHZ {33.333} \
+#    CONFIG.PSU__QSPI_COHERENCY {0} \
+#    CONFIG.PSU__QSPI__GRP_FBCLK__ENABLE {1} \
+#    CONFIG.PSU__QSPI__GRP_FBCLK__IO {MIO 6} \
+#    CONFIG.PSU__QSPI__PERIPHERAL__DATA_MODE {x4} \
+#    CONFIG.PSU__QSPI__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__QSPI__PERIPHERAL__IO {MIO 0 .. 12} \
+#    CONFIG.PSU__QSPI__PERIPHERAL__MODE {Dual Parallel} \
+#    CONFIG.PSU__SATA__LANE0__ENABLE {0} \
+#    CONFIG.PSU__SATA__LANE1__ENABLE {1} \
+#    CONFIG.PSU__SATA__LANE1__IO {GT Lane3} \
+#    CONFIG.PSU__SATA__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__SATA__REF_CLK_FREQ {125} \
+#    CONFIG.PSU__SATA__REF_CLK_SEL {Ref Clk3} \
+#    CONFIG.PSU__SD1_COHERENCY {0} \
+#    CONFIG.PSU__SD1__DATA_TRANSFER_MODE {8Bit} \
+#    CONFIG.PSU__SD1__GRP_CD__ENABLE {1} \
+#    CONFIG.PSU__SD1__GRP_CD__IO {MIO 45} \
+#    CONFIG.PSU__SD1__GRP_POW__ENABLE {0} \
+#    CONFIG.PSU__SD1__GRP_WP__ENABLE {0} \
+#    CONFIG.PSU__SD1__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__SD1__PERIPHERAL__IO {MIO 39 .. 51} \
+#    CONFIG.PSU__SD1__RESET__ENABLE {0} \
+#    CONFIG.PSU__SD1__SLOT_TYPE {SD 3.0} \
+#    CONFIG.PSU__SWDT0__CLOCK__ENABLE {0} \
+#    CONFIG.PSU__SWDT0__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__SWDT0__RESET__ENABLE {0} \
+#    CONFIG.PSU__SWDT1__CLOCK__ENABLE {0} \
+#    CONFIG.PSU__SWDT1__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__SWDT1__RESET__ENABLE {0} \
+#    CONFIG.PSU__TSU__BUFG_PORT_PAIR {0} \
+#    CONFIG.PSU__TTC0__CLOCK__ENABLE {0} \
+#    CONFIG.PSU__TTC0__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__TTC0__WAVEOUT__ENABLE {0} \
+#    CONFIG.PSU__TTC1__CLOCK__ENABLE {0} \
+#    CONFIG.PSU__TTC1__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__TTC1__WAVEOUT__ENABLE {0} \
+#    CONFIG.PSU__TTC2__CLOCK__ENABLE {0} \
+#    CONFIG.PSU__TTC2__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__TTC2__WAVEOUT__ENABLE {0} \
+#    CONFIG.PSU__TTC3__CLOCK__ENABLE {0} \
+#    CONFIG.PSU__TTC3__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__TTC3__WAVEOUT__ENABLE {0} \
+#    CONFIG.PSU__UART0__BAUD_RATE {115200} \
+#    CONFIG.PSU__UART0__MODEM__ENABLE {0} \
+#    CONFIG.PSU__UART0__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__UART0__PERIPHERAL__IO {MIO 18 .. 19} \
+#    CONFIG.PSU__UART1__BAUD_RATE {115200} \
+#    CONFIG.PSU__UART1__MODEM__ENABLE {0} \
+#    CONFIG.PSU__UART1__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__UART1__PERIPHERAL__IO {EMIO} \
+#    CONFIG.PSU__USB0_COHERENCY {0} \
+#    CONFIG.PSU__USB0__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__USB0__PERIPHERAL__IO {MIO 52 .. 63} \
+#    CONFIG.PSU__USB0__REF_CLK_FREQ {26} \
+#    CONFIG.PSU__USB0__REF_CLK_SEL {Ref Clk2} \
+#    CONFIG.PSU__USB0__RESET__ENABLE {0} \
+#    CONFIG.PSU__USB1__RESET__ENABLE {0} \
+#    CONFIG.PSU__USB2_0__EMIO__ENABLE {0} \
+#    CONFIG.PSU__USB3_0__EMIO__ENABLE {0} \
+#    CONFIG.PSU__USB3_0__PERIPHERAL__ENABLE {1} \
+#    CONFIG.PSU__USB3_0__PERIPHERAL__IO {GT Lane2} \
+#    CONFIG.PSU__USB__RESET__MODE {Boot Pin} \
+#    CONFIG.PSU__USB__RESET__POLARITY {Active Low} \
+#    CONFIG.PSU__USE__IRQ0 {1} \
+#    CONFIG.PSU__USE__M_AXI_GP0 {1} \
+#    CONFIG.PSU__USE__M_AXI_GP1 {0} \
+#    CONFIG.PSU__USE__M_AXI_GP2 {0} \
+#    CONFIG.SUBPRESET1 {Custom} \
+#  ] $zynq_ultra_ps_e_0
+# 
+#   # Create interface connections
+#   connect_bd_intf_net -intf_net bpsk_modulation_0_demod_data [get_bd_intf_pins demodulation_0/demod_out] [get_bd_intf_pins rate_recovery_0/RRdataIn]
+# connect_bd_intf_net -intf_net [get_bd_intf_nets bpsk_modulation_0_demod_data] [get_bd_intf_pins rate_recovery_0/RRdataIn] [get_bd_intf_pins system_ila_0/SLOT_8_AXIS]
+#   connect_bd_intf_net -intf_net config_decoder_0_dec_ctrl_V_V [get_bd_intf_pins config_decoder_0/dec_ctrl_V_V] [get_bd_intf_pins dec/S_AXIS_CTRL]
+# connect_bd_intf_net -intf_net [get_bd_intf_nets config_decoder_0_dec_ctrl_V_V] [get_bd_intf_pins dec/S_AXIS_CTRL] [get_bd_intf_pins system_ila_0/SLOT_11_AXIS]
+#   connect_bd_intf_net -intf_net config_decoder_0_dec_din_words [get_bd_intf_pins config_decoder_0/dec_din_words] [get_bd_intf_pins dec/S_AXIS_DIN_WORDS]
+# connect_bd_intf_net -intf_net [get_bd_intf_nets config_decoder_0_dec_din_words] [get_bd_intf_pins dec/S_AXIS_DIN_WORDS] [get_bd_intf_pins system_ila_0/SLOT_12_AXIS]
+#   connect_bd_intf_net -intf_net config_decoder_0_dec_dout_words [get_bd_intf_pins config_decoder_0/dec_dout_words] [get_bd_intf_pins dec/S_AXIS_DOUT_WORDS]
+# connect_bd_intf_net -intf_net [get_bd_intf_nets config_decoder_0_dec_dout_words] [get_bd_intf_pins dec/S_AXIS_DOUT_WORDS] [get_bd_intf_pins system_ila_0/SLOT_13_AXIS]
+#   connect_bd_intf_net -intf_net config_encoder_0_din_words [get_bd_intf_pins config_encoder_0/din_words] [get_bd_intf_pins enc/S_AXIS_DIN_WORDS]
+# connect_bd_intf_net -intf_net [get_bd_intf_nets config_encoder_0_din_words] [get_bd_intf_pins enc/S_AXIS_DIN_WORDS] [get_bd_intf_pins system_ila_0/SLOT_2_AXIS]
+#   connect_bd_intf_net -intf_net config_encoder_0_dout_words [get_bd_intf_pins config_encoder_0/dout_words] [get_bd_intf_pins enc/S_AXIS_DOUT_WORDS]
+# connect_bd_intf_net -intf_net [get_bd_intf_nets config_encoder_0_dout_words] [get_bd_intf_pins enc/S_AXIS_DOUT_WORDS] [get_bd_intf_pins system_ila_0/SLOT_3_AXIS]
+#   connect_bd_intf_net -intf_net config_encoder_0_enc_ctrl_V_V [get_bd_intf_pins config_encoder_0/enc_ctrl_V_V] [get_bd_intf_pins enc/S_AXIS_CTRL]
+# connect_bd_intf_net -intf_net [get_bd_intf_nets config_encoder_0_enc_ctrl_V_V] [get_bd_intf_pins enc/S_AXIS_CTRL] [get_bd_intf_pins system_ila_0/SLOT_0_AXIS]
+# connect_bd_intf_net -intf_net dec_M_AXIS_DOUT [get_bd_intf_pins dec/M_AXIS_DOUT] [get_bd_intf_pins system_ila_0/SLOT_14_AXIS]
+# connect_bd_intf_net -intf_net dec_M_AXIS_STATUS [get_bd_intf_pins dec/M_AXIS_STATUS] [get_bd_intf_pins system_ila_0/SLOT_15_AXIS]
+#   connect_bd_intf_net -intf_net enc_M_AXIS_DOUT [get_bd_intf_pins enc/M_AXIS_DOUT] [get_bd_intf_pins subblockint_0/ITLVdataIn]
+# connect_bd_intf_net -intf_net [get_bd_intf_nets enc_M_AXIS_DOUT] [get_bd_intf_pins subblockint_0/ITLVdataIn] [get_bd_intf_pins system_ila_0/SLOT_4_AXIS]
+# connect_bd_intf_net -intf_net enc_M_AXIS_STATUS [get_bd_intf_pins enc/M_AXIS_STATUS] [get_bd_intf_pins system_ila_0/SLOT_5_AXIS]
+#   connect_bd_intf_net -intf_net modulation_0_sym_imag [get_bd_intf_pins demodulation_0/imag_in] [get_bd_intf_pins modulation_0/sym_imag]
+#   connect_bd_intf_net -intf_net modulation_0_sym_real [get_bd_intf_pins demodulation_0/real_in] [get_bd_intf_pins modulation_0/sym_real]
+#   connect_bd_intf_net -intf_net ps8_0_axi_periph_M00_AXI [get_bd_intf_pins enc/S_AXI] [get_bd_intf_pins ps8_0_axi_periph/M00_AXI]
+#   connect_bd_intf_net -intf_net ps8_0_axi_periph_M01_AXI [get_bd_intf_pins dec/S_AXI] [get_bd_intf_pins ps8_0_axi_periph/M01_AXI]
+#   connect_bd_intf_net -intf_net ps8_0_axi_periph_M02_AXI [get_bd_intf_pins axi_traffic_gen_0/S_AXI] [get_bd_intf_pins ps8_0_axi_periph/M02_AXI]
+#   connect_bd_intf_net -intf_net rate_match_0_RMdataOut [get_bd_intf_pins modulation_0/bit_in] [get_bd_intf_pins rate_match_0/RMdataOut]
+# connect_bd_intf_net -intf_net [get_bd_intf_nets rate_match_0_RMdataOut] [get_bd_intf_pins rate_match_0/RMdataOut] [get_bd_intf_pins system_ila_0/SLOT_7_AXIS]
+#   connect_bd_intf_net -intf_net rate_recovery_0_RRdataOut [get_bd_intf_pins rate_recovery_0/RRdataOut] [get_bd_intf_pins subblockdeint_0/DEITLVdataIn]
+# connect_bd_intf_net -intf_net [get_bd_intf_nets rate_recovery_0_RRdataOut] [get_bd_intf_pins subblockdeint_0/DEITLVdataIn] [get_bd_intf_pins system_ila_0/SLOT_9_AXIS]
+#   connect_bd_intf_net -intf_net subblockdeint_0_DEITLVdataOut [get_bd_intf_pins dec/S_AXIS_DIN] [get_bd_intf_pins subblockdeint_0/DEITLVdataOut]
+# connect_bd_intf_net -intf_net [get_bd_intf_nets subblockdeint_0_DEITLVdataOut] [get_bd_intf_pins subblockdeint_0/DEITLVdataOut] [get_bd_intf_pins system_ila_0/SLOT_10_AXIS]
+#   connect_bd_intf_net -intf_net subblockint_0_ITLVdataOut [get_bd_intf_pins rate_match_0/RMdataIn] [get_bd_intf_pins subblockint_0/ITLVdataOut]
+# connect_bd_intf_net -intf_net [get_bd_intf_nets subblockint_0_ITLVdataOut] [get_bd_intf_pins subblockint_0/ITLVdataOut] [get_bd_intf_pins system_ila_0/SLOT_6_AXIS]
+#   connect_bd_intf_net -intf_net traffic_gen_0_data_gen [get_bd_intf_pins axi_traffic_gen_0/M_AXIS_MASTER] [get_bd_intf_pins enc/S_AXIS_DIN]
+# connect_bd_intf_net -intf_net [get_bd_intf_nets traffic_gen_0_data_gen] [get_bd_intf_pins axi_traffic_gen_0/M_AXIS_MASTER] [get_bd_intf_pins system_ila_0/SLOT_1_AXIS]
+#   connect_bd_intf_net -intf_net zynq_ultra_ps_e_0_M_AXI_HPM0_FPD [get_bd_intf_pins ps8_0_axi_periph/S00_AXI] [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_FPD]
+# 
+#   # Create port connections
+#   connect_bd_net -net dec_interrupt [get_bd_pins dec/interrupt] [get_bd_pins system_ila_0/probe1]
+#   connect_bd_net -net enc_interrupt [get_bd_pins enc/interrupt] [get_bd_pins system_ila_0/probe0]
+#   connect_bd_net -net rst_ps8_0_99M_peripheral_aresetn [get_bd_pins axi_traffic_gen_0/s_axi_aresetn] [get_bd_pins config_decoder_0/ap_rst_n] [get_bd_pins config_encoder_0/ap_rst_n] [get_bd_pins dec/reset_n] [get_bd_pins demodulation_0/ap_rst_n] [get_bd_pins enc/reset_n] [get_bd_pins modulation_0/ap_rst_n] [get_bd_pins ps8_0_axi_periph/ARESETN] [get_bd_pins ps8_0_axi_periph/M00_ARESETN] [get_bd_pins ps8_0_axi_periph/M01_ARESETN] [get_bd_pins ps8_0_axi_periph/M02_ARESETN] [get_bd_pins ps8_0_axi_periph/S00_ARESETN] [get_bd_pins rate_match_0/ap_rst_n] [get_bd_pins rate_recovery_0/ap_rst_n] [get_bd_pins rst_ps8_0_99M/peripheral_aresetn] [get_bd_pins subblockdeint_0/ap_rst_n] [get_bd_pins subblockint_0/ap_rst_n] [get_bd_pins system_ila_0/resetn]
+#   connect_bd_net -net vio_0_probe_out0 [get_bd_pins axi_traffic_gen_0/core_ext_start] [get_bd_pins config_decoder_0/ap_start] [get_bd_pins config_encoder_0/ap_start] [get_bd_pins demodulation_0/ap_start] [get_bd_pins modulation_0/ap_start] [get_bd_pins rate_match_0/ap_start] [get_bd_pins rate_recovery_0/ap_start] [get_bd_pins subblockdeint_0/ap_start] [get_bd_pins subblockint_0/ap_start] [get_bd_pins vio_0/probe_out0]
+#   connect_bd_net -net xlconstant_0_dout [get_bd_pins dec/m_axis_dout_tready] [get_bd_pins dec/m_axis_status_tready] [get_bd_pins enc/m_axis_status_tready] [get_bd_pins xlconstant_0/dout]
+#   connect_bd_net -net xlconstant_1_dout [get_bd_pins axi_traffic_gen_0/core_ext_stop] [get_bd_pins xlconstant_1/dout]
+#   connect_bd_net -net zynq_ultra_ps_e_0_pl_clk0 [get_bd_pins axi_traffic_gen_0/s_axi_aclk] [get_bd_pins config_decoder_0/ap_clk] [get_bd_pins config_encoder_0/ap_clk] [get_bd_pins dec/core_clk] [get_bd_pins demodulation_0/ap_clk] [get_bd_pins enc/core_clk] [get_bd_pins modulation_0/ap_clk] [get_bd_pins ps8_0_axi_periph/ACLK] [get_bd_pins ps8_0_axi_periph/M00_ACLK] [get_bd_pins ps8_0_axi_periph/M01_ACLK] [get_bd_pins ps8_0_axi_periph/M02_ACLK] [get_bd_pins ps8_0_axi_periph/S00_ACLK] [get_bd_pins rate_match_0/ap_clk] [get_bd_pins rate_recovery_0/ap_clk] [get_bd_pins rst_ps8_0_99M/slowest_sync_clk] [get_bd_pins subblockdeint_0/ap_clk] [get_bd_pins subblockint_0/ap_clk] [get_bd_pins system_ila_0/clk] [get_bd_pins vio_0/clk] [get_bd_pins zynq_ultra_ps_e_0/maxihpm0_fpd_aclk] [get_bd_pins zynq_ultra_ps_e_0/pl_clk0]
+#   connect_bd_net -net zynq_ultra_ps_e_0_pl_resetn0 [get_bd_pins rst_ps8_0_99M/ext_reset_in] [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0]
+# 
+#   # Create address segments
+#   create_bd_addr_seg -range 0x00010000 -offset 0xA0080000 [get_bd_addr_spaces zynq_ultra_ps_e_0/Data] [get_bd_addr_segs axi_traffic_gen_0/S_AXI/Reg0] SEG_axi_traffic_gen_0_Reg0
+#   create_bd_addr_seg -range 0x00040000 -offset 0xA0040000 [get_bd_addr_spaces zynq_ultra_ps_e_0/Data] [get_bd_addr_segs dec/S_AXI/PARAMS] SEG_dec_PARAMS
+#   create_bd_addr_seg -range 0x00040000 -offset 0xA0000000 [get_bd_addr_spaces zynq_ultra_ps_e_0/Data] [get_bd_addr_segs enc/S_AXI/PARAMS] SEG_enc_PARAMS
+# 
+# 
+#   # Restore current instance
+#   current_bd_instance $oldCurInst
+# 
+#   validate_bd_design
+#   save_bd_design
+# }
+# create_root_design ""
+INFO: [Device 21-403] Loading part xczu21dr-ffvd1156-2-e
+create_bd_cell: Time (s): cpu = 00:00:10 ; elapsed = 00:00:16 . Memory (MB): peak = 7425.145 ; gain = 861.477 ; free physical = 33967 ; free virtual = 39047
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+WARNING: [BD 41-1306] The connection to interface pin /config_decoder_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /config_encoder_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /demodulation_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /modulation_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /rate_match_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /rate_recovery_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /subblockdeint_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /subblockint_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /dec/m_axis_dout_tready is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_DOUT
+WARNING: [BD 41-1306] The connection to interface pin /dec/m_axis_status_tready is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_STATUS
+WARNING: [BD 41-1306] The connection to interface pin /enc/m_axis_status_tready is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_STATUS
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /enc/S_AXIS_DIN(16) and /axi_traffic_gen_0/M_AXIS_MASTER(4)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/m00_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/m00_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/m01_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M01_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/m01_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M01_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/m02_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/m02_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M02_AXI(16)
+validate_bd_design: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 7628.379 ; gain = 70.266 ; free physical = 33692 ; free virtual = 38795
+Wrote  : </home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+update_compile_order -fileset sources_1
+group_bd_cells tx [get_bd_cells config_encoder_0] [get_bd_cells axi_traffic_gen_0] [get_bd_cells subblockint_0] [get_bd_cells modulation_0] [get_bd_cells enc] [get_bd_cells rate_match_0] [get_bd_cells vio_0] [get_bd_cells xlconstant_1]
+WARNING: [BD 41-1306] The connection to interface pin /tx/modulation_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /tx/rate_match_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /tx/subblockint_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /tx/config_encoder_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /tx/enc/m_axis_status_tready is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_STATUS
+regenerate_bd_layout -routing
+regenerate_bd_layout
+group_bd_cells rx [get_bd_cells rate_recovery_0] [get_bd_cells demodulation_0] [get_bd_cells config_decoder_0] [get_bd_cells subblockdeint_0] [get_bd_cells dec]
+WARNING: [BD 41-1306] The connection to interface pin /rx/config_decoder_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /rx/demodulation_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /rx/subblockdeint_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /rx/rate_recovery_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /rx/dec/m_axis_dout_tready is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_DOUT
+WARNING: [BD 41-1306] The connection to interface pin /rx/dec/m_axis_status_tready is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_STATUS
+regenerate_bd_layout -routing
+regenerate_bd_layout
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+INFO: [PSU-1]  DP_AUDIO clock source: RPLL is also being used by other peripheral clocks. Their outputs may get impacted if any driver changes DP_AUDIO PLL source to support runtime audio change 
+startgroup
+set_property -dict [list CONFIG.PSU__ENET3__PERIPHERAL__ENABLE {0} CONFIG.PSU__GPIO0_MIO__PERIPHERAL__ENABLE {0} CONFIG.PSU__GPIO1_MIO__PERIPHERAL__ENABLE {0} CONFIG.PSU__I2C0__PERIPHERAL__ENABLE {0} CONFIG.PSU__I2C1__PERIPHERAL__ENABLE {0} CONFIG.PSU__QSPI__PERIPHERAL__ENABLE {0} CONFIG.PSU__SD1__PERIPHERAL__ENABLE {0} CONFIG.PSU__UART0__PERIPHERAL__ENABLE {1} CONFIG.PSU__UART0__PERIPHERAL__IO {MIO 26 .. 27} CONFIG.PSU__UART1__PERIPHERAL__ENABLE {0} CONFIG.PSU__USB0__PERIPHERAL__ENABLE {0} CONFIG.PSU_BANK_1_IO_STANDARD {LVCMOS33} CONFIG.PSU_BANK_2_IO_STANDARD {LVCMOS33} CONFIG.PSU_BANK_3_IO_STANDARD {LVCMOS18} CONFIG.PSU__DISPLAYPORT__PERIPHERAL__ENABLE {0}] [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+validate_bd_design
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/m00_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/m00_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/m01_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M01_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/m01_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M01_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/m02_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/m02_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M02_AXI(16)
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /tx/enc/S_AXIS_DIN(16) and /tx/axi_traffic_gen_0/M_AXIS_MASTER(4)
+WARNING: [BD 41-1271] The connection to the pin: /tx/enc/m_axis_status_tready has been overridden by the user. This pin will not be connected as a part of the interface connection: enc_M_AXIS_STATUS 
+WARNING: [BD 41-1271] The connection to the pin: /rx/dec/m_axis_dout_tready has been overridden by the user. This pin will not be connected as a part of the interface connection: dec_M_AXIS_DOUT 
+WARNING: [BD 41-1271] The connection to the pin: /rx/dec/m_axis_status_tready has been overridden by the user. This pin will not be connected as a part of the interface connection: dec_M_AXIS_STATUS 
+CRITICAL WARNING: [BD 41-120] Mismatch in sizes when expanding bus interface connection config_decoder_0_dec_din_words for logical port TDATA. Connection may be incorrect or missing.
+CRITICAL WARNING: [BD 41-120] Mismatch in sizes when expanding bus interface connection config_decoder_0_dec_dout_words for logical port TDATA. Connection may be incorrect or missing.
+CRITICAL WARNING: [BD 41-120] Mismatch in sizes when expanding bus interface connection config_encoder_0_din_words for logical port TDATA. Connection may be incorrect or missing.
+CRITICAL WARNING: [BD 41-120] Mismatch in sizes when expanding bus interface connection config_encoder_0_dout_words for logical port TDATA. Connection may be incorrect or missing.
+validate_bd_design: Time (s): cpu = 00:00:07 ; elapsed = 00:00:05 . Memory (MB): peak = 7952.008 ; gain = 0.000 ; free physical = 33496 ; free virtual = 38688
+save_bd_design
+Wrote  : </home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+make_wrapper -files [get_files /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/design_1.bd] -top
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1271] The connection to the pin: /tx/enc/m_axis_status_tready has been overridden by the user. This pin will not be connected as a part of the interface connection: enc_M_AXIS_STATUS 
+WARNING: [BD 41-1271] The connection to the pin: /rx/dec/m_axis_dout_tready has been overridden by the user. This pin will not be connected as a part of the interface connection: dec_M_AXIS_DOUT 
+WARNING: [BD 41-1271] The connection to the pin: /rx/dec/m_axis_status_tready has been overridden by the user. This pin will not be connected as a part of the interface connection: dec_M_AXIS_STATUS 
+CRITICAL WARNING: [BD 41-120] Mismatch in sizes when expanding bus interface connection config_decoder_0_dec_din_words for logical port TDATA. Connection may be incorrect or missing.
+CRITICAL WARNING: [BD 41-120] Mismatch in sizes when expanding bus interface connection config_decoder_0_dec_dout_words for logical port TDATA. Connection may be incorrect or missing.
+CRITICAL WARNING: [BD 41-120] Mismatch in sizes when expanding bus interface connection config_encoder_0_din_words for logical port TDATA. Connection may be incorrect or missing.
+CRITICAL WARNING: [BD 41-120] Mismatch in sizes when expanding bus interface connection config_encoder_0_dout_words for logical port TDATA. Connection may be incorrect or missing.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/tx/enc/s_axis_din_tdata'(128) to net 'traffic_gen_0_data_gen_TDATA'(32) - Only lower order bits will be connected.
+VHDL Output written to : /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/tx/enc/s_axis_din_tdata'(128) to net 'traffic_gen_0_data_gen_TDATA'(32) - Only lower order bits will be connected.
+VHDL Output written to : /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+add_files -norecurse /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-1271] The connection to the pin: /tx/enc/m_axis_status_tready has been overridden by the user. This pin will not be connected as a part of the interface connection: enc_M_AXIS_STATUS 
+WARNING: [BD 41-1271] The connection to the pin: /rx/dec/m_axis_dout_tready has been overridden by the user. This pin will not be connected as a part of the interface connection: dec_M_AXIS_DOUT 
+WARNING: [BD 41-1271] The connection to the pin: /rx/dec/m_axis_status_tready has been overridden by the user. This pin will not be connected as a part of the interface connection: dec_M_AXIS_STATUS 
+CRITICAL WARNING: [BD 41-120] Mismatch in sizes when expanding bus interface connection config_decoder_0_dec_din_words for logical port TDATA. Connection may be incorrect or missing.
+CRITICAL WARNING: [BD 41-120] Mismatch in sizes when expanding bus interface connection config_decoder_0_dec_dout_words for logical port TDATA. Connection may be incorrect or missing.
+CRITICAL WARNING: [BD 41-120] Mismatch in sizes when expanding bus interface connection config_encoder_0_din_words for logical port TDATA. Connection may be incorrect or missing.
+CRITICAL WARNING: [BD 41-120] Mismatch in sizes when expanding bus interface connection config_encoder_0_dout_words for logical port TDATA. Connection may be incorrect or missing.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/tx/enc/s_axis_din_tdata'(128) to net 'traffic_gen_0_data_gen_TDATA'(32) - Only lower order bits will be connected.
+VHDL Output written to : /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/tx/enc/s_axis_din_tdata'(128) to net 'traffic_gen_0_data_gen_TDATA'(32) - Only lower order bits will be connected.
+VHDL Output written to : /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx/axi_traffic_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx/config_decoder_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx/config_encoder_0 .
+WARNING: [IP_Flow 19-650] IP license key 'polar@2018.04' is enabled with a Hardware_Evaluation license.
+WARNING: [IP_Flow 19-650] IP license key 'polar@2018.04' is enabled with a Hardware_Evaluation license.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx/dec .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx/demodulation_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx/enc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx/modulation_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx/rate_match_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx/rate_recovery_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps8_0_99M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rx/subblockdeint_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx/subblockint_0 .
+Exporting to file /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0.hwh
+Generated Block Design Tcl file /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0_bd.tcl
+Generated Hardware Definition File /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/design_1_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx/vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block tx/xlconstant_1 .
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.2-0] design_1_zynq_ultra_ps_e_0_0: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Xilinx's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Xilinx's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m02_couplers/auto_ds .
+Exporting to file /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Mon Feb 10 09:54:36 2020] Launched design_1_rst_ps8_0_99M_0_synth_1, design_1_rate_recovery_0_0_synth_1, design_1_rate_match_0_0_synth_1, design_1_xbar_0_synth_1, design_1_zynq_ultra_ps_e_0_0_synth_1, design_1_vio_0_0_synth_1, design_1_auto_pc_0_synth_1, design_1_dec_0_synth_1, design_1_config_encoder_0_0_synth_1, design_1_enc_0_synth_1, design_1_demodulation_0_0_synth_1, design_1_config_decoder_0_0_synth_1, design_1_axi_traffic_gen_0_0_synth_1, design_1_auto_ds_0_synth_1, design_1_modulation_0_0_synth_1, design_1_auto_ds_2_synth_1, design_1_auto_ds_1_synth_1, design_1_auto_pc_1_synth_1, design_1_system_ila_0_0_synth_1, design_1_subblockdeint_0_0_synth_1, design_1_subblockint_0_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_rst_ps8_0_99M_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_rst_ps8_0_99M_0_synth_1/runme.log
+design_1_rate_recovery_0_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_rate_recovery_0_0_synth_1/runme.log
+design_1_rate_match_0_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_rate_match_0_0_synth_1/runme.log
+design_1_xbar_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_xbar_0_synth_1/runme.log
+design_1_zynq_ultra_ps_e_0_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_zynq_ultra_ps_e_0_0_synth_1/runme.log
+design_1_vio_0_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_vio_0_0_synth_1/runme.log
+design_1_auto_pc_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_auto_pc_0_synth_1/runme.log
+design_1_dec_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_dec_0_synth_1/runme.log
+design_1_config_encoder_0_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_config_encoder_0_0_synth_1/runme.log
+design_1_enc_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_enc_0_synth_1/runme.log
+design_1_demodulation_0_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_demodulation_0_0_synth_1/runme.log
+design_1_config_decoder_0_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_config_decoder_0_0_synth_1/runme.log
+design_1_axi_traffic_gen_0_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_axi_traffic_gen_0_0_synth_1/runme.log
+design_1_auto_ds_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_auto_ds_0_synth_1/runme.log
+design_1_modulation_0_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_modulation_0_0_synth_1/runme.log
+design_1_auto_ds_2_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_auto_ds_2_synth_1/runme.log
+design_1_auto_ds_1_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_auto_ds_1_synth_1/runme.log
+design_1_auto_pc_1_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_auto_pc_1_synth_1/runme.log
+design_1_system_ila_0_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_system_ila_0_0_synth_1/runme.log
+design_1_subblockdeint_0_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_subblockdeint_0_0_synth_1/runme.log
+design_1_subblockint_0_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_subblockint_0_0_synth_1/runme.log
+synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/runme.log
+[Mon Feb 10 09:54:37 2020] Launched impl_1...
+Run output will be captured here: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:36 ; elapsed = 00:00:33 . Memory (MB): peak = 8427.047 ; gain = 229.691 ; free physical = 33126 ; free virtual = 38435
+file mkdir /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk
+file copy -force /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/impl_1/design_1_wrapper.sysdef /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk -hwspec /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk -hwspec /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+ungroup_bd_cells [get_bd_cells tx]
+WARNING: [BD 41-1306] The connection to interface pin /modulation_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /rate_match_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /subblockint_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /config_encoder_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /enc/m_axis_status_tready is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_STATUS
+ungroup_bd_cells [get_bd_cells rx]
+WARNING: [BD 41-1306] The connection to interface pin /config_decoder_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /demodulation_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /subblockdeint_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /rate_recovery_0/ap_start is being overridden by the user. This pin will not be connected as a part of interface connection ap_ctrl
+WARNING: [BD 41-1306] The connection to interface pin /dec/m_axis_dout_tready is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_DOUT
+WARNING: [BD 41-1306] The connection to interface pin /dec/m_axis_status_tready is being overridden by the user. This pin will not be connected as a part of interface connection M_AXIS_STATUS
+regenerate_bd_layout -routing
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets zynq_ultra_ps_e_0_pl_resetn0] [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM0_FPD] [get_bd_cells zynq_ultra_ps_e_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.2 zynq_ultra_ps_e_0
+endgroup
+set_property location {1 308 335} [get_bd_cells zynq_ultra_ps_e_0]
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_ps8_0_99M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_ps8_0_99M/ext_reset_in'
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)" }  [get_bd_pins ps8_0_axi_periph/ACLK]
+INFO: [BD 5-455] Automation on '/ps8_0_axi_periph/M00_ACLK' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/ps8_0_axi_periph/M01_ACLK' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/ps8_0_axi_periph/M02_ACLK' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/rst_ps8_0_99M/slowest_sync_clk' will not be run, since it is obsolete due to previously run automations
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_LOW}}  [get_bd_pins rst_ps8_0_99M/ext_reset_in]
+INFO: [board_rule 100-100] create_bd_port -dir I reset_rtl_0 -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset_rtl_0
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl_0 /rst_ps8_0_99M/ext_reset_in
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset_rtl_0
+INFO: [BD 5-455] Automation on '/system_ila_0/clk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/config_encoder_0/ap_clk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/axi_traffic_gen_0/s_axi_aclk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/subblockint_0/ap_clk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/modulation_0/ap_clk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/enc/core_clk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/rate_match_0/ap_clk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/vio_0/clk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/rate_recovery_0/ap_clk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/demodulation_0/ap_clk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/config_decoder_0/ap_clk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/subblockdeint_0/ap_clk' will not be run, since it is obsolete due to previously run automations
+INFO: [BD 5-455] Automation on '/dec/core_clk' will not be run, since it is obsolete due to previously run automations
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/axi_traffic_gen_0/S_AXI} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_LPD]
+</axi_traffic_gen_0/S_AXI/Reg0> is being mapped into </zynq_ultra_ps_e_0/Data> at <0x80000000 [ 64K ]>
+</dec/S_AXI/PARAMS> is being mapped into </zynq_ultra_ps_e_0/Data> at <0x80040000 [ 256K ]>
+</enc/S_AXI/PARAMS> is being mapped into </zynq_ultra_ps_e_0/Data> at <0x80080000 [ 256K ]>
+endgroup
+delete_bd_objs [get_bd_nets reset_rtl_0_1]
+delete_bd_objs [get_bd_ports reset_rtl_0]
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_ps8_0_99M/ext_reset_in'
+WARNING: [BD 5-232] No interface pins matched 'get_bd_intf_pins /rst_ps8_0_99M/ext_reset_in'
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_LOW}}  [get_bd_pins rst_ps8_0_99M/ext_reset_in]
+INFO: [board_rule 100-100] create_bd_port -dir I reset_rtl_0 -type rst
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY  /reset_rtl_0
+INFO: [board_rule 100-100] connect_bd_net /reset_rtl_0 /rst_ps8_0_99M/ext_reset_in
+INFO: [board_rule 100-100] set_property CONFIG.POLARITY ACTIVE_LOW /reset_rtl_0
+delete_bd_objs [get_bd_nets reset_rtl_0_1]
+delete_bd_objs [get_bd_ports reset_rtl_0]
+connect_bd_net [get_bd_pins rst_ps8_0_99M/ext_reset_in] [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0]
+regenerate_bd_layout -routing
+regenerate_bd_layout
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+CRITICAL WARNING: [PSU-1]  Setting of Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) to 2 is not valid when the value of DRAM IC Bus Width (Parameter PSU__DDRC__DRAM_WIDTH) is set to 16. The valid value for Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) is 1. 
+CRITICAL WARNING: [PSU-1]  Setting of Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) to 2 is not valid when the value of DRAM IC Bus Width (Parameter PSU__DDRC__DRAM_WIDTH) is set to 16. The valid value for Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) is 1. 
+CRITICAL WARNING: [PSU-2]  Setting of DDR Row Address Count (Parameter PSU__DDRC__ROW_ADDR_COUNT) to 14 is not valid when the value of Device Capacity (Parameter PSU__DDRC__DEVICE_CAPACITY) is set to 8192. The valid value for Row Address Count (Parameter PSU__DDRC__ROW_ADDR_COUNT) is 16. 
+CRITICAL WARNING: [PSU-1]  Setting of Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) to 2 is not valid when the value of DRAM IC Bus Width (Parameter PSU__DDRC__DRAM_WIDTH) is set to 16. The valid value for Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) is 1. 
+CRITICAL WARNING: [PSU-1]  Setting of Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) to 2 is not valid when the value of DRAM IC Bus Width (Parameter PSU__DDRC__DRAM_WIDTH) is set to 16. The valid value for Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) is 1. 
+CRITICAL WARNING: [PSU-1]  Setting of Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) to 2 is not valid when the value of DRAM IC Bus Width (Parameter PSU__DDRC__DRAM_WIDTH) is set to 16. The valid value for Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) is 1. 
+startgroup
+set_property -dict [list CONFIG.PSU__DDRC__DEVICE_CAPACITY {8192 MBits} CONFIG.PSU__DDRC__DRAM_WIDTH {16 Bits} CONFIG.PSU__DDRC__ROW_ADDR_COUNT {16} CONFIG.PSU__DDRC__SPEED_BIN {DDR4_2133P} CONFIG.PSU__DDRC__COMPONENTS {UDIMM} CONFIG.PSU__UART0__PERIPHERAL__ENABLE {1} CONFIG.PSU__UART0__PERIPHERAL__IO {MIO 26 .. 27} CONFIG.PSU__USE__M_AXI_GP0 {1} CONFIG.PSU__USE__M_AXI_GP2 {0} CONFIG.PSU_BANK_0_IO_STANDARD {LVCMOS18} CONFIG.PSU_BANK_3_IO_STANDARD {LVCMOS18} CONFIG.PSU__CRF_APB__GPU_REF_CTRL__SRCSEL {IOPLL} CONFIG.PSU__CRF_APB__GDMA_REF_CTRL__SRCSEL {APLL} CONFIG.PSU__CRF_APB__DPDMA_REF_CTRL__SRCSEL {APLL} CONFIG.PSU__CRF_APB__DDR_CTRL__FREQMHZ {1067}] [get_bd_cells zynq_ultra_ps_e_0]
+CRITICAL WARNING: [PSU-1]  Setting of Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) to 2 is not valid when the value of DRAM IC Bus Width (Parameter PSU__DDRC__DRAM_WIDTH) is set to 16. The valid value for Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) is 1. 
+WARNING: [BD 41-1684] Pin /zynq_ultra_ps_e_0/maxihpm0_lpd_aclk is now disabled. All connections to this pin have been removed. 
+delete_bd_objs [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM0_LPD]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/axi_traffic_gen_0/S_AXI} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_FPD]
+</axi_traffic_gen_0/S_AXI/Reg0> is being mapped into </zynq_ultra_ps_e_0/Data> at <0xA0000000 [ 64K ]>
+</dec/S_AXI/PARAMS> is being mapped into </zynq_ultra_ps_e_0/Data> at <0xA0040000 [ 256K ]>
+</enc/S_AXI/PARAMS> is being mapped into </zynq_ultra_ps_e_0/Data> at <0xA0080000 [ 256K ]>
+validate_bd_design
+CRITICAL WARNING: [PSU-1]  Setting of Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) to 2 is not valid when the value of DRAM IC Bus Width (Parameter PSU__DDRC__DRAM_WIDTH) is set to 16. The valid value for Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) is 1. 
+CRITICAL WARNING: [PSU-1]  Setting of Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) to 2 is not valid when the value of DRAM IC Bus Width (Parameter PSU__DDRC__DRAM_WIDTH) is set to 16. The valid value for Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) is 1. 
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /enc/S_AXIS_DIN(16) and /axi_traffic_gen_0/M_AXIS_MASTER(4)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/m00_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/m00_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/m01_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M01_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/m01_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M01_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/m02_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/m02_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M02_AXI(16)
+validate_bd_design: Time (s): cpu = 00:00:14 ; elapsed = 00:00:10 . Memory (MB): peak = 8744.160 ; gain = 0.000 ; free physical = 28140 ; free virtual = 36320
+CRITICAL WARNING: [PSU-1]  Setting of Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) to 2 is not valid when the value of DRAM IC Bus Width (Parameter PSU__DDRC__DRAM_WIDTH) is set to 16. The valid value for Bank Group Address Count (Parameter PSU__DDRC__BG_ADDR_COUNT) is 1. 
+WARNING: [IP_Flow 19-474] Invalid Parameter 'Component_Name'
+startgroup
+set_property -dict [list CONFIG.PSU__DDRC__BG_ADDR_COUNT {1}] [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+validate_bd_design
+CRITICAL WARNING: [BD 41-237] Bus Interface property TDATA_NUM_BYTES does not match between /enc/S_AXIS_DIN(16) and /axi_traffic_gen_0/M_AXIS_MASTER(4)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/m00_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/m00_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M00_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/m01_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M01_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/m01_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M01_AXI(16)
+WARNING: [BD 41-237] Bus Interface property AWUSER_WIDTH does not match between /ps8_0_axi_periph/m02_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M02_AXI(16)
+WARNING: [BD 41-237] Bus Interface property ARUSER_WIDTH does not match between /ps8_0_axi_periph/m02_couplers/auto_ds/S_AXI(0) and /ps8_0_axi_periph/xbar/M02_AXI(16)
+validate_bd_design: Time (s): cpu = 00:00:09 ; elapsed = 00:00:07 . Memory (MB): peak = 8744.160 ; gain = 0.000 ; free physical = 28176 ; free virtual = 36357
+save_bd_design
+Wrote  : </home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/design_1.bd> 
+Wrote  : </home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ui/bd_1f5defd0.ui> 
+reset_run synth_1
+reset_run design_1_rst_ps8_0_99M_0_synth_1
+reset_run design_1_xbar_0_synth_1
+reset_run design_1_vio_0_0_synth_1
+reset_run design_1_dec_0_synth_1
+reset_run design_1_enc_0_synth_1
+reset_run design_1_axi_traffic_gen_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+INFO: [BD 41-1662] The design 'design_1.bd' is already validated. Therefore parameter propagation will not be re-run.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_12_AXIS_tdata'(32) to net 'config_decoder_0_dec_din_words_TDATA'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_13_AXIS_tdata'(32) to net 'config_decoder_0_dec_dout_words_TDATA'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_2_AXIS_tdata'(32) to net 'config_encoder_0_din_words_TDATA'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_3_AXIS_tdata'(32) to net 'config_encoder_0_dout_words_TDATA'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/enc/s_axis_din_tdata'(128) to net 'traffic_gen_0_data_gen_TDATA'(32) - Only lower order bits will be connected.
+VHDL Output written to : /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_12_AXIS_tdata'(32) to net 'config_decoder_0_dec_din_words_TDATA'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_13_AXIS_tdata'(32) to net 'config_decoder_0_dec_dout_words_TDATA'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_2_AXIS_tdata'(32) to net 'config_encoder_0_din_words_TDATA'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/system_ila_0/SLOT_3_AXIS_tdata'(32) to net 'config_encoder_0_dout_words_TDATA'(8) - Only lower order bits will be connected.
+WARNING: [BD 41-235] Width mismatch when connecting pin: '/enc/s_axis_din_tdata'(128) to net 'traffic_gen_0_data_gen_TDATA'(32) - Only lower order bits will be connected.
+VHDL Output written to : /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/sim/design_1.v
+VHDL Output written to : /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+INFO: [BD 41-1029] Generation completed for the IP Integrator block axi_traffic_gen_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block config_decoder_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block config_encoder_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block dec .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block demodulation_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block enc .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block modulation_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rate_match_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rate_recovery_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps8_0_99M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block subblockdeint_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block subblockint_0 .
+Exporting to file /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0.hwh
+Generated Block Design Tcl file /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/hw_handoff/design_1_system_ila_0_0_bd.tcl
+Generated Hardware Definition File /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/bd_0/synth/design_1_system_ila_0_0.hwdef
+INFO: [BD 41-1029] Generation completed for the IP Integrator block system_ila_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block vio_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconstant_1 .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m00_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m00_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m01_couplers/auto_ds .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m01_couplers/auto_pc .
+WARNING: [IP_Flow 19-4994] Overwriting existing constraint file '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2_ooc.xdc'
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps8_0_axi_periph/m02_couplers/auto_ds .
+INFO: [xilinx.com:ip:zynq_ultra_ps_e:3.2-0] design_1_zynq_ultra_ps_e_0_1: 
+Changes in your design (including the PCW configuration settings) are not automatically exported from Vivado to Xilinx's SDK, Petalinux or Yocto.
+This is by design to avoid disrupting existing embedded development efforts. To have any changes of your design taking effect in the embedded software flow please export your
+design by going through Vivado's main menu, click on File, then Export finally select Export Hardware, please ensure you click on the Include BitStream option.
+The auto-generated HDF file is all you need to import in Xilinx's SDK, Petalinux or Yocto for your changes to be reflected in the Embedded Software Flow.
+For more information, please consult PG201, section: Exporting PCW Settings to Embedded Software Flows
+INFO: [PSU-0] Address Range of DDR (0x7ff00000 to 0x7fffffff) is reserved by PMU for internal purpose.
+INFO: [BD 41-1029] Generation completed for the IP Integrator block zynq_ultra_ps_e_0 .
+Exporting to file /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/hw_handoff/design_1.hwh
+Generated Block Design Tcl file /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/hw_handoff/design_1_bd.tcl
+Generated Hardware Definition File /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.hwdef
+[Mon Feb 10 12:01:08 2020] Launched design_1_rst_ps8_0_99M_0_synth_1, design_1_xbar_0_synth_1, design_1_vio_0_0_synth_1, design_1_dec_0_synth_1, design_1_enc_0_synth_1, design_1_axi_traffic_gen_0_0_synth_1, design_1_auto_ds_0_synth_1, design_1_auto_pc_1_synth_1, design_1_auto_ds_2_synth_1, design_1_zynq_ultra_ps_e_0_1_synth_1, design_1_auto_ds_1_synth_1, design_1_auto_pc_0_synth_1, synth_1...
+Run output will be captured here:
+design_1_rst_ps8_0_99M_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_rst_ps8_0_99M_0_synth_1/runme.log
+design_1_xbar_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_xbar_0_synth_1/runme.log
+design_1_vio_0_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_vio_0_0_synth_1/runme.log
+design_1_dec_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_dec_0_synth_1/runme.log
+design_1_enc_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_enc_0_synth_1/runme.log
+design_1_axi_traffic_gen_0_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_axi_traffic_gen_0_0_synth_1/runme.log
+design_1_auto_ds_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_auto_ds_0_synth_1/runme.log
+design_1_auto_pc_1_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_auto_pc_1_synth_1/runme.log
+design_1_auto_ds_2_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_auto_ds_2_synth_1/runme.log
+design_1_zynq_ultra_ps_e_0_1_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_zynq_ultra_ps_e_0_1_synth_1/runme.log
+design_1_auto_ds_1_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_auto_ds_1_synth_1/runme.log
+design_1_auto_pc_0_synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_auto_pc_0_synth_1/runme.log
+synth_1: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/runme.log
+[Mon Feb 10 12:01:09 2020] Launched impl_1...
+Run output will be captured here: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/impl_1/runme.log
+launch_runs: Time (s): cpu = 00:00:31 ; elapsed = 00:00:31 . Memory (MB): peak = 8783.129 ; gain = 38.969 ; free physical = 27950 ; free virtual = 35879
+file mkdir /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk
+file copy -force /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/impl_1/design_1_wrapper.sysdef /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk -hwspec /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk -hwspec /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/00001b8d6a1b01
+set_property PROGRAM.FILE {/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xczu21dr_0]
+set_property PROBES.FILE {/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xczu21dr_0]
+set_property FULL_PROBES.FILE {/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xczu21dr_0]
+current_hw_device [get_hw_devices xczu21dr_0]
+refresh_hw_device [lindex [get_hw_devices xczu21dr_0] 0]
+INFO: [Labtools 27-2302] Device xczu21dr (JTAG device index = 0) is programmed with a design that has 1 ILA core(s).
+INFO: [Labtools 27-2302] Device xczu21dr (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+INFO: [Labtools 27-1889] Uploading output probe values for VIO core [hw_vio_1]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu21dr_0] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+Processing Interface config_encoder_0_enc_ctrl_V_V_ila1_slot0
+Processing Interface subblockdeint_0_DEITLVdataOut_ila1_slot10
+Processing Interface config_decoder_0_dec_ctrl_V_V_ila1_slot11
+Processing Interface config_decoder_0_dec_din_words_ila1_slot12
+Processing Interface config_decoder_0_dec_dout_words_ila1_slot13
+Processing Interface dec_M_AXIS_DOUT_ila1_slot14
+Processing Interface dec_M_AXIS_STATUS_ila1_slot15
+Processing Interface traffic_gen_0_data_gen_ila1_slot1
+Processing Interface config_encoder_0_din_words_ila1_slot2
+Processing Interface config_encoder_0_dout_words_ila1_slot3
+Processing Interface enc_M_AXIS_DOUT_ila1_slot4
+Processing Interface enc_M_AXIS_STATUS_ila1_slot5
+Processing Interface subblockint_0_ITLVdataOut_ila1_slot6
+Processing Interface rate_match_0_RMdataOut_ila1_slot7
+Processing Interface bpsk_modulation_0_demod_data_ila1_slot8
+Processing Interface rate_recovery_0_RRdataOut_ila1_slot9
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu21dr_2]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xczu21dr_2] 0]
+INFO: [Labtools 27-1435] Device xczu21dr (JTAG device index = 2) is not programmed (DONE status = 0).
+current_hw_device [get_hw_devices arm_dap_3]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_3] 0]
+current_hw_device [get_hw_devices xczu21dr_2]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes design_1_i/system_ila_0/inst/net_slot_14_axis_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu21dr_0] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu21dr_0] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+INFO: [Labtools 27-1964] The ILA core 'hw_ila_1' trigger was armed at 2020-Feb-10 12:42:10
+set_property OUTPUT_VALUE 1 [get_hw_probes design_1_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xczu21dr_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xczu21dr_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu21dr_0] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu21dr_0] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+INFO: [Labtools 27-1966] The ILA core 'hw_ila_1' triggered at 2020-Feb-10 12:42:17
+upload_hw_ila_data: Time (s): cpu = 00:00:07 ; elapsed = 00:00:26 . Memory (MB): peak = 9298.094 ; gain = 40.844 ; free physical = 25593 ; free virtual = 34304
+Processed interface config_encoder_0_enc_ctrl_V_V_ila1_slot0
+Processed interface subblockdeint_0_DEITLVdataOut_ila1_slot10
+Processed interface config_decoder_0_dec_ctrl_V_V_ila1_slot11
+Processed interface config_decoder_0_dec_din_words_ila1_slot12
+Processed interface config_decoder_0_dec_dout_words_ila1_slot13
+Processed interface dec_M_AXIS_DOUT_ila1_slot14
+Processed interface dec_M_AXIS_STATUS_ila1_slot15
+Processed interface traffic_gen_0_data_gen_ila1_slot1
+Processed interface config_encoder_0_din_words_ila1_slot2
+Processed interface config_encoder_0_dout_words_ila1_slot3
+Processed interface enc_M_AXIS_DOUT_ila1_slot4
+Processed interface enc_M_AXIS_STATUS_ila1_slot5
+Processed interface subblockint_0_ITLVdataOut_ila1_slot6
+Processed interface rate_match_0_RMdataOut_ila1_slot7
+Processed interface bpsk_modulation_0_demod_data_ila1_slot8
+Processed interface rate_recovery_0_RRdataOut_ila1_slot9
+INFO: [Labtools 27-3304] ILA Waveform data saved to file /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.hw/backup/hw_ila_data_1.ila. Use Tcl command 'read_hw_ila_data' or Vivado File->Import->Import ILA Data menu item to import the previously saved data.
+display_hw_ila_data: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 9355.109 ; gain = 57.016 ; free physical = 25564 ; free virtual = 34307
+save_wave_config {/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+write_project_tcl -all_properties -dump_project_info {/home/puja/Desktop/working_downlink_chain/encoder_int_rm_mod_demod_rr_deint_decoder/K_64_N_512_E_896WithATG/K_64_N_512_E_896.tcl}
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [Common 17-344] 'set_property' was cancelled
+INFO: [Common 17-344] 'set_property' was cancelled
+write_project_tcl: Time (s): cpu = 00:00:08 ; elapsed = 00:01:25 . Memory (MB): peak = 9355.109 ; gain = 0.000 ; free physical = 1631 ; free virtual = 33756
+INFO: [Common 17-344] 'write_project_tcl' was cancelled
+write_project_tcl -all_properties -dump_project_info {/home/puja/Desktop/working_downlink_chain/tcl/BBU/K_64_N_512_E_896.tcl}
+INFO: [BD 5-453] Writing out BD creation steps for design_1 as a TCL proc
+INFO: [Vivado-projutils-8] Tcl script 'K_64_N_512_E_896.tcl' generated in output directory '/home/puja/Desktop/working_downlink_chain/tcl/BBU'
+
+INFO: [Vivado-projutils-15] Please note that by default, the file path for the project source files were set wth respect to the 'origin_dir' variable in the
+ generated script. When this script is executed from the output directory, these source files will be referenced with respect to this 'origin_dir' path value.
+ In case this script was later moved to a different directory, the 'origin_dir' value must be set manually in the script with the path
+ relative to the new output directory to make sure that the source files are referenced correctly from the original project. You can also set the
+ 'origin_dir' automatically by setting the 'origin_dir_loc' variable in the tcl shell before sourcing this generated script. The 'origin_dir_loc'
+ variable should be set to the path relative to the new output directory. Alternatively, if you are sourcing the script from the Vivado command line,
+ then set the origin dir using '-tclargs --origin_dir <path>'. For example, 'vivado -mode tcl -source K_64_N_512_E_896.tcl -tclargs --origin_dir ".."
+
+WARNING: [Vivado-projutils-10] Found source(s) that were local or imported into the project. If this project is being source controlled, then
+ please ensure that the project source(s) are also part of this source controlled data. The list of these local source(s) can be found in the generated script
+ under the header section.
+
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 10 13:07:45 2020...

@@ -1,0 +1,369 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 10 09:55:48 2020
+# Process ID: 16237
+# Current directory: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_config_encoder_0_0_synth_1
+# Command line: vivado -log design_1_config_encoder_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_config_encoder_0_0.tcl
+# Log file: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_config_encoder_0_0_synth_1/design_1_config_encoder_0_0.vds
+# Journal file: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_config_encoder_0_0_synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_config_encoder_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/puja/Desktop/working_downlink_chain/BBU/ip_repo_path/K_64_N_512_E_896_ATG'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top design_1_config_encoder_0_0 -part xczu21dr-ffvd1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu21dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu21dr'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 16420 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1475.078 ; gain = 65.000 ; free physical = 30080 ; free virtual = 35457
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_config_encoder_0_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_config_encoder_0_0/synth/design_1_config_encoder_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'config_encoder' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/a405/hdl/verilog/config_encoder.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 2'b01 
+	Parameter ap_ST_fsm_state2 bound to: 2'b10 
+	Parameter ap_const_lv32_0 bound to: 0 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/a405/hdl/verilog/config_encoder.v:59]
+WARNING: [Synth 8-6014] Unused sequential element din_words_V_data_V_1_sel_rd_reg was removed.  [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/a405/hdl/verilog/config_encoder.v:145]
+WARNING: [Synth 8-6014] Unused sequential element din_words_V_last_V_1_sel_rd_reg was removed.  [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/a405/hdl/verilog/config_encoder.v:171]
+WARNING: [Synth 8-6014] Unused sequential element dout_words_V_data_V_1_sel_rd_reg was removed.  [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/a405/hdl/verilog/config_encoder.v:197]
+WARNING: [Synth 8-6014] Unused sequential element dout_words_V_last_V_1_sel_rd_reg was removed.  [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/a405/hdl/verilog/config_encoder.v:223]
+INFO: [Synth 8-6155] done synthesizing module 'config_encoder' (1#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/a405/hdl/verilog/config_encoder.v:12]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_config_encoder_0_0' (2#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_config_encoder_0_0/synth/design_1_config_encoder_0_0.v:58]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1520.828 ; gain = 110.750 ; free physical = 30055 ; free virtual = 35432
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1520.828 ; gain = 110.750 ; free physical = 30050 ; free virtual = 35427
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1520.828 ; gain = 110.750 ; free physical = 30050 ; free virtual = 35427
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu21dr-ffvd1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_config_encoder_0_0/constraints/config_encoder_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_config_encoder_0_0/constraints/config_encoder_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_config_encoder_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_config_encoder_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2443.031 ; gain = 0.000 ; free physical = 28154 ; free virtual = 33530
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2443.031 ; gain = 0.000 ; free physical = 28154 ; free virtual = 33529
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2443.031 ; gain = 0.000 ; free physical = 28153 ; free virtual = 33530
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 2443.031 ; gain = 1032.953 ; free physical = 28079 ; free virtual = 33457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu21dr-ffvd1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 2443.031 ; gain = 1032.953 ; free physical = 28079 ; free virtual = 33457
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_config_encoder_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 2443.031 ; gain = 1032.953 ; free physical = 28076 ; free virtual = 33454
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 2443.031 ; gain = 1032.953 ; free physical = 28029 ; free virtual = 33407
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module config_encoder 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   4 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 5     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[0]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[0]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[1]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[1]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[2]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[2]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[3]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[3]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[4]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[4]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[5]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[5]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[6]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[6]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[7]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[7]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[8]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[8]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[9]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[9]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[10]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[10]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[11]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[11]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[12]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[12]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[13]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[13]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[14]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[14]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[15]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[15]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[16]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[16]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[17]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[17]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[18]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[18]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[19]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[19]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[20]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[20]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[21]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[21]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[22]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[22]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[23]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[23]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[24]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[24]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[25]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[25]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[26]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[26]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[27]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[27]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[28]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[28]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[29]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[29]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_B_reg[30]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_B_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/enc_ctrl_V_V_1_payload_A_reg[30]' (FDRE) to 'inst/enc_ctrl_V_V_1_payload_A_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\enc_ctrl_V_V_1_payload_B_reg[31] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\enc_ctrl_V_V_1_payload_A_reg[31] )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:21 . Memory (MB): peak = 2443.031 ; gain = 1032.953 ; free physical = 27977 ; free virtual = 33357
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:52 . Memory (MB): peak = 2736.336 ; gain = 1326.258 ; free physical = 26418 ; free virtual = 31836
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:52 . Memory (MB): peak = 2747.352 ; gain = 1337.273 ; free physical = 26413 ; free virtual = 31831
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:30 ; elapsed = 00:00:52 . Memory (MB): peak = 2748.359 ; gain = 1338.281 ; free physical = 26414 ; free virtual = 31831
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 2748.359 ; gain = 1338.281 ; free physical = 26374 ; free virtual = 31792
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 2748.359 ; gain = 1338.281 ; free physical = 26374 ; free virtual = 31791
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 2748.359 ; gain = 1338.281 ; free physical = 26373 ; free virtual = 31791
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 2748.359 ; gain = 1338.281 ; free physical = 26373 ; free virtual = 31790
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 2748.359 ; gain = 1338.281 ; free physical = 26371 ; free virtual = 31788
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 2748.359 ; gain = 1338.281 ; free physical = 26370 ; free virtual = 31787
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     1|
+|3     |LUT4 |     6|
+|4     |LUT5 |     8|
+|5     |LUT6 |     2|
+|6     |FDRE |    11|
+|7     |FDSE |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------+---------------+------+
+|      |Instance |Module         |Cells |
++------+---------+---------------+------+
+|1     |top      |               |    30|
+|2     |  inst   |config_encoder |    30|
++------+---------+---------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 2748.359 ; gain = 1338.281 ; free physical = 26370 ; free virtual = 31787
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:21 ; elapsed = 00:00:37 . Memory (MB): peak = 2748.359 ; gain = 416.078 ; free physical = 26397 ; free virtual = 31814
+Synthesis Optimization Complete : Time (s): cpu = 00:00:31 ; elapsed = 00:00:53 . Memory (MB): peak = 2748.367 ; gain = 1338.281 ; free physical = 26397 ; free virtual = 31814
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2800.000 ; gain = 0.000 ; free physical = 26240 ; free virtual = 31658
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+83 Infos, 4 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:32 ; elapsed = 00:00:54 . Memory (MB): peak = 2800.000 ; gain = 1406.145 ; free physical = 26296 ; free virtual = 31713
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2800.000 ; gain = 0.000 ; free physical = 26296 ; free virtual = 31713
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_config_encoder_0_0_synth_1/design_1_config_encoder_0_0.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_config_encoder_0_0, cache-ID = 8a0c874d36864ce1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2824.012 ; gain = 0.000 ; free physical = 26297 ; free virtual = 31714
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/design_1_config_encoder_0_0_synth_1/design_1_config_encoder_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_config_encoder_0_0_utilization_synth.rpt -pb design_1_config_encoder_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 10 09:56:55 2020...

@@ -1,0 +1,568 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 10 12:07:56 2020
+# Process ID: 6068
+# Current directory: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1
+# Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
+# Log file: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/design_1_wrapper.vds
+# Journal file: /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/vivado.jou
+#-----------------------------------------------------------
+source design_1_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/puja/Desktop/working_downlink_chain/BBU/ip_repo_path/K_64_N_512_E_896_ATG'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
+Command: synth_design -top design_1_wrapper -part xczu21dr-ffvd1156-2-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu21dr'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu21dr'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6093 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 1557.191 ; gain = 88.996 ; free physical = 27381 ; free virtual = 35700
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_wrapper' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'design_1' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'design_1_axi_traffic_gen_0_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_axi_traffic_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_axi_traffic_gen_0_0' (1#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_axi_traffic_gen_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'axi_traffic_gen_0' of module 'design_1_axi_traffic_gen_0_0' requires 47 connections, but only 46 given [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:195]
+INFO: [Synth 8-6157] synthesizing module 'design_1_config_decoder_0_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_config_decoder_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_config_decoder_0_0' (2#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_config_decoder_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'config_decoder_0' of module 'design_1_config_decoder_0_0' requires 17 connections, but only 14 given [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:242]
+INFO: [Synth 8-6157] synthesizing module 'design_1_config_encoder_0_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_config_encoder_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_config_encoder_0_0' (3#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_config_encoder_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'config_encoder_0' of module 'design_1_config_encoder_0_0' requires 17 connections, but only 14 given [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:257]
+INFO: [Synth 8-6157] synthesizing module 'design_1_dec_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_dec_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_dec_0' (4#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_dec_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_demodulation_0_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_demodulation_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_demodulation_0_0' (5#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_demodulation_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'demodulation_0' of module 'design_1_demodulation_0_0' requires 18 connections, but only 15 given [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:312]
+INFO: [Synth 8-6157] synthesizing module 'design_1_enc_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_enc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_enc_0' (6#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_enc_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_modulation_0_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_modulation_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_modulation_0_0' (7#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_modulation_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'modulation_0' of module 'design_1_modulation_0_0' requires 18 connections, but only 15 given [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:368]
+INFO: [Synth 8-6157] synthesizing module 'design_1_ps8_0_axi_periph_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:678]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_QJIMLI' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:1620]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_0' (8#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_0' (9#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_0' requires 56 connections, but only 53 given [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:1959]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_QJIMLI' (10#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:1620]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1D3SAH3' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:2015]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_1' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_1' (11#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_pc_1' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_pc_1' (12#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_pc' of module 'design_1_auto_pc_1' requires 56 connections, but only 53 given [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:2354]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1D3SAH3' (13#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:2015]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_P3UMW5' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:2410]
+INFO: [Synth 8-6157] synthesizing module 'design_1_auto_ds_2' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_auto_ds_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_auto_ds_2' (14#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_auto_ds_2_stub.v:6]
+WARNING: [Synth 8-350] instance 'auto_ds' of module 'design_1_auto_ds_2' requires 76 connections, but only 74 given [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:2713]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_P3UMW5' (15#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:2410]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1A7ZMW4' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:2790]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1A7ZMW4' (16#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:2790]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xbar_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xbar_0' (17#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_xbar_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'xbar' of module 'design_1_xbar_0' requires 82 connections, but only 80 given [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:1537]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_ps8_0_axi_periph_0' (18#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:678]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rate_match_0_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_rate_match_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rate_match_0_0' (19#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_rate_match_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rate_match_0' of module 'design_1_rate_match_0_0' requires 14 connections, but only 11 given [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:495]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rate_recovery_0_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_rate_recovery_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rate_recovery_0_0' (20#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_rate_recovery_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rate_recovery_0' of module 'design_1_rate_recovery_0_0' requires 14 connections, but only 11 given [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:507]
+INFO: [Synth 8-6157] synthesizing module 'design_1_rst_ps8_0_99M_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_rst_ps8_0_99M_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_rst_ps8_0_99M_0' (21#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_rst_ps8_0_99M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps8_0_99M' of module 'design_1_rst_ps8_0_99M_0' requires 10 connections, but only 6 given [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:519]
+INFO: [Synth 8-6157] synthesizing module 'design_1_subblockdeint_0_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_subblockdeint_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_subblockdeint_0_0' (22#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_subblockdeint_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'subblockdeint_0' of module 'design_1_subblockdeint_0_0' requires 14 connections, but only 11 given [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:526]
+INFO: [Synth 8-6157] synthesizing module 'design_1_subblockint_0_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_subblockint_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_subblockint_0_0' (23#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_subblockint_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'subblockint_0' of module 'design_1_subblockint_0_0' requires 14 connections, but only 11 given [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:538]
+WARNING: [Synth 8-4446] all outputs are unconnected for this instance and logic may be removed [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:550]
+INFO: [Synth 8-6157] synthesizing module 'design_1_system_ila_0_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_system_ila_0_0' (24#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_system_ila_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_vio_0_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_vio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_vio_0_0' (25#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_vio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_0_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_5_xlconstant' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 1 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_5_xlconstant' (26#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_0_0' (27#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_0_0/synth/design_1_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_xlconstant_1_0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_5_xlconstant__parameterized0' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 0 - type: integer 
+	Parameter CONST_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_5_xlconstant__parameterized0' (27#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ipshared/4649/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_xlconstant_1_0' (28#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_xlconstant_1_0/synth/design_1_xlconstant_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'design_1_zynq_ultra_ps_e_0_1' [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_zynq_ultra_ps_e_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_zynq_ultra_ps_e_0_1' (29#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/.Xil/Vivado-6068-puja-MS-7B48/realtime/design_1_zynq_ultra_ps_e_0_1_stub.v:6]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'vio_0'. This will prevent further optimization [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:626]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'subblockint_0'. This will prevent further optimization [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:538]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'subblockdeint_0'. This will prevent further optimization [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:526]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rate_recovery_0'. This will prevent further optimization [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:507]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'rate_match_0'. This will prevent further optimization [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:495]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'modulation_0'. This will prevent further optimization [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:368]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'demodulation_0'. This will prevent further optimization [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:312]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'config_encoder_0'. This will prevent further optimization [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:257]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'config_decoder_0'. This will prevent further optimization [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:242]
+INFO: [Synth 8-6071] Mark debug on the nets applies keep_hierarchy on instance 'axi_traffic_gen_0'. This will prevent further optimization [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:195]
+INFO: [Synth 8-6155] done synthesizing module 'design_1' (30#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/synth/design_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_wrapper' (31#1) [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_1A7ZMW4 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1A7ZMW4 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1A7ZMW4 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1A7ZMW4 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port S_AXI_araddr[39]
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port S_AXI_araddr[38]
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port S_AXI_araddr[37]
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port S_AXI_araddr[36]
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port S_AXI_araddr[35]
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port S_AXI_araddr[34]
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port S_AXI_araddr[33]
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port S_AXI_araddr[32]
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port S_AXI_awaddr[39]
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port S_AXI_awaddr[38]
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port S_AXI_awaddr[37]
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port S_AXI_awaddr[36]
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port S_AXI_awaddr[35]
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port S_AXI_awaddr[34]
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port S_AXI_awaddr[33]
+WARNING: [Synth 8-3331] design m02_couplers_imp_P3UMW5 has unconnected port S_AXI_awaddr[32]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[39]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[38]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[37]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[36]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[35]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[34]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[33]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[32]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[39]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[38]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[37]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[36]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[35]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[34]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[33]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[32]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[31]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[30]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[29]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[28]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[27]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[26]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[25]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[24]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[23]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[22]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[21]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[20]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[19]
+WARNING: [Synth 8-3331] design m01_couplers_imp_1D3SAH3 has unconnected port S_AXI_awaddr[18]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[39]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[38]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[37]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[36]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[35]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[34]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[33]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[32]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[21]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[20]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[19]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_araddr[18]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_awaddr[39]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_awaddr[38]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_awaddr[37]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_awaddr[36]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_awaddr[35]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_awaddr[34]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_awaddr[33]
+WARNING: [Synth 8-3331] design m00_couplers_imp_QJIMLI has unconnected port S_AXI_awaddr[32]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 1602.941 ; gain = 134.746 ; free physical = 27387 ; free virtual = 35707
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1602.941 ; gain = 134.746 ; free physical = 27389 ; free virtual = 35709
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1602.941 ; gain = 134.746 ; free physical = 27389 ; free virtual = 35709
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xczu21dr-ffvd1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_axi_traffic_gen_0_0/design_1_axi_traffic_gen_0_0/design_1_axi_traffic_gen_0_0_in_context.xdc] for cell 'design_1_i/axi_traffic_gen_0'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_axi_traffic_gen_0_0/design_1_axi_traffic_gen_0_0/design_1_axi_traffic_gen_0_0_in_context.xdc] for cell 'design_1_i/axi_traffic_gen_0'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_config_decoder_0_0/design_1_config_decoder_0_0/design_1_config_decoder_0_0_in_context.xdc] for cell 'design_1_i/config_decoder_0'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_config_decoder_0_0/design_1_config_decoder_0_0/design_1_config_decoder_0_0_in_context.xdc] for cell 'design_1_i/config_decoder_0'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_config_encoder_0_0/design_1_config_encoder_0_0/design_1_config_encoder_0_0_in_context.xdc] for cell 'design_1_i/config_encoder_0'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_config_encoder_0_0/design_1_config_encoder_0_0/design_1_config_encoder_0_0_in_context.xdc] for cell 'design_1_i/config_encoder_0'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_dec_0/design_1_dec_0/design_1_dec_0_in_context.xdc] for cell 'design_1_i/dec'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_dec_0/design_1_dec_0/design_1_dec_0_in_context.xdc] for cell 'design_1_i/dec'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_demodulation_0_0/design_1_demodulation_0_0/design_1_demodulation_0_0_in_context.xdc] for cell 'design_1_i/demodulation_0'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_demodulation_0_0/design_1_demodulation_0_0/design_1_demodulation_0_0_in_context.xdc] for cell 'design_1_i/demodulation_0'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_enc_0/design_1_enc_0/design_1_enc_0_in_context.xdc] for cell 'design_1_i/enc'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_enc_0/design_1_enc_0/design_1_enc_0_in_context.xdc] for cell 'design_1_i/enc'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_modulation_0_0/design_1_modulation_0_0/design_1_modulation_0_0_in_context.xdc] for cell 'design_1_i/modulation_0'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_modulation_0_0/design_1_modulation_0_0/design_1_modulation_0_0_in_context.xdc] for cell 'design_1_i/modulation_0'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_xbar_0/design_1_xbar_0/design_1_xbar_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/xbar'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_rate_match_0_0/design_1_rate_match_0_0/design_1_rate_match_0_0_in_context.xdc] for cell 'design_1_i/rate_match_0'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_rate_match_0_0/design_1_rate_match_0_0/design_1_rate_match_0_0_in_context.xdc] for cell 'design_1_i/rate_match_0'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_rate_recovery_0_0/design_1_rate_recovery_0_0/design_1_rate_recovery_0_0_in_context.xdc] for cell 'design_1_i/rate_recovery_0'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_rate_recovery_0_0/design_1_rate_recovery_0_0/design_1_rate_recovery_0_0_in_context.xdc] for cell 'design_1_i/rate_recovery_0'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_99M'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0/design_1_rst_ps8_0_99M_0_in_context.xdc] for cell 'design_1_i/rst_ps8_0_99M'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_subblockdeint_0_0/design_1_subblockdeint_0_0/design_1_subblockdeint_0_0_in_context.xdc] for cell 'design_1_i/subblockdeint_0'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_subblockdeint_0_0/design_1_subblockdeint_0_0/design_1_subblockdeint_0_0_in_context.xdc] for cell 'design_1_i/subblockdeint_0'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_subblockint_0_0/design_1_subblockint_0_0/design_1_subblockint_0_0_in_context.xdc] for cell 'design_1_i/subblockint_0'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_subblockint_0_0/design_1_subblockint_0_0/design_1_subblockint_0_0_in_context.xdc] for cell 'design_1_i/subblockint_0'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_system_ila_0_0/design_1_system_ila_0_0/design_1_system_ila_0_0_in_context.xdc] for cell 'design_1_i/system_ila_0'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0/design_1_vio_0_0_in_context.xdc] for cell 'design_1_i/vio_0'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_vio_0_0/design_1_vio_0_0/design_1_vio_0_0_in_context.xdc] for cell 'design_1_i/vio_0'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/m00_couplers/auto_ds'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_0/design_1_auto_ds_0/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/m00_couplers/auto_ds'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/m00_couplers/auto_pc'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/m00_couplers/auto_pc'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/m01_couplers/auto_ds'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_1/design_1_auto_ds_1/design_1_auto_ds_0_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/m01_couplers/auto_ds'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/m01_couplers/auto_pc'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_1/design_1_auto_pc_1/design_1_auto_pc_1_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/m01_couplers/auto_pc'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2/design_1_auto_ds_2_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/m02_couplers/auto_ds'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_auto_ds_2/design_1_auto_ds_2/design_1_auto_ds_2_in_context.xdc] for cell 'design_1_i/ps8_0_axi_periph/m02_couplers/auto_ds'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/design_1_zynq_ultra_ps_e_0_1/design_1_zynq_ultra_ps_e_0_1_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/ip/design_1_zynq_ultra_ps_e_0_1/design_1_zynq_ultra_ps_e_0_1/design_1_zynq_ultra_ps_e_0_1_in_context.xdc] for cell 'design_1_i/zynq_ultra_ps_e_0'
+Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2495.777 ; gain = 0.000 ; free physical = 26541 ; free virtual = 34861
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2496.777 ; gain = 0.000 ; free physical = 26541 ; free virtual = 34861
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.06 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2496.777 ; gain = 1.000 ; free physical = 26541 ; free virtual = 34861
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 2496.777 ; gain = 1028.582 ; free physical = 26620 ; free virtual = 34940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu21dr-ffvd1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 2496.777 ; gain = 1028.582 ; free physical = 26620 ; free virtual = 34940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for design_1_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/axi_traffic_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/config_decoder_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/config_encoder_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/dec. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/demodulation_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/enc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/modulation_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ps8_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rate_match_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rate_recovery_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/rst_ps8_0_99M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/subblockdeint_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/subblockint_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/system_ila_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/vio_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/xlconstant_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ps8_0_axi_periph/m00_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ps8_0_axi_periph/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ps8_0_axi_periph/m01_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ps8_0_axi_periph/m01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/ps8_0_axi_periph/m02_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for design_1_i/zynq_ultra_ps_e_0. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 2496.777 ; gain = 1028.582 ; free physical = 26620 ; free virtual = 34940
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:19 . Memory (MB): peak = 2496.777 ; gain = 1028.582 ; free physical = 26622 ; free virtual = 34943
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 4272 (col length:192)
+BRAMs: 2160 (col length: RAMB18 192 RAMB36 96)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:20 . Memory (MB): peak = 2496.777 ; gain = 1028.582 ; free physical = 26609 ; free virtual = 34932
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5578] Moved timing constraint from pin 'design_1_i/zynq_ultra_ps_e_0/pl_clk0' to pin 'design_1_i/zynq_ultra_ps_e_0/bbstub_pl_clk0/O'
+INFO: [Synth 8-5819] Moved 1 constraints on hierarchical pins to their respective driving/loading pins
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:28 ; elapsed = 00:00:48 . Memory (MB): peak = 2820.090 ; gain = 1351.895 ; free physical = 26155 ; free virtual = 34479
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:28 ; elapsed = 00:00:48 . Memory (MB): peak = 2820.090 ; gain = 1351.895 ; free physical = 26155 ; free virtual = 34478
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:28 ; elapsed = 00:00:48 . Memory (MB): peak = 2832.145 ; gain = 1363.949 ; free physical = 26154 ; free virtual = 34477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 2832.145 ; gain = 1363.949 ; free physical = 26154 ; free virtual = 34477
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 2832.145 ; gain = 1363.949 ; free physical = 26154 ; free virtual = 34477
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 2832.145 ; gain = 1363.949 ; free physical = 26154 ; free virtual = 34477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 2832.145 ; gain = 1363.949 ; free physical = 26154 ; free virtual = 34477
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 2832.145 ; gain = 1363.949 ; free physical = 26155 ; free virtual = 34478
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 2832.145 ; gain = 1363.949 ; free physical = 26155 ; free virtual = 34478
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |design_1_xbar_0              |         1|
+|2     |design_1_auto_ds_0           |         1|
+|3     |design_1_auto_pc_0           |         1|
+|4     |design_1_auto_ds_1           |         1|
+|5     |design_1_auto_pc_1           |         1|
+|6     |design_1_auto_ds_2           |         1|
+|7     |design_1_axi_traffic_gen_0_0 |         1|
+|8     |design_1_config_decoder_0_0  |         1|
+|9     |design_1_config_encoder_0_0  |         1|
+|10    |design_1_dec_0               |         1|
+|11    |design_1_demodulation_0_0    |         1|
+|12    |design_1_enc_0               |         1|
+|13    |design_1_modulation_0_0      |         1|
+|14    |design_1_rate_match_0_0      |         1|
+|15    |design_1_rate_recovery_0_0   |         1|
+|16    |design_1_rst_ps8_0_99M_0     |         1|
+|17    |design_1_subblockdeint_0_0   |         1|
+|18    |design_1_subblockint_0_0     |         1|
+|19    |design_1_system_ila_0_0      |         1|
+|20    |design_1_vio_0_0             |         1|
+|21    |design_1_zynq_ultra_ps_e_0_1 |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+-----------------------------+------+
+|      |Cell                         |Count |
++------+-----------------------------+------+
+|1     |design_1_auto_ds_0           |     1|
+|2     |design_1_auto_ds_1           |     1|
+|3     |design_1_auto_ds_2           |     1|
+|4     |design_1_auto_pc_0           |     1|
+|5     |design_1_auto_pc_1           |     1|
+|6     |design_1_axi_traffic_gen_0_0 |     1|
+|7     |design_1_config_decoder_0_0  |     1|
+|8     |design_1_config_encoder_0_0  |     1|
+|9     |design_1_dec_0               |     1|
+|10    |design_1_demodulation_0_0    |     1|
+|11    |design_1_enc_0               |     1|
+|12    |design_1_modulation_0_0      |     1|
+|13    |design_1_rate_match_0_0      |     1|
+|14    |design_1_rate_recovery_0_0   |     1|
+|15    |design_1_rst_ps8_0_99M_0     |     1|
+|16    |design_1_subblockdeint_0_0   |     1|
+|17    |design_1_subblockint_0_0     |     1|
+|18    |design_1_system_ila_0_0      |     1|
+|19    |design_1_vio_0_0             |     1|
+|20    |design_1_xbar_0              |     1|
+|21    |design_1_zynq_ultra_ps_e_0_1 |     1|
++------+-----------------------------+------+
+
+Report Instance Areas: 
++------+---------------------+----------------------------+------+
+|      |Instance             |Module                      |Cells |
++------+---------------------+----------------------------+------+
+|1     |top                  |                            |  4340|
+|2     |  design_1_i         |design_1                    |  4340|
+|3     |    ps8_0_axi_periph |design_1_ps8_0_axi_periph_0 |  2422|
+|4     |      m00_couplers   |m00_couplers_imp_QJIMLI     |   431|
+|5     |      m01_couplers   |m01_couplers_imp_1D3SAH3    |   431|
+|6     |      m02_couplers   |m02_couplers_imp_P3UMW5     |   334|
+|7     |    xlconstant_0     |design_1_xlconstant_0_0     |     0|
+|8     |    xlconstant_1     |design_1_xlconstant_1_0     |     0|
++------+---------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 2832.145 ; gain = 1363.949 ; free physical = 26155 ; free virtual = 34478
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 8 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:20 ; elapsed = 00:00:33 . Memory (MB): peak = 2832.145 ; gain = 470.113 ; free physical = 26191 ; free virtual = 34515
+Synthesis Optimization Complete : Time (s): cpu = 00:00:29 ; elapsed = 00:00:48 . Memory (MB): peak = 2832.152 ; gain = 1363.949 ; free physical = 26192 ; free virtual = 34515
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2871.207 ; gain = 0.000 ; free physical = 26114 ; free virtual = 34438
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+90 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:31 ; elapsed = 00:00:50 . Memory (MB): peak = 2883.207 ; gain = 1415.016 ; free physical = 26165 ; free virtual = 34489
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2883.207 ; gain = 0.000 ; free physical = 26165 ; free virtual = 34489
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/synth_1/design_1_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Mon Feb 10 12:08:58 2020...

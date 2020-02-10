@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="demodulation" xd:componentRef="demodulation" xd:initiationInterval="1" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="real_in.data" xd:originalName="real_in" xd:direction="in" xd:interfaceRef="real_in" xd:busTypeRef="axis" xd:dataWidth="128"/>
+  <xd:arg xd:name="real_in.last" xd:originalName="real_in" xd:direction="in" xd:interfaceRef="real_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="imag_in.data" xd:originalName="imag_in" xd:direction="in" xd:interfaceRef="imag_in" xd:busTypeRef="axis" xd:dataWidth="128"/>
+  <xd:arg xd:name="imag_in.last" xd:originalName="imag_in" xd:direction="in" xd:interfaceRef="imag_in" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="demod_out.data" xd:originalName="demod_out" xd:direction="out" xd:interfaceRef="demod_out" xd:busTypeRef="axis" xd:dataWidth="128"/>
+  <xd:arg xd:name="demod_out.last" xd:originalName="demod_out" xd:direction="out" xd:interfaceRef="demod_out" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="1" xd:worst-case="1" xd:average-case="1"/>
+  <xd:resourceEstimates xd:LUT="1190" xd:FF="824" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

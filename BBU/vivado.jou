@@ -1,0 +1,108 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Mon Feb 10 09:46:06 2020
+# Process ID: 14161
+# Current directory: /home/puja/Desktop/working_downlink_chain/BBU
+# Command line: vivado
+# Log file: /home/puja/Desktop/working_downlink_chain/BBU/vivado.log
+# Journal file: /home/puja/Desktop/working_downlink_chain/BBU/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project K_64_N_512_E_896 /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896 -part xczu21dr-ffvd1156-2-e
+set_property  ip_repo_paths  /home/puja/Desktop/working_downlink_chain/BBU/ip_repo_path/K_64_N_512_E_896_ATG [current_project]
+update_ip_catalog
+source /home/puja/Desktop/working_downlink_chain/encoder_int_rm_mod_demod_rr_deint_decoder/K_64_N_512_E_896WithATG/design_1.tcl
+update_compile_order -fileset sources_1
+group_bd_cells tx [get_bd_cells config_encoder_0] [get_bd_cells axi_traffic_gen_0] [get_bd_cells subblockint_0] [get_bd_cells modulation_0] [get_bd_cells enc] [get_bd_cells rate_match_0] [get_bd_cells vio_0] [get_bd_cells xlconstant_1]
+regenerate_bd_layout -routing
+regenerate_bd_layout
+group_bd_cells rx [get_bd_cells rate_recovery_0] [get_bd_cells demodulation_0] [get_bd_cells config_decoder_0] [get_bd_cells subblockdeint_0] [get_bd_cells dec]
+regenerate_bd_layout -routing
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.PSU__ENET3__PERIPHERAL__ENABLE {0} CONFIG.PSU__GPIO0_MIO__PERIPHERAL__ENABLE {0} CONFIG.PSU__GPIO1_MIO__PERIPHERAL__ENABLE {0} CONFIG.PSU__I2C0__PERIPHERAL__ENABLE {0} CONFIG.PSU__I2C1__PERIPHERAL__ENABLE {0} CONFIG.PSU__QSPI__PERIPHERAL__ENABLE {0} CONFIG.PSU__SD1__PERIPHERAL__ENABLE {0} CONFIG.PSU__UART0__PERIPHERAL__ENABLE {1} CONFIG.PSU__UART0__PERIPHERAL__IO {MIO 26 .. 27} CONFIG.PSU__UART1__PERIPHERAL__ENABLE {0} CONFIG.PSU__USB0__PERIPHERAL__ENABLE {0} CONFIG.PSU_BANK_1_IO_STANDARD {LVCMOS33} CONFIG.PSU_BANK_2_IO_STANDARD {LVCMOS33} CONFIG.PSU_BANK_3_IO_STANDARD {LVCMOS18} CONFIG.PSU__DISPLAYPORT__PERIPHERAL__ENABLE {0}] [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+validate_bd_design
+save_bd_design
+make_wrapper -files [get_files /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/design_1.bd] -top
+add_files -norecurse /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.v
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+file mkdir /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk
+file copy -force /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/impl_1/design_1_wrapper.sysdef /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk -hwspec /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper.hdf
+ungroup_bd_cells [get_bd_cells tx]
+ungroup_bd_cells [get_bd_cells rx]
+regenerate_bd_layout -routing
+regenerate_bd_layout
+delete_bd_objs [get_bd_nets zynq_ultra_ps_e_0_pl_resetn0] [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM0_FPD] [get_bd_cells zynq_ultra_ps_e_0]
+startgroup
+create_bd_cell -type ip -vlnv xilinx.com:ip:zynq_ultra_ps_e:3.2 zynq_ultra_ps_e_0
+endgroup
+set_property location {1 308 335} [get_bd_cells zynq_ultra_ps_e_0]
+startgroup
+apply_bd_automation -rule xilinx.com:bd_rule:clkrst -config {Clk "/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)" }  [get_bd_pins ps8_0_axi_periph/ACLK]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_LOW}}  [get_bd_pins rst_ps8_0_99M/ext_reset_in]
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {Auto} Clk_xbar {Auto} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_LPD} Slave {/axi_traffic_gen_0/S_AXI} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_LPD]
+endgroup
+delete_bd_objs [get_bd_nets reset_rtl_0_1]
+delete_bd_objs [get_bd_ports reset_rtl_0]
+apply_bd_automation -rule xilinx.com:bd_rule:board -config { Manual_Source {Auto} rst_polarity {ACTIVE_LOW}}  [get_bd_pins rst_ps8_0_99M/ext_reset_in]
+delete_bd_objs [get_bd_nets reset_rtl_0_1]
+delete_bd_objs [get_bd_ports reset_rtl_0]
+connect_bd_net [get_bd_pins rst_ps8_0_99M/ext_reset_in] [get_bd_pins zynq_ultra_ps_e_0/pl_resetn0]
+regenerate_bd_layout -routing
+regenerate_bd_layout
+startgroup
+set_property -dict [list CONFIG.PSU__DDRC__DEVICE_CAPACITY {8192 MBits} CONFIG.PSU__DDRC__DRAM_WIDTH {16 Bits} CONFIG.PSU__DDRC__ROW_ADDR_COUNT {16} CONFIG.PSU__DDRC__SPEED_BIN {DDR4_2133P} CONFIG.PSU__DDRC__COMPONENTS {UDIMM} CONFIG.PSU__UART0__PERIPHERAL__ENABLE {1} CONFIG.PSU__UART0__PERIPHERAL__IO {MIO 26 .. 27} CONFIG.PSU__USE__M_AXI_GP0 {1} CONFIG.PSU__USE__M_AXI_GP2 {0} CONFIG.PSU_BANK_0_IO_STANDARD {LVCMOS18} CONFIG.PSU_BANK_3_IO_STANDARD {LVCMOS18} CONFIG.PSU__CRF_APB__GPU_REF_CTRL__SRCSEL {IOPLL} CONFIG.PSU__CRF_APB__GDMA_REF_CTRL__SRCSEL {APLL} CONFIG.PSU__CRF_APB__DPDMA_REF_CTRL__SRCSEL {APLL} CONFIG.PSU__CRF_APB__DDR_CTRL__FREQMHZ {1067}] [get_bd_cells zynq_ultra_ps_e_0]
+delete_bd_objs [get_bd_intf_nets zynq_ultra_ps_e_0_M_AXI_HPM0_LPD]
+endgroup
+apply_bd_automation -rule xilinx.com:bd_rule:axi4 -config { Clk_master {Auto} Clk_slave {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Clk_xbar {/zynq_ultra_ps_e_0/pl_clk0 (96 MHz)} Master {/zynq_ultra_ps_e_0/M_AXI_HPM0_FPD} Slave {/axi_traffic_gen_0/S_AXI} intc_ip {/ps8_0_axi_periph} master_apm {0}}  [get_bd_intf_pins zynq_ultra_ps_e_0/M_AXI_HPM0_FPD]
+validate_bd_design
+startgroup
+set_property -dict [list CONFIG.PSU__DDRC__BG_ADDR_COUNT {1}] [get_bd_cells zynq_ultra_ps_e_0]
+endgroup
+validate_bd_design
+save_bd_design
+reset_run synth_1
+reset_run design_1_rst_ps8_0_99M_0_synth_1
+reset_run design_1_xbar_0_synth_1
+reset_run design_1_vio_0_0_synth_1
+reset_run design_1_dec_0_synth_1
+reset_run design_1_enc_0_synth_1
+reset_run design_1_axi_traffic_gen_0_0_synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 6
+wait_on_run impl_1
+file mkdir /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk
+file copy -force /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/impl_1/design_1_wrapper.sysdef /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper.hdf
+
+launch_sdk -workspace /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk -hwspec /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper.hdf
+open_hw
+connect_hw_server
+open_hw_target
+set_property PROGRAM.FILE {/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/impl_1/design_1_wrapper.bit} [get_hw_devices xczu21dr_0]
+set_property PROBES.FILE {/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xczu21dr_0]
+set_property FULL_PROBES.FILE {/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.runs/impl_1/design_1_wrapper.ltx} [get_hw_devices xczu21dr_0]
+current_hw_device [get_hw_devices xczu21dr_0]
+refresh_hw_device [lindex [get_hw_devices xczu21dr_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu21dr_0] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+current_hw_device [get_hw_devices arm_dap_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_1] 0]
+current_hw_device [get_hw_devices xczu21dr_2]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xczu21dr_2] 0]
+current_hw_device [get_hw_devices arm_dap_3]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices arm_dap_3] 0]
+current_hw_device [get_hw_devices xczu21dr_2]
+set_property TRIGGER_COMPARE_VALUE eq1'b1 [get_hw_probes design_1_i/system_ila_0/inst/net_slot_14_axis_tvalid -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu21dr_0] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+run_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu21dr_0] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+set_property OUTPUT_VALUE 1 [get_hw_probes design_1_i/vio_0_probe_out0 -of_objects [get_hw_vios -of_objects [get_hw_devices xczu21dr_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+commit_hw_vio [get_hw_probes {design_1_i/vio_0_probe_out0} -of_objects [get_hw_vios -of_objects [get_hw_devices xczu21dr_0] -filter {CELL_NAME=~"design_1_i/vio_0"}]]
+wait_on_hw_ila [get_hw_ilas -of_objects [get_hw_devices xczu21dr_0] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]
+display_hw_ila_data [upload_hw_ila_data [get_hw_ilas -of_objects [get_hw_devices xczu21dr_0] -filter {CELL_NAME=~"design_1_i/system_ila_0/inst/ila_lib"}]]
+save_wave_config {/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+close_hw
+write_project_tcl -all_properties -dump_project_info {/home/puja/Desktop/working_downlink_chain/encoder_int_rm_mod_demod_rr_deint_decoder/K_64_N_512_E_896WithATG/K_64_N_512_E_896.tcl}
+write_project_tcl -all_properties -dump_project_info {/home/puja/Desktop/working_downlink_chain/tcl/BBU/K_64_N_512_E_896.tcl}

@@ -1,0 +1,121 @@
+12:35:08 INFO  : Registering command handlers for SDK TCF services
+12:35:08 INFO  : Launching XSCT server: xsct -n -interactive /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/temp_xsdb_launch_script.tcl
+12:35:11 INFO  : XSCT server has started successfully.
+12:35:11 INFO  : Successfully done setting XSCT server connection channel  
+12:35:11 INFO  : Successfully done setting SDK workspace  
+12:35:11 INFO  : Processing command line option -hwspec /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper.hdf.
+12:36:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:36:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:37:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:37:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+12:37:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:37:24 INFO  : Jtag cable 'Platform Cable USB II 00001b8d6a1b01' is selected.
+12:37:24 INFO  : 'jtag frequency' command is executed.
+12:37:24 INFO  : Sourcing of '/opt/Xilinx/SDK/2018.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+12:37:24 INFO  : Context for 'APU' is selected.
+12:37:25 INFO  : System reset is completed.
+12:37:28 INFO  : 'after 3000' command is executed.
+12:37:29 INFO  : Context for 'APU' is selected.
+12:37:29 INFO  : Cleared APU and A53 resets
+12:37:29 INFO  : Context for 'RPU' is selected.
+12:37:29 INFO  : Cleared RPU and R5 resets
+12:37:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001b8d6a1b01" && level==0} -index 0' command is executed.
+12:39:06 INFO  : FPGA configured successfully with bitstream "/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:39:07 INFO  : Context for 'APU' is selected.
+12:39:07 INFO  : Hardware design information is loaded from '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:39:07 INFO  : 'configparams force-mem-access 1' command is executed.
+12:39:07 INFO  : Context for 'APU' is selected.
+12:39:07 INFO  : Sourcing of '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+12:39:27 ERROR : Memory read error at 0xFD080030. Invalid DAP IDCODE. Cannot access DAP: invalid ACK value: 0
+12:39:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /opt/Xilinx/SDK/2018.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001b8d6a1b01"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001b8d6a1b01"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Platform Cable USB II 00001b8d6a1b01"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001b8d6a1b01" && level==0} -index 0
+fpga -file /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001b8d6a1b01"} -index 1
+loadhw -hw /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001b8d6a1b01"} -index 1
+source /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+----------------End of Script----------------
+
+12:39:44 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+12:39:45 INFO  : Jtag cable 'Platform Cable USB II 00001b8d6a1b01' is selected.
+12:39:45 INFO  : 'jtag frequency' command is executed.
+12:39:45 INFO  : Sourcing of '/opt/Xilinx/SDK/2018.3/scripts/sdk/util/zynqmp_utils.tcl' is done.
+12:39:45 INFO  : Context for 'APU' is selected.
+12:39:46 INFO  : System reset is completed.
+12:39:49 INFO  : 'after 3000' command is executed.
+12:39:49 INFO  : Context for 'APU' is selected.
+12:39:50 INFO  : Cleared APU and A53 resets
+12:39:50 INFO  : Context for 'RPU' is selected.
+12:39:50 INFO  : Cleared RPU and R5 resets
+12:39:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001b8d6a1b01" && level==0} -index 0' command is executed.
+12:41:27 INFO  : FPGA configured successfully with bitstream "/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit"
+12:41:27 INFO  : Context for 'APU' is selected.
+12:41:27 INFO  : Hardware design information is loaded from '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper_hw_platform_0/system.hdf'.
+12:41:27 INFO  : 'configparams force-mem-access 1' command is executed.
+12:41:27 INFO  : Context for 'APU' is selected.
+12:41:27 INFO  : Sourcing of '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl' is done.
+12:41:31 INFO  : 'psu_init' command is executed.
+12:41:32 INFO  : 'after 1000' command is executed.
+12:41:32 INFO  : 'psu_ps_pl_isolation_removal' command is executed.
+12:41:33 INFO  : 'after 1000' command is executed.
+12:41:33 INFO  : 'psu_ps_pl_reset_config' command is executed.
+12:41:33 INFO  : 'catch {psu_protection}' command is executed.
+12:41:33 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:41:33 INFO  : Processor reset is completed for 'psu_cortexa53_0'.
+12:41:36 INFO  : The application '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/polar/Debug/polar.elf' is downloaded to processor 'psu_cortexa53_0'.
+12:41:36 INFO  : 'configparams force-mem-access 0' command is executed.
+12:41:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+source /opt/Xilinx/SDK/2018.3/scripts/sdk/util/zynqmp_utils.tcl
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001b8d6a1b01"} -index 1
+rst -system
+after 3000
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001b8d6a1b01"} -index 1
+reset_apu
+targets -set -nocase -filter {name =~"RPU*" && jtag_cable_name =~ "Platform Cable USB II 00001b8d6a1b01"} -index 1
+clear_rpu_reset
+targets -set -filter {jtag_cable_name =~ "Platform Cable USB II 00001b8d6a1b01" && level==0} -index 0
+fpga -file /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper_hw_platform_0/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001b8d6a1b01"} -index 1
+loadhw -hw /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper_hw_platform_0/system.hdf -mem-ranges [list {0x80000000 0xbfffffff} {0x400000000 0x5ffffffff} {0x1000000000 0x7fffffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*" && jtag_cable_name =~ "Platform Cable USB II 00001b8d6a1b01"} -index 1
+source /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/design_1_wrapper_hw_platform_0/psu_init.tcl
+psu_init
+after 1000
+psu_ps_pl_isolation_removal
+after 1000
+psu_ps_pl_reset_config
+catch {psu_protection}
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Platform Cable USB II 00001b8d6a1b01"} -index 1
+rst -processor
+dow /home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/polar/Debug/polar.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+12:41:36 INFO  : Context for processor 'psu_cortexa53_0' is selected.
+12:41:36 INFO  : 'con' command is executed.
+12:41:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~"*A53*0" && jtag_cable_name =~ "Platform Cable USB II 00001b8d6a1b01"} -index 1
+con
+----------------End of Script----------------
+
+12:41:36 INFO  : Launch script is exported to file '/home/puja/Desktop/working_downlink_chain/BBU/K_64_N_512_E_896/K_64_N_512_E_896.sdk/.sdk/launch_scripts/xilinx_c-c++_application_(system_debugger)/system_debugger_using_debug_polar.elf_on_local.tcl'
+13:51:33 INFO  : Disconnected from the channel tcfchan#1.

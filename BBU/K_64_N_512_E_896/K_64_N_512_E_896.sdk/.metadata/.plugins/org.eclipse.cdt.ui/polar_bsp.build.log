@@ -1,0 +1,189 @@
+12:35:50 **** Build of project polar_bsp ****
+make -k all 
+Running Make include in psu_cortexa53_0/libsrc/csudma_v1_3/src
+make -C psu_cortexa53_0/libsrc/csudma_v1_3/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make include in psu_cortexa53_0/libsrc/standalone_v6_8/src
+make -C psu_cortexa53_0/libsrc/standalone_v6_8/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make include in psu_cortexa53_0/libsrc/ipipsu_v2_4/src
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_4/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make include in psu_cortexa53_0/libsrc/gpiops_v3_4/src
+make -C psu_cortexa53_0/libsrc/gpiops_v3_4/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make include in psu_cortexa53_0/libsrc/resetps_v1_2/src
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make include in psu_cortexa53_0/libsrc/axipmon_v6_7/src
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make include in psu_cortexa53_0/libsrc/scugic_v3_10/src
+make -C psu_cortexa53_0/libsrc/scugic_v3_10/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make include in psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make include in psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make include in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make include in psu_cortexa53_0/libsrc/uartps_v3_7/src
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make include in psu_cortexa53_0/libsrc/rtcpsu_v1_6/src
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_6/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make include in psu_cortexa53_0/libsrc/trafgen_v4_2/src
+make -C psu_cortexa53_0/libsrc/trafgen_v4_2/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make include in psu_cortexa53_0/libsrc/clockps_v1_0/src
+make -C psu_cortexa53_0/libsrc/clockps_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make include in psu_cortexa53_0/libsrc/zdma_v1_6/src
+make -C psu_cortexa53_0/libsrc/zdma_v1_6/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make include in psu_cortexa53_0/libsrc/polar_v1_0/src
+make -C psu_cortexa53_0/libsrc/polar_v1_0/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make include in psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src -s include  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Running Make libs in psu_cortexa53_0/libsrc/csudma_v1_3/src
+make -C psu_cortexa53_0/libsrc/csudma_v1_3/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling csudma
+aarch64-none-elf-ar: creating ../../../lib/libxil.a
+Running Make libs in psu_cortexa53_0/libsrc/standalone_v6_8/src
+make -C psu_cortexa53_0/libsrc/standalone_v6_8/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling standalone A53
+In file included from xtime_l.c:52:0:
+xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from sleep.c:59:0:
+xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+In file included from xil_sleeptimer.c:51:0:
+xtime_l.h:77:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+Running Make libs in psu_cortexa53_0/libsrc/ipipsu_v2_4/src
+make -C psu_cortexa53_0/libsrc/ipipsu_v2_4/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling ipipsu
+Running Make libs in psu_cortexa53_0/libsrc/gpiops_v3_4/src
+make -C psu_cortexa53_0/libsrc/gpiops_v3_4/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling gpiops
+Running Make libs in psu_cortexa53_0/libsrc/resetps_v1_2/src
+make -C psu_cortexa53_0/libsrc/resetps_v1_2/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling resetps
+Running Make libs in psu_cortexa53_0/libsrc/axipmon_v6_7/src
+make -C psu_cortexa53_0/libsrc/axipmon_v6_7/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling axipmon
+Running Make libs in psu_cortexa53_0/libsrc/scugic_v3_10/src
+make -C psu_cortexa53_0/libsrc/scugic_v3_10/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling scugic
+Running Make libs in psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src
+make -C psu_cortexa53_0/libsrc/sysmonpsu_v2_5/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling sysmonpsu
+Running Make libs in psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src
+make -C psu_cortexa53_0/libsrc/ddrcpsu_v1_1/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling ddrcpsu
+Running Make libs in psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src
+make -C psu_cortexa53_0/libsrc/cpu_cortexa53_v1_5/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling cpu_cortexa53
+Running Make libs in psu_cortexa53_0/libsrc/uartps_v3_7/src
+make -C psu_cortexa53_0/libsrc/uartps_v3_7/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling uartps
+Running Make libs in psu_cortexa53_0/libsrc/rtcpsu_v1_6/src
+make -C psu_cortexa53_0/libsrc/rtcpsu_v1_6/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling rtcpsu
+Running Make libs in psu_cortexa53_0/libsrc/trafgen_v4_2/src
+make -C psu_cortexa53_0/libsrc/trafgen_v4_2/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling trafgen
+Running Make libs in psu_cortexa53_0/libsrc/clockps_v1_0/src
+make -C psu_cortexa53_0/libsrc/clockps_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling clockps
+Running Make libs in psu_cortexa53_0/libsrc/zdma_v1_6/src
+make -C psu_cortexa53_0/libsrc/zdma_v1_6/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling zdma
+Running Make libs in psu_cortexa53_0/libsrc/polar_v1_0/src
+make -C psu_cortexa53_0/libsrc/polar_v1_0/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling polar
+xpolar.c: In function 'xpolar_write_POLAR_CODE_REG0_N_words':
+xpolar.c:386:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_read_POLAR_CODE_REG0_N_words':
+xpolar.c:400:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_write_POLAR_CODE_REG0_K_words':
+xpolar.c:413:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_read_POLAR_CODE_REG0_K_words':
+xpolar.c:427:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_write_POLAR_CODE_REG0_words':
+xpolar.c:440:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_read_POLAR_CODE_REG0_words':
+xpolar.c:452:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_write_POLAR_CODE_REG2_AUGMENT_words':
+xpolar.c:464:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_read_POLAR_CODE_REG2_AUGMENT_words':
+xpolar.c:478:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_write_POLAR_CODE_REG2_CRC_SEL_words':
+xpolar.c:491:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_read_POLAR_CODE_REG2_CRC_SEL_words':
+xpolar.c:505:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_write_POLAR_CODE_REG2_ITLV_words':
+xpolar.c:518:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_read_POLAR_CODE_REG2_ITLV_words':
+xpolar.c:532:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_write_POLAR_CODE_REG2_CRC_INIT_words':
+xpolar.c:545:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_read_POLAR_CODE_REG2_CRC_INIT_words':
+xpolar.c:559:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_write_POLAR_CODE_REG2_words':
+xpolar.c:572:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_read_POLAR_CODE_REG2_words':
+xpolar.c:584:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_write_POLAR_CODE_REG3_words':
+xpolar.c:596:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_read_POLAR_CODE_REG3_words':
+xpolar.c:608:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_write_POLAR_BA_TABLE_words':
+xpolar.c:620:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar.c: In function 'xpolar_read_POLAR_BA_TABLE_words':
+xpolar.c:632:17: warning: comparison between signed and unsigned integer expressions [-Wsign-compare]
+   for (i = 0; i < length; i++) {
+                 ^
+xpolar_g.c:44:1: warning: missing braces around initializer [-Wmissing-braces]
+ {
+ ^
+xpolar_g.c:44:1: warning: missing braces around initializer [-Wmissing-braces]
+xpolar_g.c:44:1: warning: missing braces around initializer [-Wmissing-braces]
+Running Make libs in psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src
+make -C psu_cortexa53_0/libsrc/coresightps_dcc_v1_4/src -s libs  "SHELL=/bin/sh" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra"
+Compiling coresightps_dcc
+Finished building libraries
+
+12:35:56 Build Finished (took 6s.342ms)
+

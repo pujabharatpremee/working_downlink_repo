@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="rate_match" xd:componentRef="rate_match" xd:initiationInterval="7" xd:clockPeriod="10.000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="ap_ctrl" xd:busTypeRef="acc_handshake" xd:type="acc_handshake"/>
+  <xd:arg xd:name="RMdataIn.data" xd:originalName="RMdataIn" xd:direction="in" xd:interfaceRef="RMdataIn" xd:busTypeRef="axis" xd:dataWidth="128"/>
+  <xd:arg xd:name="RMdataIn.last" xd:originalName="RMdataIn" xd:direction="in" xd:interfaceRef="RMdataIn" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:arg xd:name="RMdataOut.data" xd:originalName="RMdataOut" xd:direction="out" xd:interfaceRef="RMdataOut" xd:busTypeRef="axis" xd:dataWidth="128"/>
+  <xd:arg xd:name="RMdataOut.last" xd:originalName="RMdataOut" xd:direction="out" xd:interfaceRef="RMdataOut" xd:busTypeRef="axis" xd:dataWidth="1"/>
+  <xd:latencyEstimates xd:best-case="7" xd:worst-case="7" xd:average-case="7"/>
+  <xd:resourceEstimates xd:LUT="258" xd:FF="889" xd:BRAM="0" xd:DSP="0"/>
+</xd:acceleratorMap>

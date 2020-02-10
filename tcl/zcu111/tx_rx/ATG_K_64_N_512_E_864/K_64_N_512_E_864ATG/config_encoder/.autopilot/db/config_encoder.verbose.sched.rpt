@@ -1,0 +1,130 @@
+
+
+================================================================
+== Vivado HLS Report for 'config_encoder'
+================================================================
+* Date:           Fri Feb  7 10:48:57 2020
+
+* Version:        2018.3 (Build 2405991 on Thu Dec 06 23:56:15 MST 2018)
+* Project:        config_encoder
+* Solution:       din_32_dout_128
+* Product family: zynquplus
+* Target device:  xczu21dr-ffvd1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     0.000|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |    1|    1|    1|    1|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 2
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 
+	2  / true
+2 --> 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 3 [1/1] (0.00ns)   --->   "%p_Result_s = call i32 @llvm.part.set.i32.i8(i32 undef, i8 0, i32 24, i32 31)" [config_encoder.cpp:16]   --->   Operation 3 'partset' 'p_Result_s' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 4 [1/1] (0.00ns)   --->   "%p_Result_1 = call i32 @llvm.part.set.i32.i16(i32 %p_Result_s, i16 0, i32 8, i32 23)" [config_encoder.cpp:17]   --->   Operation 4 'partset' 'p_Result_1' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 5 [1/1] (0.00ns)   --->   "%p_Result_2 = call i32 @_ssdm_op_PartSet.i32.i32.i7.i32.i32(i32 %p_Result_1, i7 0, i32 0, i32 6)" [config_encoder.cpp:19]   --->   Operation 5 'partset' 'p_Result_2' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 6 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P(i32* %enc_ctrl_V_V, i32 %p_Result_2)" [config_encoder.cpp:20]   --->   Operation 6 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 7 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P.i1P(i8* %din_words_V_data_V, i1* %din_words_V_last_V, i8 4, i1 true)" [config_encoder.cpp:24]   --->   Operation 7 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_1 : Operation 8 [2/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P.i1P(i8* %dout_words_V_data_V, i1* %dout_words_V_last_V, i8 16, i1 true)" [config_encoder.cpp:28]   --->   Operation 8 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+
+State 2 <SV = 1> <Delay = 0.00>
+ST_2 : Operation 9 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %enc_ctrl_V_V), !map !49"   --->   Operation 9 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %din_words_V_data_V), !map !53"   --->   Operation 10 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %din_words_V_last_V), !map !57"   --->   Operation 11 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i8* %dout_words_V_data_V), !map !61"   --->   Operation 12 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1* %dout_words_V_last_V), !map !65"   --->   Operation 13 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([15 x i8]* @config_encoder_str) nounwind"   --->   Operation 14 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %enc_ctrl_V_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [config_encoder.cpp:8]   --->   Operation 15 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %din_words_V_data_V, i1* %din_words_V_last_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [config_encoder.cpp:9]   --->   Operation 16 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i8* %dout_words_V_data_V, i1* %dout_words_V_last_V, [5 x i8]* @p_str, i32 1, i32 1, [5 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2, [1 x i8]* @p_str2, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str2, [1 x i8]* @p_str2) nounwind" [config_encoder.cpp:10]   --->   Operation 17 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_2 : Operation 18 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i32P(i32* %enc_ctrl_V_V, i32 %p_Result_2)" [config_encoder.cpp:20]   --->   Operation 18 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 19 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P.i1P(i8* %din_words_V_data_V, i1* %din_words_V_last_V, i8 4, i1 true)" [config_encoder.cpp:24]   --->   Operation 19 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 20 [1/2] (0.00ns)   --->   "call void @_ssdm_op_Write.axis.volatile.i8P.i1P(i8* %dout_words_V_data_V, i1* %dout_words_V_last_V, i8 16, i1 true)" [config_encoder.cpp:28]   --->   Operation 20 'write' <Predicate = true> <Delay = 0.00> <Core = "AXI4Stream">   --->   Core 5 'AXI4Stream' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : >
+ST_2 : Operation 21 [1/1] (0.00ns)   --->   "ret void" [config_encoder.cpp:31]   --->   Operation 21 'ret' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 0ns
+The critical path consists of the following:
+
+ <State 2>: 0ns
+The critical path consists of the following:
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A

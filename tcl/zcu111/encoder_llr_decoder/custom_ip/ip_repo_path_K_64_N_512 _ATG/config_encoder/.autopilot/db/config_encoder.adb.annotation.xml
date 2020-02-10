@@ -1,0 +1,5 @@
+<annotationInfo>
+<item  id="15" filename="config_encoder.cpp" linenumber="16" name="p_Result_s" contextFuncName="config_encoder" moduleName="config_encoder" rtlName="p_Result_s_fu_93_p5" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/puja/Desktop/working_downlink_chain/custom_ip"><\/item>
+<item  id="16" filename="config_encoder.cpp" linenumber="17" name="p_Result_1" contextFuncName="config_encoder" moduleName="config_encoder" rtlName="p_Result_1_fu_105_p5" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/puja/Desktop/working_downlink_chain/custom_ip"><\/item>
+<item  id="17" filename="config_encoder.cpp" linenumber="19" name="p_Result_2" contextFuncName="config_encoder" moduleName="config_encoder" rtlName="p_Result_2_fu_117_p5" latency="0" BRAM="-1" DSP="-1" FF="-1" LUT="-1" fileDirectory="/home/puja/Desktop/working_downlink_chain/custom_ip"><\/item>
+</annotationInfo>

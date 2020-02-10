@@ -1,0 +1,4 @@
+#!/bin/sh
+lli=${LLVMINTERP-lli}
+exec $lli \
+    /home/puja/Desktop/working_downlink_chain/custom_ip/config_encoder/din_32_dout_128/.autopilot/db/a.g.bc ${1+"$@"}
